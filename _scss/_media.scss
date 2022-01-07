@@ -28,7 +28,6 @@
   margin-right: 10px;
 }
 
-
 // Video responsive
 .video-responsive {
   display: block;
@@ -86,3 +85,26 @@ video.video-responsive {
     margin-top: $layout-spacing;
   }
 }
+
+// Image in home page
+.home-image {
+  display: block;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Image in posts
+.post-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Sponsors in the About page
+.img-sp{
+  display: inline-block;
+  padding-right: 5%
+}
+
+

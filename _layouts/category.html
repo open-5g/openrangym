@@ -15,7 +15,7 @@ layout: default
       <div class="column col-12">
         <ul class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="{{ site.url }}{{ site.baseurl }}">Help Center Home</a>
+            <a href="{{ site.url }}{{ site.baseurl }}">Home</a>
           </li>
           <li class="breadcrumb-item">
             <a href="#">{{ page_category.name }}</a>
@@ -24,6 +24,9 @@ layout: default
         <h2 class="text-light text-bold">{{ page_category.name }}</h2>
         <p class="text-light mb-2">{{ page_category.description }}</p>
       </div>
+
+      &nbsp;
+      
       {% if page.has-subcategories == true %}
         {% for subcategory in site.data.subcategory_list %}
         {% capture subcategory_name %}{{ subcategory | first }}{% endcapture %}
@@ -34,11 +37,18 @@ layout: default
               <div class="card card-link">
                 <div class="card-body text-center my-4">
                   <h5 class="text-bold">{{ page_subcategory.name }}</h5>
-                      
-                  {% if subcategory[1].size == 1 %}
-                  <p class="m-0">{{ category | last | size }} article</p>
+                  
+                  {% assign subcategory_posts_num = 0 %}
+                  {% for post in site.posts %}
+                    {% if subcategory_name == post.category %}
+                      {% assign subcategory_posts_num = subcategory_posts_num | plus: 1 %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if subcategory_posts_num == 1 %}
+                    <p class="m-0">{{ subcategory_posts_num }} article</p>
                   {% else %}
-                  <p class="m-0">{{ category | last | size }} articles</p>
+                    <p class="m-0">{{ subcategory_posts_num }} articles</p>
                   {% endif %}
                 </div>
               </div>
@@ -47,7 +57,7 @@ layout: default
           {% endif %}
         {% endfor %} 
       {% else %}
-        {% for post in site.categories.[page.category] %}
+        {% for post in site.categories[page.category] %}
           {% include article-card.html %}
         {% endfor %}
       {% endif %}

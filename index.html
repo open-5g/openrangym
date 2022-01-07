@@ -8,22 +8,39 @@ title: Home
     <div class="container-full">
       <div class="container grid-xl">
         <div class="columns negative-m-s">
-          <div class="column col-12 text-center">
-            <h6 class="text-secondary">Select a Category</h6>
+          <div class="column col-10 col-md-10 col-sm-12">
+            <img src="{{ site.home_image }}" class="home-image" width="100%">
           </div>
           {% for category in site.data.category_list %}
           {% capture category_name %}{{ category | first }}{% endcapture %}
           {% assign page_category = site.data.category_list[category_name] %}
-          <div class="column col-4 col-md-6 col-sm-12">
+          <div class="column col-5 col-md-5 col-sm-12">
             <a href="{{ site.baseurl }}/{{ category_name | slugify }}">
               <div class="card card-link">
                 <div class="card-body text-center my-4">
                   <h5 class="text-bold">{{ page_category.name }}</h5>
-                      
-                  {% if category[1].size == 1 %}
-                  <p class="m-0">{{ category | last | size }} article</p>
-                  {% else %}
-                  <p class="m-0">{{ category | last | size }} articles</p>
+                  
+                  {% if site.show_article_counter == true %}
+                    {% if category[1].has-subcategories == true %}
+                      {% assign subcategory_num = 0 %}
+                      {% for subcategory in site.data.subcategory_list %}
+                        {% if subcategory[1].parent-category == category[0] %}
+                          {% assign subcategory_num = subcategory_num | plus: 1 %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% if subcategory_num == 1 %}
+                        <p class="m-0">{{ subcategory_num }} subcategory</p>
+                      {% else %}
+                        <p class="m-0">{{ subcategory_num }} subcategories</p>
+                      {% endif %}
+                    {% else %}
+                      {% if site.categories[category_name].size == 1 %}
+                        <p class="m-0">{{ site.categories[category_name].size }} article</p>
+                      {% else %}
+                        <p class="m-0">{{ site.categories[category_name].size }} articles</p>
+                      {% endif %}
+                    {% endif %}
                   {% endif %}
                 </div>
               </div>

@@ -10,30 +10,24 @@
       <img style="max-width: 150px;" src="{{ site.baseurl }}/assets/{{ site.brand_logo }}"/>
     </a>
     <p class="m-0 text-light">{{ site.content_type }}</p>
+    {% if site.nav_button %}
     <a style="height: auto;" class="btn btn-lg btn-outline py-2 mt-4">Return to {{ site.brand_name }} Home</a>
+    {% endif %}
 
   </div>
   <ul class="main-nav">
-    {% if site.nav_item_one == null %}
-    {% else %}
+    {% for element in site.nav_items %}
+    {% if element.link %}
     <li class="mx-4">
-      <a  class="nav-links" href="{{ site.nav_item_one_link }}">{{ site.nav_item_one }}</a>
+      <a  class="nav-links" href="{{ element.link }}" target="_blank">{{ element.name }}</a>
     </li>
     {% endif %}
-    {% if site.nav_item_two == null %}
-    {% else %}
-    <li class="mx-4">
-      <a  class="nav-links" href="{{ site.nav_item_two_link }}">{{ site.nav_item_two }}</a>
-    </li>
-    {% endif %}
-    {% if site.nav_item_three == null %}
-    {% else %}
-    <li class="mx-4">
-      <a  class="nav-links" href="{{ site.nav_item_three_link }}">{{ site.nav_item_three }}</a>
-    </li>
-    {% endif %}
+    {% endfor %}
+    
+    {% if site.nav_button %}
     <li>
       <a href="{{ site.nav_button_link }}" style="height: auto;" class="btn btn-lg btn-outline py-2">{{ site.nav_button }}</a>
     </li>
+    {% endif %}
   </ul>
 </nav>

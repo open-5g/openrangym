@@ -1,12 +1,18 @@
 #This file defines all the categories you are using
 
-
-using-subcategories:
-  name: Using Subcategories
-  description: Learn to use subcategories!
-using-odin:
-  name: Using Odin
-  description: Welcome to Odin, time to get started
-customizing-odin:
-  name: Customizing Odin
-  description: Welcome to Odin, time to get started
+o-ran-frameworks:
+  name: O-RAN Frameworks
+  description:
+  has-subcategories: false
+ran-frameworks:
+  name: RAN Frameworks
+  description:
+  has-subcategories: false
+experimental-platforms:
+  name: Experimental Platforms
+  description:
+  has-subcategories: false
+datasets:
+  name: Datasets
+  description:
+  has-subcategories: false

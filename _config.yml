@@ -18,60 +18,68 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Odin - A Jekyll Knowledge Base Theme
-description: Odin is a simple to setup and use Jekyll theme for help desks and knowledge bases. Hosts for free on Github Pages!
-baseurl: /odin # the subpath of your site, e.g. /support
-url: https://teaguns.github.io # the base hostname AND PROTOCOL for your site, e.g. http://example.com
+title: OpenRAN Gym
+tagline: #
+description: OpenRAN Gym
+baseurl: # the subpath of your site, e.g. /support
+url: https://openrangym.com # the base hostname AND PROTOCOL for your site, e.g. http://example.com
 permalink: /:categories/:title
 
-content_type: Knowledge Base #Define whether this is a knowledge base, help center, or something else
-use_authors: true #Set this to false to disable showing post authors
+content_type: # Define whether this is a knowledge base, help center, or something else
+use_authors: false #Set this to false to disable showing post authors
 
 brand_logo: logo.png
-brand_name: Odin
-header: How can we help you?
-subheader: Support and documentation for Odin
+favicon: favicon.ico
+brand_name: OpenRAN Gym
+header: OpenRAN Gym
+subheader: An Open Toolbox for Data Collection and Experimentation with AI in O-RAN
 
-meta_image: odin-meta.png
+home_image: /assets/post-assets/openrangym-architecture.png
+meta_image: /post-assets/openrangym-architecture.png
 
 # Social Links
-twitter_username: TheTeaGuns
-facebook_page:
-github_username: TeaGuns
-email: m@credd.in
-linkedin_page:
-instagram_username: 
+twitter_username: #
+facebook_page: #
+github_username: open-5g
+email: melodia@northeastern.edu
+linkedin_page: https://www.linkedin.com/company/institute-for-the-wireless-internet-of-things-at-northeastern-university/
+instagram_username: #
 
+# Template options
+show_article_counter: false
 
 # Navivation
-nav_item_one: Github
-nav_item_one_link: https://github.com/TeaGuns/odin
+nav_items:
+  - name: Open5G
+    link: https://open5g.info/
 
-nav_item_two: Twitter
-nav_item_two_link: https://twitter.com/TheTeaGuns
-
-nav_item_three: #
-nav_item_three_link: #
-
-nav_button: Return to Odin Home
-nav_button_link: https://teaguns.github.io/odin/
+nav_button: Contribute
+nav_button_link: /other/contribute.html
 
 # More Help
-help_one_title: Odin Bugs
-help_one_content: If you find any bugs or problems with this theme, please open an issue over on Github.
-help_one_button: Github
-help_one_link: https://github.com/TeaGuns/odin/issues
+help_one_title: #
+help_one_content: #
+help_one_button: #
+help_one_link: #
 
-help_two_title: Twitter
-help_two_content: Feel free to tweet at me if you have suggestions for Odin. Or if you just want to say hi.
-help_two_button: Twitter
-help_two_link: https://twitter.com/theteaguns
+help_two_title: #
+help_two_content: #
+help_two_button: #
+help_two_link: #
+
+footer_items:
+  - name: About
+    link: /other/about
+  - name: WiNES Lab
+    link: https://ece.northeastern.edu/wineslab/
+  - name: Northeastern Institute for the Wireless Internet of Things
+    link: https://www.northeastern.edu/wiot/
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-last-modified-at
+# plugins:
+#   - jekyll-feed
+#   - jekyll-last-modified-at
 
 # Exclude from processing.
 # The following items will not be processed, by default.

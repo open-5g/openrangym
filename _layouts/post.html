@@ -15,11 +15,13 @@ layout: default
         <div class="column col-12">
           <ul class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="{{ site.url }}{{ site.baseurl }}">Help Center Home</a>
+              <a href="{{ site.url }}{{ site.baseurl }}">Home</a>
             </li>
+            {% if page_category.name != other %}
             <li class="breadcrumb-item">
               <a href="../{{ page.category }}">{{ page_category.name }}</a>
             </li>
+            {% endif %}
             <li class="breadcrumb-item">
               <a href="#">{{ page.title }}</a>
             </li>
@@ -42,11 +44,13 @@ layout: default
                   </div>
                 </div>
                 {% else %}
-                <div class="ml-2">
-                    <p class="m-0 text-small">Last updated:</p>
-                    <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }} - {% include reading-time.html %}</p>
-                  </div>
+                <!-- <div class="ml-2">
+                  <p class="m-0 text-small">Last updated:</p>
+                  <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }}</p>
+                </div> -->
                 {% endif %}
+
+              &nbsp;
 
               {{ content }}
 

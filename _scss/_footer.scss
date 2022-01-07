@@ -9,6 +9,14 @@
         font-size: 1.5em;
       }
     }
+    .footer-links {
+      a {
+        display: inline-block;
+        font-size: 0.8em;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
   }
   h5 {
     color: $white;

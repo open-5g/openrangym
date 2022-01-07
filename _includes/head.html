@@ -16,7 +16,11 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} | {{ site.tagline }}
+      {% if page.tagline %}
+        {{ site.title }} | {{ site.tagline }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
     {% else %}
       {{ page.title }} | {{ site.title }}
     {% endif %}
@@ -31,7 +35,7 @@
 
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/public/favicon.ico">
+  <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/assets/{{ site.favicon }}">
 
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}atom.xml">

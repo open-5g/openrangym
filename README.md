@@ -1,9 +1,10 @@
-# Odin Knowledge Base
+# OpenRAN Gym
 
-Odin is a Jekyll template for knowledgebases and support sites. Please see the [official Jekyll docs](https://jekyllrb.com/docs/) for more info on running, building and editing a Jekyll site.
+Serve website locally with:
 
-*Full documentation is in the works and coming soon*
+```
+bundle exec jekyll serve
+```
 
-
-
+Please see the [official Jekyll docs](https://jekyllrb.com/docs/) for more info on running, building and editing a Jekyll site.
 

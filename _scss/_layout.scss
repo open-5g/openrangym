@@ -57,7 +57,7 @@
 .columns {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
 
   &.col-x-align {
     align-items: center;
