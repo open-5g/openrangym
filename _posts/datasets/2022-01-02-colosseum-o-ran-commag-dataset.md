@@ -7,6 +7,8 @@ author:
 short-description:
 ---
 
+{% assign publications = site.data.publications %}
+
 This is the dataset for the paper L. Bonati, S. D'Oro, M. Polese, S. Basagni, T. Melodia, <i>"Intelligence and Learning in O-RAN for Data-driven NextG Cellular Networks,"</i> IEEE Communications Magazine, vol. 59, no. 10, pp. 21–27, October 2021.
 The dataset can be found <a href="https://github.com/wineslab/colosseum-oran-commag-dataset" target="_blank">at this link</a>.
 {: .text-justify}
@@ -20,9 +22,6 @@ We emulate a 5G network with 4 base stations and 40 users in the dense urban sce
 {: .text-justify}
 
 If you use this dataset, please reference the following paper:
-> L. Bonati, S. D'Oro, M. Polese, S. Basagni, T. Melodia,
-> *"Intelligence and Learning in O-RAN for Data-driven NextG Cellular Networks,"*
-> IEEE Communications Magazine, vol. 59, no. 10, pp. 21–27, October 2021.
-> <a href="https://ece.northeastern.edu/wineslab/papers/bonati2021intelligence.pdf" target="_blank">[pdf]</a>
-> <a href="https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021intelligence.txt" target="_blank">[bibtex]</a>
+
+> {{ publications.bonati2021intelligence }}
 > {: .text-justify}

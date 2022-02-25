@@ -7,6 +7,8 @@ author:
 short-description: Colosseum Wireless Network Emulator
 ---
 
+{% assign publications = site.data.publications %}
+
 Colosseum is the world’s largest wireless network emulator designed to support research and development of large-scale, next generation radio network technologies in a repeatable and highly configurable Radio-frequency (RF) and traffic environments. It combines 128 Standard Radio Nodes (SRNs) with a Massive digital Channel Emulator (MCHEM) backed by an extensive FPGA routing fabric. Each of the SRNs provides a platform for Software-defined Radio (SDR) and machine learning applications with two key hardware components, namely, a Dell R730 Server which comes with an NVIDIA K40M GPU, and an Ettus Research USRP X310 SDR that is equipped with a Xilinx Kintex 7 FPGA. The MCHEM facilitates real-world wireless RF channel emulation between the SRNs and can emulate fading, multipath, etc., for up to 256x256 independently customizable channels. This allows for large scale RF testing with up to 256 independent radio nodes each with powerful computational capabilities. Accessible as a cloud-based platform, Colosseum also provides other resources to create a real-time high-fidelity radio scenario such as traffic generation, timing, and GPS synthesis.
 {: .text-justify}
 
@@ -28,11 +30,8 @@ Colosseum provides the users with preconfigured and ready to use LXC containers 
 {: .text-justify}
 
 If you use Colosseum for your research, please reference the following paper:
-> L. Bonati, P. Johari, M. Polese, S. D’Oro, S. Mohanti, M. Tehrani-Moayyed, D. Villa, S. Shrivastava, C. Tassie, K. Yoder, A. Bagga, P. Patel, V. Petkov, M. Seltser, F. Restuccia, A. Gosain, K.R. Chowdhury, S. Basagni, T. Melodia,
-> *"Colosseum: Large-Scale Wireless Experimentation Through Hardware-in-the-Loop Network Emulation,"*
-> in Proceedings of IEEE Intl. Symp. on Dynamic Spectrum Access Networks (DySPAN), Virtual Conference, December 2021.
-> <a href="https://ece.northeastern.edu/wineslab/papers/bonati2021colosseum.pdf" target="_blank">[pdf]</a>
-> <a href="https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021colosseum.txt" target="_blank">[bibtex]</a>
+
+> {{ publications.bonati2021colosseum }}
 > {: .text-justify}
 
 Visit the <a href="https://www.northeastern.edu/colosseum" target="_blank">Colosseum website</a> for more information about this platform.

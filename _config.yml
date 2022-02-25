@@ -34,6 +34,10 @@ brand_name: OpenRAN Gym
 header: OpenRAN Gym
 subheader: An Open Toolbox for Data Collection and Experimentation with AI in O-RAN
 
+footer_images:
+  - image: other/NU_IoT_NLuxPlus_WRWW.png
+    link: https://www.northeastern.edu/wiot/
+
 home_image: /assets/post-assets/openrangym-architecture.png
 meta_image: /post-assets/openrangym-architecture.png
 
@@ -52,6 +56,7 @@ show_article_counter: false
 nav_items:
   - name: Open5G
     link: https://open5g.info/
+    external: true
 
 nav_button: Contribute
 nav_button_link: /other/contribute.html

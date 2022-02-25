@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "About"
+title: "Publications"
 date: 2022-01-07
 category: other
 author:
@@ -14,22 +14,36 @@ The goal of OpenRAN Gym is to bring together researchers from academia and indus
 We welcome contributions from the community, please follow this link to [contribute](/other/contribute) to OpenRAN Gym.
 {: .text-justify}
 
-If you use the components part of OpenRAN Gym, please reference the following paper
+If you use the components part of OpenRAN Gym, please reference the following paper and the paper relative to the specific component that you are using.
 {: .text-justify}
 
 > {{ publications.bonati2022openrangym }}
 > {: .text-justify}
 
-OpenRAN Gym is organized by a team at the Institute for the Wireless Internet of Things, Northeastern University.
+&nbsp;
+
+**Publications**
+
+OpenRAN Gym features the following publications:
 {: .text-justify}
 
-- <a href="https://ece.northeastern.edu/wineslab/Leonardo.php" target="_blank">Leonardo Bonati</a>
-- <a href="https://ece.northeastern.edu/wineslab/Michele.php" target="_blank">Michele Polese</a>
-- <a href="https://ece.northeastern.edu/wineslab/Salvatore.php" target="_blank">Salvatore D'Oro</a>
+> {{ publications.doro2022orchestran }}
+> {: .text-justify}
 
-<i></i>
-- <a href="https://ece.northeastern.edu/wineslab/tmelodia.php" target="_blank">Tommaso Melodia</a>
-- <a href="https://ece.northeastern.edu/fac-ece/basagni/" target="_blank">Stefano Basagni</a>
+> {{ publications.bonati2022openrangym }}
+> {: .text-justify}
+
+> {{ publications.polese2022coloran }}
+> {: .text-justify}
+
+> {{ publications.bonati2021intelligence }}
+> {: .text-justify}
+
+> {{ publications.polese2021deepbeam }}
+> {: .text-justify}
+
+> {{ publications.bonati2021scope }}
+> {: .text-justify}
 
 &nbsp;
 
