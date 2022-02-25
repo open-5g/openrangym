@@ -7,7 +7,7 @@
   </div>
   <div class="text-center show-sm">
     <a style="width: 100%;" href="{{ site.url }}{{ site.baseurl }}" class="logo flex-centered">
-      <img style="max-width: 150px;" src="{{ site.baseurl }}/assets/{{ site.brand_logo }}"/>
+      <img style="max-width: 150px;" src="/assets/{{ site.brand_logo }}"/>
     </a>
     <p class="m-0 text-light">{{ site.content_type }}</p>
     {% if site.nav_button %}
@@ -19,7 +19,7 @@
     {% for element in site.nav_items %}
     {% if element.link %}
     <li class="mx-4">
-      <a  class="nav-links" href="{{ element.link }}" target="_blank">{{ element.name }}</a>
+      <a class="nav-links" href="{{ element.link }}" {% if element.external %}target="_blank"{% endif %}>{{ element.name }}</a>
     </li>
     {% endif %}
     {% endfor %}

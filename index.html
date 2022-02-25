@@ -15,9 +15,9 @@ title: Home
           {% capture category_name %}{{ category | first }}{% endcapture %}
           {% assign page_category = site.data.category_list[category_name] %}
           <div class="column col-5 col-md-5 col-sm-12">
-            <a href="{{ site.baseurl }}/{{ category_name | slugify }}">
+            <a href="/{{ category_name | slugify }}">
               <div class="card card-link">
-                <div class="card-body text-center my-4">
+                <div class="card-body text-center my-0">
                   <h5 class="text-bold">{{ page_category.name }}</h5>
                   
                   {% if site.show_article_counter == true %}
@@ -46,7 +46,17 @@ title: Home
               </div>
             </a>
           </div>
-          {% endfor %} 
+          {% endfor %}
+
+          <div class="column col-10 col-md-10 col-sm-12">
+            <a href="/other/publications">
+              <div class="card card-link">
+                <div class="card-body text-center my-0">
+                  <h5 class="text-bold">Publications</h5>
+                </div>
+              </div>
+            </a>
+          </div>
 
           {% include more-help.html %}
         </div>

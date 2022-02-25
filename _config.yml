@@ -57,9 +57,12 @@ nav_items:
   - name: Open5G
     link: https://open5g.info/
     external: true
+  - name: Publications
+    link: /other/publications
+    external: false
 
 nav_button: Contribute
-nav_button_link: /other/contribute.html
+nav_button_link: /other/contribute
 
 # More Help
 help_one_title: #
