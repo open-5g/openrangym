@@ -7,7 +7,7 @@
         {% for element in site.footer_images %}
         {% if element.link %}
         <a href="{{ element.link }}" {{% if element.external %}}target="_blank"{{% endif %}}>
-          <img style="max-width: 35%; min-width: 150px; opacity: 0.7;" src="{{ site.baseurl }}/assets/{{ element.image }}"/>
+          <img style="max-width: 25%; min-width: 150px; opacity: 0.7;" src="{{ site.baseurl }}/assets/{{ element.image }}"/>
         </a>
         {% endif %}
         {% endfor %}
