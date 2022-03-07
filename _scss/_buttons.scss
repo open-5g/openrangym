@@ -61,6 +61,8 @@
       background: darken($primary-color-dark, 2%);
       border-color: darken($primary-color-dark, 5%);
       color: $gray-color-light;
+            text-decoration: none;
+
     }
     &:active,
     &.active {

@@ -65,6 +65,7 @@ p {
 a {
   transition: all ease 0.2s;
   font-weight: 800;
+  color: $link-base-color;
   &:hover {
     color: $highlight-color;
     text-decoration: none;
