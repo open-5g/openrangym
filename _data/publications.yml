@@ -50,3 +50,8 @@ bertizzolo2020arena:
   Computer Networks, vol. 181, November 2020.
   <a href=\"https://ece.northeastern.edu/wineslab/papers/BertizzoloComnet20.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/BertizzoloComnet20.txt\" target=\"_blank\">[bibtex]</a>"
+doro2022dapps:
+  "S. D'Oro, M. Polese, L. Bonati, H. Cheng, and T. Melodia,
+  *\"dApps: Distributed Applications for Real-time Inference and Control in O-RAN,\"*
+  arXiv preprint arXiv:2203.02370, March 2022.
+  <a href=\"https://arxiv.org/pdf/2203.02370.pdf\" target=\"_blank\">[pdf]</a>"
