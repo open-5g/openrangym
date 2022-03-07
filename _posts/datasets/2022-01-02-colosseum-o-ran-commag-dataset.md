@@ -21,6 +21,9 @@ We perform data-driven closed-loop control implemented using the [ColO-RAN](/o-r
 We emulate a 5G network with 4 base stations and 40 users in the dense urban scenario of Rome, Italy. The locations of the base stations have been extracted from OpenCelliD (a database of real-world cellular deployments) and cover an area of 0.11 km<sup>2</sup>. We consider a multi-slice scenario in which the users are statically assigned to a slice of the network and request three different traffic types: high-capacity enhanced mobile broadband (eMBB), ultra-reliable low-latency communications (URLLC), and machine-type communications (MTC). This reflects the case, for instance, of telecom operators providing different levels of service to different devices (e.g., MTC service to IoT-enabled devices, or URLLC to devices for time-critical applications). The base stations serve each slice with a dedicated (and possibly different) scheduling policy, selecting among proportionally fair (PF), waterfilling (WF), and round-robin (RR). We also consider the case where the number of physical resource blocks (PRBs) allocated to each slice varies over time.
 {: .text-justify}
 
+The dataset can be found <a href="https://github.com/wineslab/colosseum-oran-commag-dataset" target="_blank">at this link</a>.
+{: .text-justify}
+
 If you use this dataset, please reference the following paper:
 
 > {{ publications.bonati2021intelligence }}
