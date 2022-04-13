@@ -8,8 +8,20 @@
 
     {% include footer.html %}
 
-    <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
-    <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+    <!-- Insights analytics -->
+    <script src="https://getinsights.io/js/insights.js"></script>
+    <script>
+      insights.init('nC40F8NGBydA2nMP');
+      insights.trackPages();
+
+      insights.track({
+        id: "user-locale",
+        parameters: {
+          locale: parameters.locale(),
+          screenSize: parameters.screenType()
+        }
+      });
+    </script>
     
   </body>
 </html>
