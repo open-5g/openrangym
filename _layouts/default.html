@@ -11,16 +11,14 @@
     <!-- Insights analytics -->
     <script src="https://getinsights.io/js/insights.js"></script>
     <script>
-      import { parameters } from "insights-js"
-
       insights.init('nC40F8NGBydA2nMP');
       insights.trackPages();
 
       insights.track({
         id: "user-locale",
         parameters: {
-          locale: parameters.locale(),
-          screenSize: parameters.screenType()
+          locale: insights.parameters.locale(),
+          screenSize: insights.parameters.screenType()
         }
       });
     </script>
