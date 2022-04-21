@@ -33,6 +33,9 @@ OpenRAN Gym features the following publications:
 > {{ publications.doro2022dapps }}
 > {: .text-justify}
 
+> {{ publications.polese2022understanding }}
+> {: .text-justify}
+
 > {{ publications.bonati2022openrangym }}
 > {: .text-justify}
 
