@@ -33,6 +33,10 @@ favicon: favicon.ico
 brand_name: OpenRAN Gym
 header: OpenRAN Gym
 subheader: An Open Toolbox for Data Collection and Experimentation with AI in O-RAN
+short_description: "OpenRAN Gym is the first publicly-available research platform for
+data-driven O-RAN experimentation at scale. Building on frameworks for data collection
+and RAN control, OpenRAN Gym enables end-to-end design and testing of data-driven xApps
+by offering an O-RAN-compliant near-real-time RIC and E2 termination."
 
 footer_images:
   - image: other/NU_IoT_NLuxPlus_WRWW.png

@@ -184,3 +184,9 @@ dl {
 .muli {
   font-family: "Muli", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
+
+.short-description {
+  color: $secondary-color-dark;
+  font-style: italic;
+  margin-bottom: -2px;
+}
