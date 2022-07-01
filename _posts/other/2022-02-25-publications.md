@@ -27,6 +27,9 @@ If you use the components part of OpenRAN Gym, please reference the following pa
 OpenRAN Gym features the following publications:
 {: .text-justify}
 
+> {{ publications.polese2022coloran }}
+> {: .text-justify}
+
 > {{ publications.doro2022orchestran }}
 > {: .text-justify}
 
@@ -37,9 +40,6 @@ OpenRAN Gym features the following publications:
 > {: .text-justify}
 
 > {{ publications.bonati2022openrangym }}
-> {: .text-justify}
-
-> {{ publications.polese2022coloran }}
 > {: .text-justify}
 
 > {{ publications.bonati2021intelligence }}
