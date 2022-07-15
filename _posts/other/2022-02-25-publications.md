@@ -27,13 +27,13 @@ If you use the components part of OpenRAN Gym, please reference the following pa
 OpenRAN Gym features the following publications:
 {: .text-justify}
 
+> {{ publications.doro2022dapps }}
+> {: .text-justify}
+
 > {{ publications.polese2022coloran }}
 > {: .text-justify}
 
 > {{ publications.doro2022orchestran }}
-> {: .text-justify}
-
-> {{ publications.doro2022dapps }}
 > {: .text-justify}
 
 > {{ publications.polese2022understanding }}
