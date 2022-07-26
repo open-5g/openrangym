@@ -40,7 +40,6 @@ bonati2022openrangym:
   "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
   *\"OpenRAN Gym: An Open Toolbox for Data Collection and Experimentation with AI in O-RAN,\"*
   in Proceedings of IEEE WCNC Workshop on Open RAN Architecture for 5G Evolution and 6G, Austin, TX, USA, April 2022.
-  (Preprint available as arXiv:2202.10318 [cs.NI].)
   <a href=\"https://arxiv.org/pdf/2202.10318.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym.txt\" target=\"_blank\">[bibtex]</a>"
 doro2022dapps:
@@ -62,3 +61,9 @@ polese2022understanding:
   arXiv:2202.01032 [cs.NI], February 2022.
   <a href=\"https://arxiv.org/pdf/2202.01032.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/polese2022understanding.txt\" target=\"_blank\">[bibtex]</a>"
+bonati2022openrangym-pawr:
+  "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
+  *\"OpenRAN Gym: AI/ML Development, Data Collection, and Testing for O-RAN on PAWR Platforms,\"*
+  arXiv:2207.12362 [cs.NI], July 2022.
+  <a href=\"https://arxiv.org/abs/2207.12362\" target=\"_blank\">[pdf]</a>
+  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym-pawr.txt\" target=\"_blank\">[bibtex]</a>"
