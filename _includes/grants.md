@@ -1,1 +1,1 @@
-OpenRAN Gym is partially supported by the U.S. National Science Foundation under Grants CNS-1925601, CNS-2120447, and CNS-2112471.
+OpenRAN Gym is partially supported by the U.S. National Science Foundation under Grants CNS-1925601, CNS-2120447, and CNS-2112471, and by the U.S. Office of Naval Research under Grant N00014-20-1-2132.
