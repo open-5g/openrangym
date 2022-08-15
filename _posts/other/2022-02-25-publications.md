@@ -27,6 +27,9 @@ If you use the components part of OpenRAN Gym, please reference the following pa
 OpenRAN Gym features the following publications:
 {: .text-justify}
 
+> {{ publications.bonati2022intelligent }}
+> {: .text-justify}
+
 > {{ publications.bonati2022openrangym-pawr }}
 > {: .text-justify}
 
