@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Colosseum O-RAN ColO-RAN Dataset"
+title: "Colosseum ColO-RAN Dataset"
 date: 2022-01-03
 category: datasets
 author:
