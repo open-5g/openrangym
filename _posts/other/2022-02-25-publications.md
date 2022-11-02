@@ -20,12 +20,20 @@ If you use the components part of OpenRAN Gym, please reference the following pa
 > {{ publications.bonati2022openrangym }}
 > {: .text-justify}
 
+If you use [ns-O-RAN](/ran-frameworks/ns-o-ran), please reference the following paper:
+
+> {{ publications.lacava2022programmable }}
+> {: .text-justify}
+
 &nbsp;
 
 **Publications**
 
 OpenRAN Gym features the following publications:
 {: .text-justify}
+
+> {{ publications.lacava2022programmable }}
+> {: .text-justify}
 
 > {{ publications.bonati2022intelligent }}
 > {: .text-justify}
