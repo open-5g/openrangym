@@ -26,6 +26,7 @@ $dark-color: #2b2c34 !default;
 $gray-color: #d7d8e1 !default;
 $gray-color-light: #f5f6ff !default;
 $gray-color-dark: #9b9caf !default;
+$gray-color-darker: #626262 !default;
 
 $border-color: $gray-color-light !default;
 $border-color-dark: darken($border-color, 10%) !default;
