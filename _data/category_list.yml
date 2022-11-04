@@ -16,3 +16,7 @@ datasets:
   name: Datasets
   description:
   has-subcategories: false
+tutorials:
+  name: Tutorials
+  description:
+  has-subcategories: false
