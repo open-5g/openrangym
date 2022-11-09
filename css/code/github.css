@@ -1,4 +1,4 @@
-.highlight pre { background-color: #f8f8f8; padding: 6px 10px; }
+.highlight pre { background-color: #f8f8f8; padding: 6px 10px; white-space: pre-wrap; }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
