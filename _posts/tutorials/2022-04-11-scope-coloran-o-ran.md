@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Use of SCOPE and ColO-RAN near-RT RIC"
+title: "4G srsRAN with SCOPE and O-RAN near-RT RIC"
 date: 2022-11-11
 category: tutorials
 author:
