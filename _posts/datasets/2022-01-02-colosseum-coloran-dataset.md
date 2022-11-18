@@ -10,7 +10,7 @@ short-description:
 {% assign publications = site.data.publications %}
 
 This is the dataset for the paper M. Polese, L. Bonati, S. D'Oro, S. Basagni, T. Melodia, <i>"ColoRAN: Design and Testing of Open RAN Intelligence on Large-scale Experimental Platforms,"</i> IEEE Transactions on Mobile Computing, pp. 1–14, July 2022.
-The dataset can be found <a href="https://github.com/wineslab/colosseum-oran-commag-dataset" target="_blank">at this link</a>.
+The dataset can be found <a href="https://github.com/wineslab/colosseum-oran-coloran-dataset" target="_blank">at this link</a>.
 {: .text-justify}
 
 We perform data-driven closed-loop control implemented using the [ColO-RAN](/o-ran-frameworks/coloran) RIC and the [SCOPE](/ran-frameworks/scope) framework on the [Colosseum](/experimental-platforms/colosseum) wireless network emulator. We demonstrate the feasibility of a closed-control loop where DRL agents running in xApps on the near-real-time RIC select the best-performing scheduling policy for each RAN slice.
