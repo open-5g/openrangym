@@ -135,5 +135,5 @@ This script creates the ColO-RAN near-RT RIC container, assigns it the required 
 > {{ publications.bonati2022openrangym }}
 > {: .text-justify}
 
-> {{ publications.bonati2022openrangym-pawr }}
+> {{ publications.bonati2023openrangympawr }}
 > {: .text-justify}

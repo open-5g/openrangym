@@ -61,12 +61,6 @@ polese2022understanding:
   arXiv:2202.01032 [cs.NI], February 2022.
   <a href=\"https://arxiv.org/pdf/2202.01032.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/polese2022understanding.txt\" target=\"_blank\">[bibtex]</a>"
-bonati2022openrangym-pawr:
-  "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
-  *\"OpenRAN Gym: AI/ML Development, Data Collection, and Testing for O-RAN on PAWR Platforms,\"*
-  Computer Networks, pp 1-12, November 2022.
-  <a href=\"https://arxiv.org/pdf/2207.12362.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym-pawr.txt\" target=\"_blank\">[bibtex]</a>"
 bonati2022intelligent:
   "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
   *\"Intelligent Closed-loop RAN Control with xApps in OpenRAN Gym,\"*
@@ -79,4 +73,10 @@ lacava2022programmable:
   arXiv:2209.14171 [cs.NI], October 2022.
   <a href=\"https://arxiv.org/pdf/2209.14171v3.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/andrea/LacavaAMC22.txt\" target=\"_blank\">[bibtex]</a>"
+bonati2023openrangympawr:
+  "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
+  *\"OpenRAN Gym: AI/ML Development, Data Collection, and Testing for O-RAN on PAWR Platforms,\"*
+  Computer Networks, vol. 220, pp. 1-11, January 2023.
+  <a href=\"https://arxiv.org/pdf/2207.12362.pdf\" target=\"_blank\">[pdf]</a>
+  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym-pawr.txt\" target=\"_blank\">[bibtex]</a>"
 

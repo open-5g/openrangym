@@ -17,7 +17,7 @@ We welcome contributions from the community, please follow this link to [contrib
 If you use the components part of OpenRAN Gym, please reference the following paper and the paper relative to the specific component that you are using.
 {: .text-justify}
 
-> {{ publications.bonati2022openrangym }}
+> {{ publications.bonati2023openrangympawr }}
 > {: .text-justify}
 
 If you use [ns-O-RAN](/ran-frameworks/ns-o-ran), please reference the following paper:
@@ -32,7 +32,7 @@ If you use [ns-O-RAN](/ran-frameworks/ns-o-ran), please reference the following 
 OpenRAN Gym features the following publications:
 {: .text-justify}
 
-> {{ publications.bonati2022openrangym-pawr }}
+> {{ publications.bonati2023openrangympawr }}
 > {: .text-justify}
 
 > {{ publications.lacava2022programmable }}
