@@ -10,8 +10,8 @@
       <img style="max-width: 150px;" src="/assets/{{ site.brand_logo }}"/>
     </a>
     <p class="m-0 text-light">{{ site.content_type }}</p>
-    {% if site.nav_button %}
-    <a style="height: auto;" class="btn btn-lg btn-outline py-2 mt-4">Return to {{ site.brand_name }} Home</a>
+    {% if site.nav_button and page.title != 'Home' %}
+    <a style="height: auto;" href="{{ site.url }}{{ site.baseurl }}" class="btn btn-lg btn-outline py-2 mt-4">Return to {{ site.brand_name }} Home</a>
     {% endif %}
 
   </div>
