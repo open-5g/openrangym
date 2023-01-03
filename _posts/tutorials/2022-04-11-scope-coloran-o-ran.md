@@ -20,7 +20,7 @@ As a first step, we start the SCOPE base station and pass the configuration of t
 
 {% highlight bash %}
 cd radio_api/
-python3 scope_start.py --config-file radio.conf
+python3 scope_start.py --config-file radio_interactive.conf
 {% endhighlight %}
 
 
