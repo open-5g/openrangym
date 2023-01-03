@@ -16,7 +16,7 @@ In the remaining of this tutorial, we assume users started an interactive reserv
 
 
 ### Starting the SCOPE Base Station
-As a first step, we start the SCOPE base station and pass the configuration of the base station through the `radio.conf` file. In the SCOPE node, type the following commands. These commands take care of starting the base station and core network applications. They can also be used on other nodes to start the UEs applications.
+As a first step, we start the SCOPE base station and pass the configuration of the base station through the `radio_interactive.conf` file. In the SCOPE node, type the following commands. These commands take care of starting the base station and core network applications. They can also be used on other nodes to start the UEs applications.
 
 {% highlight bash %}
 cd radio_api/
