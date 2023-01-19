@@ -79,4 +79,9 @@ bonati2023openrangympawr:
   Computer Networks, vol. 220, pp. 1-11, January 2023.
   <a href=\"https://arxiv.org/pdf/2207.12362.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym-pawr.txt\" target=\"_blank\">[bibtex]</a>"
-
+bonati2023neutran:
+  "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
+  *\"NeutRAN: An Open RAN Neutral Host Architecture for Zero-Touch RAN and Spectrum Sharing,\"*
+  arXiv:2301.07653 [cs.NI], pp. 1-13, January 2023.
+  <a href=\"https://arxiv.org/pdf/2301.07653.pdf\" target=\"_blank\">[pdf]</a>
+  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2023neutran.txt\" target=\"_blank\">[bibtex]</a>"
