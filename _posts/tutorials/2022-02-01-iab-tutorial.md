@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tutorial on O-RAN and IAN on Colosseum"
+title: "Tutorial on O-RAN and IAB on Colosseum"
 date: 2022-02-01
 category: tutorials
 author:
