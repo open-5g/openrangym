@@ -9,10 +9,10 @@ short-description: How to setup and use SCOPE and ColO-RAN near-RT RIC with Colo
 
 {% assign publications = site.data.publications %}
 
-In this tutorial, we show how to use the [SCOPE](ran-frameworks/scope) and [ColO-RAN](o-ran-frameworks/coloran) components of OpenRAN Gym to develop O-RAN-compliant Artificial Intelligence (AI)/Machine Learning (ML) solutions, deploy them as xApps on the near-RT RAN Intelligent Controller (RIC), and test them on large-scale softwarized Radio Access Network (RAN) deployed on the [Colosseum](experimental-platforms/colosseum) wireless network emulator and controlled by the RIC.
+In this tutorial, we show how to use the [SCOPE](/ran-frameworks/scope) and [ColO-RAN](/o-ran-frameworks/coloran) components of OpenRAN Gym to develop O-RAN-compliant Artificial Intelligence (AI)/Machine Learning (ML) solutions, deploy them as xApps on the near-RT RAN Intelligent Controller (RIC), and test them on large-scale softwarized Radio Access Network (RAN) deployed on the [Colosseum](/experimental-platforms/colosseum) wireless network emulator and controlled by the RIC.
 
 #### Prerequisites
-In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with one ColO-RAN near-RT RIC node (`coloran-near-rt-ric` or `coloran-near-rt-ric-prebuilt` image), and at least one SCOPE node (`scope-with-e2` image). Procedures on how to use the OpenRAN Gym images on different testbeds (e.g., the [Arena](experimental-platforms/arena) testbed, or to the POWDER and COSMOS testbeds of the [PAWR program](experimental-platforms/pawr-platforms)) can be found at the end of this tutorial.
+In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with one ColO-RAN near-RT RIC node (`coloran-near-rt-ric` or `coloran-near-rt-ric-prebuilt` image), and at least one SCOPE node (`scope-with-e2` image). Procedures on how to use the OpenRAN Gym images on different testbeds (e.g., the [Arena](/experimental-platforms/arena) testbed, or to the POWDER and COSMOS testbeds of the [PAWR program](/experimental-platforms/pawr-platforms)) can be found at the end of this tutorial.
 
 
 ### Starting the SCOPE Base Station
@@ -79,7 +79,7 @@ After performing these steps, the ColO-RAN sample xApp logs on file the KPMs rec
 
 
 ### Use OpenRAN Gym on Different Testbeds
-In this section, we illustrate how the OpenRAN Gym containerized applications, including the xApps developed and pre-trained on Colosseum, can be transferred to other testbeds (e.g., to the [Arena](experimental-platforms/arena) testbed, or to the testbeds of the [PAWR program](experimental-platforms/pawr-platforms)), and describe the necessary adjustments (if any) to run these applications on each experimental platform.
+In this section, we illustrate how the OpenRAN Gym containerized applications, including the xApps developed and pre-trained on Colosseum, can be transferred to other testbeds (e.g., to the [Arena](/experimental-platforms/arena) testbed, or to the testbeds of the [PAWR program](/experimental-platforms/pawr-platforms)), and describe the necessary adjustments (if any) to run these applications on each experimental platform.
 
 To facilitate these tasks, we developed some tools to automatically start the OpenRAN Gym LXC containers on the different platforms, and to properly interface them with the available radio resources. After the LXC images have been transferred (e.g., through the `scp` or `rsync` utilities) in a running instance of the testbed of interest, the image can be imported with the following command. This command imports the `scope-with-e2.tar.gz` LXC image transferred from Colosseum (i.e., the SCOPE image with the module for the E2 termination) to the compute machine of the remote testbed. After the above operation completes successfully, the new image, named `scope`, is visible by running the following command `lxc image list`.
 
