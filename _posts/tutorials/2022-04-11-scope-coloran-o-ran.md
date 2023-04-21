@@ -12,7 +12,7 @@ short-description: How to setup and use SCOPE and ColO-RAN near-RT RIC with Colo
 In this tutorial, we show how to use the [SCOPE](/ran-frameworks/scope) and [ColO-RAN](/o-ran-frameworks/coloran) components of OpenRAN Gym to develop O-RAN-compliant Artificial Intelligence (AI)/Machine Learning (ML) solutions, deploy them as xApps on the near-RT RAN Intelligent Controller (RIC), and test them on large-scale softwarized Radio Access Network (RAN) deployed on the [Colosseum](/experimental-platforms/colosseum) wireless network emulator and controlled by the RIC.
 
 #### Prerequisites
-In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with one ColO-RAN near-RT RIC node (`coloran-near-rt-ric` or `coloran-near-rt-ric-prebuilt` image), and at least one SCOPE node (`scope-with-e2` image). Procedures on how to use the OpenRAN Gym images on different testbeds (e.g., the [Arena](/experimental-platforms/arena) testbed, or to the POWDER and COSMOS testbeds of the [PAWR program](/experimental-platforms/pawr-platforms)) can be found at the end of this tutorial.
+In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with one ColO-RAN near-RT RIC node (`coloran-near-rt-ric` or `coloran-near-rt-ric-prebuilt` image, credentials are `root`/`ChangeMe` for both), and at least one SCOPE node (`scope-with-e2` image, credentials are `root`/`scope`). Procedures on how to use the OpenRAN Gym images on different testbeds (e.g., the [Arena](/experimental-platforms/arena) testbed, or to the POWDER and COSMOS testbeds of the [PAWR program](/experimental-platforms/pawr-platforms)) can be found at the end of this tutorial.
 
 
 ### Starting the SCOPE Base Station
