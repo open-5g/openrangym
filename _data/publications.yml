@@ -46,7 +46,6 @@ doro2022dapps:
   "S. D'Oro, M. Polese, L. Bonati, H. Cheng, and T. Melodia,
   *\"dApps: Distributed Applications for Real-time Inference and Control in O-RAN,\"*
   IEEE Communications Magazine, November 2022.
-  (Preprint available as arXiv:2203.02370 [cs.NI].)
   <a href=\"https://arxiv.org/pdf/2203.02370.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022dapps.txt\" target=\"_blank\">[bibtex]</a>"
 doro2022orchestran:
@@ -58,7 +57,7 @@ doro2022orchestran:
 polese2022understanding:
   "M. Polese, L. Bonati, S. D'Oro, S. Basagni, T. Melodia,
   *\"Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges,\"*
-  arXiv:2202.01032 [cs.NI], February 2022.
+  IEEE Communications Surveys & Tutorials, pp. 1-23, January 2023.
   <a href=\"https://arxiv.org/pdf/2202.01032.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/polese2022understanding.txt\" target=\"_blank\">[bibtex]</a>"
 bonati2022intelligent:
