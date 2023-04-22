@@ -7,5 +7,57 @@ author:
 short-description: How to setup and use and IAB network controlled by O-RAN in Colosseum
 ---
 
-To be updated.
+In this tutorial, we show how to use OpenAirInterface (OAI) with a [custom IAB implementation](https://dl.acm.org/doi/10.1145/3495243.3558750) to set up a working IAB 5G network deployed on the [Colosseum](experimental-platforms/colosseum) wireless network emulator and controlled by the RIC. The network will be made of 10 SRN, divided into 1 IAB-donor, 4 IAB-relay (each one made of one softUE and one gNB), and 1 softUE connected to the last IAB-relay. In this way, it will be possible to assess the performances of a linear IAB network with 5 hops.
 
+<!-- Later on, we'll describe how to deploy a realistic IAB network using the scenarios we developed using real data from different European cities. -->
+
+## IAB RAN
+
+#### Prerequisites
+
+In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with at least 4 IAB RAN nodes (`oai-iab-ran` or `oai-iab-ran-stable` image), one OAI IAB-aware core network (`oai-core-iab`) to deploy the network. The IAB network is then controlled by [iab-manager](https://github.com/wineslab/iab-manager), that can be run either locally or in the core network node.
+
+### Linear IAB Network
+
+Once the reservation is ready, iab-manager can be used to interact with the different components. First of all, create a `.env` in the main folder containing your colosseum credentials in the format:
+
+{% highlight python %}
+COLOSSEUM_USER = [username]
+COLOSSEUM_PWD = [pwd]
+{% endhighlight %}
+
+This will allow iab-manager to fetch the reservations' data from the Colosseum API and automatically map the SRNs to iab-nodes of your network.
+
+Then, you must configure `iab-manager` through the `config.yml` configuration file. Create the file with the following content:
+
+{% highlight yaml %}
+topology: "toy1.graphml"
+scenario: 20055
+scenario_nodes: 25
+srn_blacklist: []
+results_folder: "./results"
+if_freq: 0
+{% endhighlight %}
+
+You can then run iab-manager:
+{% highlight bash %}
+python3 iab-manager.py
+{% endhighlight %}
+
+The software will connect to the Colosseum reservation API to fetch the information about the current reservation, then it will read the content of the topology from `toy1.graphml`, which represents the linear topology we want to deploy and finally it will map each SRN from the reservation to a node from the topology, which will then be mapped to a radio in the scenario. At the end of the setup, iab-manager will show a prompt that allows the user to interact with the running network.
+
+First, let's start the core network by typing `core start`.
+
+Then, we can start the rf scenario by typing `rf_scenario start`.
+
+Finally, we automatically start the network by issuing the command `autostart`.
+
+It's also possible to start the network manually by starting first the iab-donor, then the iab-relays and finally the UE: `donor 0 start`, `iab_node start 12`, `iab_node start 34`, `iab_node start 56`, `iab_node start 78`, `ue 9 start`
+
+<!-- ### Realistic IAB Network -->
+
+## RIC
+
+### Near-RT RIC setup
+
+### Non-RT RIC Setup
