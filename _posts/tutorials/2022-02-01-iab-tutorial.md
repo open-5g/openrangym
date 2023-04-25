@@ -4,10 +4,10 @@ title: "Tutorial on O-RAN and IAB on Colosseum"
 date: 2022-02-01
 category: tutorials
 author:
-short-description: How to setup and use and IAB network controlled by O-RAN in Colosseum
+short-description: How to setup and use an IAB network controlled by O-RAN in Colosseum
 ---
 
-In this tutorial, we show how to use OpenAirInterface (OAI) with a [custom IAB implementation](https://dl.acm.org/doi/10.1145/3495243.3558750) to set up a working IAB 5G network deployed on the [Colosseum](experimental-platforms/colosseum) wireless network emulator and controlled by the RIC. The network will be made of 10 SRN, divided into 1 IAB-donor, 4 IAB-relay (each one made of one softUE and one gNB), and 1 softUE connected to the last IAB-relay. In this way, it will be possible to assess the performances of a linear IAB network with 5 hops.
+In this tutorial, we show how to use OpenAirInterface (OAI) with a [custom IAB implementation](https://dl.acm.org/doi/10.1145/3495243.3558750) to set up a working IAB 5G network deployed on the [Colosseum](/experimental-platforms/colosseum) wireless network emulator and controlled by the RIC. The network will be made of 10 SRN, divided into 1 IAB-donor, 4 IAB-relay (each one made of one softUE and one gNB), and 1 softUE connected to the last IAB-relay. In this way, it will be possible to assess the performances of a linear IAB network with 5 hops.
 
 <!-- Later on, we'll describe how to deploy a realistic IAB network using the scenarios we developed using real data from different European cities. -->
 
