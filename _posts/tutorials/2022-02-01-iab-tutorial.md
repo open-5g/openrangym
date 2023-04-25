@@ -52,12 +52,16 @@ Then, we can start the rf scenario by typing `rf_scenario start`.
 
 Finally, we automatically start the network by issuing the command `autostart`.
 
-It's also possible to start the network manually by starting first the iab-donor, then the iab-relays and finally the UE: `donor 0 start`, `iab_node start 12`, `iab_node start 34`, `iab_node start 56`, `iab_node start 78`, `ue 9 start`
+It is also possible to start the network manually by starting first the iab-donor, then the iab-relays and finally the UE: `donor 0 start`, `iab_node start 12`, `iab_node start 34`, `iab_node start 56`, `iab_node start 78`, `ue 9 start`
 
 <!-- ### Realistic IAB Network -->
 
 ## RIC
+To be updated.
 
 ### Near-RT RIC setup
+To be updated.
 
 ### Non-RT RIC Setup
+To be updated.
+
