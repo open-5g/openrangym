@@ -15,7 +15,7 @@ In this tutorial, we show how to use OpenAirInterface (OAI) with a [custom IAB i
 
 #### Prerequisites
 
-In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with at least 4 IAB RAN nodes (`oai-iab-ran`), one OAI IAB-aware core network (`oai-core-iab`) to deploy the network. The IAB network is then controlled by [iab-manager](https://github.com/wineslab/iab-manager), that can be run either locally or in the core network node.
+In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with at least 4 IAB RAN nodes (`oai-iab-ran`), one OAI IAB-aware core network (`oai-core-iab`) to deploy the network. For both images the login is `root` and the password is `pass`. The IAB network is then controlled by [iab-manager](https://github.com/wineslab/iab-manager), that can be run either locally or in the core network node.
 
 ### Linear IAB Network
 
@@ -25,7 +25,7 @@ Once the reservation is ready, iab-manager can be used to interact with the diff
 git clone https://github.com/wineslab/iab-manager.git
 {% endhighlight %}
 
-Then enter the directory and create a `.env` in the main folder containing your colosseum credentials in the format:
+Then enter the directory and create a `.env` in the main folder containing your Colosseum credentials in the format:
 
 {% highlight python %}
 COLOSSEUM_USER = [username]
