@@ -15,11 +15,17 @@ In this tutorial, we show how to use OpenAirInterface (OAI) with a [custom IAB i
 
 #### Prerequisites
 
-In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with at least 4 IAB RAN nodes (`oai-iab-ran` or `oai-iab-ran-stable` image), one OAI IAB-aware core network (`oai-core-iab`) to deploy the network. The IAB network is then controlled by [iab-manager](https://github.com/wineslab/iab-manager), that can be run either locally or in the core network node.
+In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with at least 4 IAB RAN nodes (`oai-iab-ran`), one OAI IAB-aware core network (`oai-core-iab`) to deploy the network. The IAB network is then controlled by [iab-manager](https://github.com/wineslab/iab-manager), that can be run either locally or in the core network node.
 
 ### Linear IAB Network
 
-Once the reservation is ready, iab-manager can be used to interact with the different components. First of all, create a `.env` in the main folder containing your colosseum credentials in the format:
+Once the reservation is ready, iab-manager can be used to interact with the different components. First of all, if you haven't already downloaded it, clone the iab-manager repo on your local machine:
+
+{% highlight bash %}
+git clone https://github.com/wineslab/iab-manager.git
+{% endhighlight %}
+
+Then enter the directory and create a `.env` in the main folder containing your colosseum credentials in the format:
 
 {% highlight python %}
 COLOSSEUM_USER = [username]
@@ -28,7 +34,7 @@ COLOSSEUM_PWD = [pwd]
 
 This will allow iab-manager to fetch the reservations' data from the Colosseum API and automatically map the SRNs to iab-nodes of your network.
 
-Then, you must configure `iab-manager` through the `config.yml` configuration file. Create the file with the following content:
+Then, you must configure iab-manager through the `config.yml` configuration file. Create the file with the following content:
 
 {% highlight yaml %}
 topology: "toy1.graphml"
@@ -57,11 +63,13 @@ It is also possible to start the network manually by starting first the iab-dono
 <!-- ### Realistic IAB Network -->
 
 ## RIC
+
 To be updated.
 
 ### Near-RT RIC setup
+
 To be updated.
 
 ### Non-RT RIC Setup
-To be updated.
 
+To be updated.
