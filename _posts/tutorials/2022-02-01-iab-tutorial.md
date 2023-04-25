@@ -25,7 +25,7 @@ Once the reservation is ready, iab-manager can be used to interact with the diff
 git clone https://github.com/wineslab/iab-manager.git
 {% endhighlight %}
 
-Then enter the directory and create a `.env` in the main folder containing your colosseum credentials in the format:
+Then enter the directory and create a `.env` in the main folder containing your Colosseum credentials in the format:
 
 {% highlight python %}
 COLOSSEUM_USER = [username]
