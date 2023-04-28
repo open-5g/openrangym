@@ -50,10 +50,10 @@ After the ColO-RAN neat-RT RIC is started following the previous steps, the SCOP
 - receive RIC Control messages from the xApps
 - interface with the SCOPE Application Programming Interfaces (APIs) to modify the scheduling and slicing configurations of the base station based on the received xApp control
 
-Modify the `build_odu.sh` script to include the IP of the ColO-RAN node (e.g., the `col0` interface of the ColO-RAN node in Colosseum).
+Modify the `build_odu.sh` script to include the IP address of the ColO-RAN node (e.g., the `col0` interface of the ColO-RAN node in Colosseum).
 
 {% highlight bash %}
-export RIC_HOST="<insert-ric-ip-here>"
+export RIC_HOST="<insert-ric-ip-address-here>"
 export RIC_PORT=36422
 export INTERFACE_TO_RIC="col0"
 {% endhighlight %}
