@@ -32,7 +32,7 @@ COLOSSEUM_USER = [username]
 COLOSSEUM_PWD = [pwd]
 {% endhighlight %}
 
-This will allow iab-manager to fetch the reservations' data from the Colosseum API and automatically map the SRNs to iab-nodes of your network.
+This will allow iab-manager to fetch the reservations' data from the Colosseum API and automatically map the SRNs to IAB-nodes of your network.
 
 Then, you must configure iab-manager through the `config.yml` configuration file. Create the file with the following content:
 
