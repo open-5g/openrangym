@@ -60,7 +60,7 @@ Finally, we automatically start the network by issuing the command `autostart`.
 
 It is also possible to start the network manually by starting first the iab-donor, then the iab-relays and finally the UE: `donor 0 start`, `iab_node start 12`, `iab_node start 34`, `iab_node start 56`, `iab_node start 78`, `ue 9 start`.
 
-The numbers in the commands above identify the id of the node, which is set in the topology file (`toy1.graphml`). In the case of iab-relays, since two SRNs are combined to form a single iab-relay, the id is set in a separate property of the graph called `iab`. In this example is set to the union of two single ids, so if an iab-node is made of an MT with id `1` and a DU with id `2`, its id will be `12`.
+The numbers in the commands above identify the id of the node, which is set in the topology file (`toy1.graphml`). In the case of IAB-nodes, since two SRNs are combined to form a single IAB-node, the id is set in a separate property of the graph called `iab`. In this example is set to the union of two single ids, so if an IAB-node is made of an MT with id `1` and a DU with id `2`, its id will be `12`.
 
 <!-- ### Realistic IAB Network -->
 
