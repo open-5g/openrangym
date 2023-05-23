@@ -58,9 +58,12 @@ show_article_counter: false
 
 # Navivation
 nav_items:
-  - name: Open5G
-    link: https://open5g.info/
-    external: true
+  # - name: Open5G
+  #   link: https://open5g.info/
+  #   external: true
+  - name: About
+    link: /other/about
+    external: false
   - name: Publications
     link: /other/publications
     external: false
@@ -84,6 +87,8 @@ footer_items:
     link: /other/about
   - name: WiNES Lab
     link: https://ece.northeastern.edu/wineslab/
+  - name: Open5G
+    link: https://open5g.info/
   - name: Northeastern Institute for the Wireless Internet of Things
     link: https://www.northeastern.edu/wiot/
 
