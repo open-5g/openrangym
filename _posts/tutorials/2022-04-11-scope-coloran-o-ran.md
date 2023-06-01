@@ -12,11 +12,21 @@ short-description: How to setup and use SCOPE and ColO-RAN near-RT RIC with Colo
 In this tutorial, we show how to use the [SCOPE](/ran-frameworks/scope) and [ColO-RAN](/o-ran-frameworks/coloran) components of OpenRAN Gym to develop O-RAN-compliant Artificial Intelligence (AI)/Machine Learning (ML) solutions, deploy them as xApps on the near-RT RAN Intelligent Controller (RIC), and test them on large-scale softwarized Radio Access Network (RAN) deployed on the [Colosseum](/experimental-platforms/colosseum) wireless network emulator and controlled by the RIC.
 
 #### Prerequisites
-In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with one ColO-RAN near-RT RIC node (`coloran-near-rt-ric` or `coloran-near-rt-ric-prebuilt` image, credentials are `root`/`ChangeMe` for both), and at least one SCOPE node (`scope-with-e2` image, credentials are `root`/`scope`). Procedures on how to use the OpenRAN Gym images on different testbeds (e.g., the [Arena](/experimental-platforms/arena) testbed, or to the POWDER and COSMOS testbeds of the [PAWR program](/experimental-platforms/pawr-platforms)) can be found at the end of this tutorial.
+In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with one ColO-RAN near-RT RIC node (`coloran-near-rt-ric` or `coloran-near-rt-ric-prebuilt` image, credentials are `root`/`ChangeMe` for both), at least one SCOPE base station (`scope-with-e2` image, credentials are `root`/`scope`), and at least one SCOPE UE (`scope` image, credentials are `root`/`scope`). The RIC should be allocated to the last SRN in the Colosseum reservation. Procedures on how to use the OpenRAN Gym images on different testbeds (e.g., the [Arena](/experimental-platforms/arena) testbed, or to the POWDER and COSMOS testbeds of the [PAWR program](/experimental-platforms/pawr-platforms)) can be found at the end of this tutorial.
 
 
 ### Starting the SCOPE Base Station
-As a first step, we start the SCOPE base station and pass the configuration of the base station through the `radio_interactive.conf` file. In the SCOPE node, type the following commands. These commands take care of starting the base station and core network applications. They can also be used on other nodes to start the UEs applications.
+As a first step, we start the SCOPE base station (the base station application will only start if this is the first node in the reservation, otherwise a UE application will start) and pass the configuration of the base station through the `radio_interactive.conf` file. In the SCOPE node, type the following commands. These commands take care of starting the base station and core network applications. They can also be used on other nodes to start the UEs applications (see below).
+
+{% highlight bash %}
+cd radio_api/
+python3 scope_start.py --config-file radio_interactive.conf
+{% endhighlight %}
+
+
+### Starting the SCOPE UE
+
+You can use the same steps as before to start the SCOPE UEs. Run the following commands on all the terminals of the SRNs that you want to use as UEs.
 
 {% highlight bash %}
 cd radio_api/
