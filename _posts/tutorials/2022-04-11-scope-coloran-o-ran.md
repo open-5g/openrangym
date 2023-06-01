@@ -24,7 +24,7 @@ python3 scope_start.py --config-file radio_interactive.conf
 {% endhighlight %}
 
 
-### Starting the SCOPE UE
+### Starting the SCOPE UEs
 
 You can use the same steps as before to start the SCOPE UEs. Run the following commands on all the terminals of the SRNs that you want to use as UEs.
 
