@@ -84,3 +84,9 @@ bonati2023neutran:
   IEEE Transactions on Mobile Computing, August 2023.
   <a href=\"https://arxiv.org/pdf/2301.07653.pdf\" target=\"_blank\">[pdf]</a>
   <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2023neutran.txt\" target=\"_blank\">[bibtex]</a>"
+fiandrino2023explora:
+  "C. Fiandrino, L. Bonati, S. D'Oro, M. Polese, T. Melodia, and J. Widmer,
+  *\"EXPLORA: AI/ML EXPLainability for the Open RAN,&quot,\"*
+  in Proceedings of ACM CoNEXT, Paris, France, December 2023.
+  <a href=\"https://arxiv.org/pdf/2310.13667.pdf\" target=\"_blank\">[pdf]</a>
+  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/fiandrino2023explora.txt\" target=\"_blank\">[bibtex]</a>"
