@@ -9,6 +9,24 @@ short-description: How to setup and use SCOPE and ColO-RAN near-RT RIC with Colo
 
 {% assign publications = site.data.publications %}
 
+{% assign el = publications.publications | where: "name", "bonati2022openrangym" %}
+{% assign element = el[0] %}
+{% capture pub_bonati2022openrangym %}
+{% include pub-template.html %}
+{% endcapture %}
+
+{% assign el = publications.publications | where: "name", "bonati2023openrangympawr" %}
+{% assign element = el[0] %}
+{% capture pub_bonati2023openrangympawr %}
+{% include pub-template.html %}
+{% endcapture %}
+
+{% assign el = publications.publications | where: "name", "polese2022coloran" %}
+{% assign element = el[0] %}
+{% capture pub_polese2022coloran %}
+{% include pub-template.html %}
+{% endcapture %}
+
 In this tutorial, we show how to use the [SCOPE](/ran-frameworks/scope) and [ColO-RAN](/o-ran-frameworks/coloran) components of OpenRAN Gym to develop O-RAN-compliant Artificial Intelligence (AI)/Machine Learning (ML) solutions, deploy them as xApps on the near-RT RAN Intelligent Controller (RIC), and test them on large-scale softwarized Radio Access Network (RAN) deployed on the [Colosseum](/experimental-platforms/colosseum) wireless network emulator and controlled by the RIC.
 
 #### Prerequisites
@@ -150,8 +168,11 @@ This script creates the ColO-RAN near-RT RIC container, assigns it the required 
 ---
 
 ### References
-> {{ publications.bonati2022openrangym }}
+> {{ pub_bonati2022openrangym | strip_newlines }}
 > {: .text-justify}
 
-> {{ publications.bonati2023openrangympawr }}
+> {{ pub_bonati2023openrangympawr | strip_newlines }}
+> {: .text-justify}
+
+> {{ pub_polese2022coloran | strip_newlines }}
 > {: .text-justify}

@@ -9,6 +9,12 @@ short-description: Colosseum Wireless Network Emulator
 
 {% assign publications = site.data.publications %}
 
+{% assign el = publications.other | where: "name", "bonati2021colosseum" %}
+{% assign element = el[0] %}
+{% capture pub_bonati2021colosseum %}
+{% include pub-template.html %}
+{% endcapture %}
+
 Colosseum is the world’s largest wireless network emulator designed to support research and development of large-scale, next generation radio network technologies in a repeatable and highly configurable Radio-frequency (RF) and traffic environments.
 {: .text-justify}
 
@@ -36,7 +42,7 @@ As an RF testbed Colosseum can be utilized to:
 
 If you use Colosseum for your research, please reference the following paper:
 
-> {{ publications.bonati2021colosseum }}
+> {{ pub_bonati2021colosseum | strip_newlines }}
 > {: .text-justify}
 
 Visit the <a href="https://www.northeastern.edu/colosseum" target="_blank">Colosseum website</a> for more information about this platform.

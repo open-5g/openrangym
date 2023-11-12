@@ -1,104 +1,185 @@
 # This file collects the publications listed in the website
 
-bertizzolo2020arena:
-  "L. Bertizzolo, L. Bonati, E. Demirors, A. Al-Shawabka, S. D'Oro, F. Restuccia, and T. Melodia,
-  *\"Arena: A 64-antenna SDR-based Ceiling Grid Testing Platform for Sub-6 GHz 5G-and-Beyond Radio Spectrum Research,\"*
-  Computer Networks, vol. 181, November 2020.
-  <a href=\"https://ece.northeastern.edu/wineslab/papers/BertizzoloComnet20.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/BertizzoloComnet20.txt\" target=\"_blank\">[bibtex]</a>"
-bonati2021scope:
-  "L. Bonati, S. D'Oro, S. Basagni, and T. Melodia,
-  *\"SCOPE: An Open and Softwarized Prototyping Platform for NextG Systems,\"*
-  in Proceedings of ACM MobiSys, June 2021.
-  <a href=\"https://ece.northeastern.edu/wineslab/papers/bonati2021scope.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021scope.txt\" target=\"_blank\">[bibtex]</a>"
-polese2021deepbeam:
-  "M. Polese, F. Restuccia, and T. Melodia,
-  *\"DeepBeam: Deep Waveform Learning for Coordination-Free Beam Management in mmWave Networks\",*
-  in Proceedings of ACM MobiHoc, July 2021.
-  <a href=\"https://arxiv.org/pdf/2012.14350.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/polese2021mobihoc.txt\" target=\"_blank\">[bibtex]</a>"
-bonati2021intelligence:
-  "L. Bonati, S. D'Oro, M. Polese, S. Basagni, and T. Melodia,
-  *\"Intelligence and Learning in O-RAN for Data-driven NextG Cellular Networks,\"*
-  IEEE Communications Magazine, vol. 59, no. 10, pp. 21–27, October 2021.
-  <a href=\"https://ece.northeastern.edu/wineslab/papers/bonati2021intelligence.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021intelligence.txt\" target=\"_blank\">[bibtex]</a>"
-bonati2021colosseum:
-  "L. Bonati, P. Johari, M. Polese, S. D’Oro, S. Mohanti, M. Tehrani-Moayyed, D. Villa, S. Shrivastava, C. Tassie, K. Yoder, A. Bagga, P. Patel, V. Petkov, M. Seltser, F. Restuccia, A. Gosain, K.R. Chowdhury, S. Basagni, T. Melodia,
-  *\"Colosseum: Large-Scale Wireless Experimentation Through Hardware-in-the-Loop Network Emulation,\"*
-  in Proceedings of IEEE DySPAN, December 2021.
-  <a href=\"https://ece.northeastern.edu/wineslab/papers/bonati2021colosseum.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021colosseum.txt\" target=\"_blank\">[bibtex]</a>"
-polese2022coloran:
-  "M. Polese, L. Bonati, S. D'Oro, S. Basagni, and T. Melodia,
-  *\"ColO-RAN: Developing Machine Learning-based xApps for Open RAN Closed-loop Control on Programmable Experimental Platforms,\"*
-  IEEE Transactions on Mobile Computing, July 2022.
-  <a href=\"https://arxiv.org/pdf/2112.09559\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/polese2021coloran.txt\" target=\"_blank\">[bibtex]</a>"
-bonati2022openrangym:
-  "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
-  *\"OpenRAN Gym: An Open Toolbox for Data Collection and Experimentation with AI in O-RAN,\"*
-  in Proceedings of IEEE WCNC Workshop on Open RAN Architecture for 5G Evolution and 6G, Austin, TX, USA, April 2022.
-  <a href=\"https://arxiv.org/pdf/2202.10318.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym.txt\" target=\"_blank\">[bibtex]</a>"
-doro2022dapps:
-  "S. D'Oro, M. Polese, L. Bonati, H. Cheng, and T. Melodia,
-  *\"dApps: Distributed Applications for Real-time Inference and Control in O-RAN,\"*
-  IEEE Communications Magazine, November 2022.
-  <a href=\"https://arxiv.org/pdf/2203.02370.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022dapps.txt\" target=\"_blank\">[bibtex]</a>"
-doro2022orchestran:
-  "S. D'Oro, L. Bonati, M. Polese, T. Melodia,
-  *\"OrchestRAN: Network Automation through Orchestrated Intelligence in the Open RAN,\"*
-  in Proceedings of IEEE INFOCOM, May 2022.
-  <a href=\"https://arxiv.org/pdf/2201.05632.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022infocom.txt\" target=\"_blank\">[bibtex]</a>"
-polese2022understanding:
-  "M. Polese, L. Bonati, S. D'Oro, S. Basagni, T. Melodia,
-  *\"Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges,\"*
-  IEEE Communications Surveys & Tutorials, pp. 1-23, January 2023.
-  <a href=\"https://arxiv.org/pdf/2202.01032.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/polese2022understanding.txt\" target=\"_blank\">[bibtex]</a>"
-bonati2022intelligent:
-  "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
-  *\"Intelligent Closed-loop RAN Control with xApps in OpenRAN Gym,\"*
-  in Proceedings of European Wireless, Dresden, Germany, September 2022.
-  <a href=\"https://arxiv.org/pdf/2208.14877.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022intelligent.txt\" target=\"_blank\">[bibtex]</a>"
-lacava2022programmable:
-  "A. Lacava, M. Polese, R. Sivaraj, R. Soundrarajan, B. S. Bhati, T. Singh, T. Zugno, F. Cuomo, T. Melodia,
-  *\"Programmable and Customized Intelligence for Traffic Steering in 5G Networks Using Open RAN Architectures,\"*
-  arXiv:2209.14171 [cs.NI], October 2022.
-  <a href=\"https://arxiv.org/pdf/2209.14171v3.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/andrea/LacavaAMC22.txt\" target=\"_blank\">[bibtex]</a>"
-bonati2023openrangympawr:
-  "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
-  *\"OpenRAN Gym: AI/ML Development, Data Collection, and Testing for O-RAN on PAWR Platforms,\"*
-  Computer Networks, vol. 220, pp. 1-11, January 2023.
-  <a href=\"https://arxiv.org/pdf/2207.12362.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym-pawr.txt\" target=\"_blank\">[bibtex]</a>"
-bonati2023neutran:
-  "L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia,
-  *\"NeutRAN: An Open RAN Neutral Host Architecture for Zero-Touch RAN and Spectrum Sharing,\"*
-  IEEE Transactions on Mobile Computing, August 2023.
-  <a href=\"https://arxiv.org/pdf/2301.07653.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2023neutran.txt\" target=\"_blank\">[bibtex]</a>"
-fiandrino2023explora:
-  "C. Fiandrino, L. Bonati, S. D'Oro, M. Polese, T. Melodia, and J. Widmer,
-  *\"EXPLORA: AI/ML EXPLainability for the Open RAN,&quot,\"*
-  in Proceedings of ACM CoNEXT, Paris, France, December 2023.
-  <a href=\"https://arxiv.org/pdf/2310.13667.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/fiandrino2023explora.txt\" target=\"_blank\">[bibtex]</a>"
-tsampazi2023comparative:
-  "M. Tsampazi, S. D'Oro, M. Polese, L. Bonati, G. Poitau, M. Healy, and T. Melodia,
-  *\"A Comparative Analysis of Deep Reinforcement Learning-based xApps in O-RAN,\"*
-  in Proceedings of IEEE GLOBECOM, Kuala Lumpur, Malaysia, December 2023.
-  <a href=\"https://arxiv.org/pdf/2309.05621.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2023globecom.txt\" target=\"_blank\">[bibtex]</a>"
-bonati20235gct:
-  "L. Bonati, M. Polese, S. D'Oro, P. Brach del Prever, T. Melodia,
-  *\"5G-CT: Automated Deployment and Over-the-Air Testing of End-to-End Open Radio Access Networks,\"*
-  arXiv:2311.03206 [cs.NI], pp. 1-7, November 2023.
-  <a href=\"https://arxiv.org/pdf/2311.03206.pdf\" target=\"_blank\">[pdf]</a>
-  <a href=\"https://ece.northeastern.edu/wines_bibtex/bonati20235gct.txt\" target=\"_blank\">[bibtex]</a>"
+# these publications are automatically printed in the publications page, in reverse order
+publications:
+  - name: bonati2021scope
+    author: L. Bonati, S. D'Oro, B. Stefano, T. Melodia
+    title: "SCOPE: An Open and Softwarized Prototyping Platform for NextG Systems"
+    booktitle: Proceedings of ACM MobiSys
+    address: Virtual Conference
+    month: June
+    year: 2021
+    pdflink: "https://ece.northeastern.edu/wineslab/papers/bonati2021scope.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021scope.txt"
+    note: AR 21.7%
+
+  - name: polese2021deepbeam
+    author: M. Polese, F. Restuccia, T. Melodia
+    title: "DeepBeam: Deep Waveform Learning for Coordination-Free Beam Management in mmWave Networks"
+    booktitle: Proceedings of ACM MobiHoc
+    address: Virtual Conference
+    month: July
+    year: 2021
+    pdflink: "https://arxiv.org/pdf/2012.14350.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2021mobihoc.txt"
+
+  - name: bonati2021intelligence
+    author: L. Bonati, S. D'Oro, M. Polese, S. Basagni, and T. Melodia
+    title: Intelligence and Learning in O-RAN for Data-driven NextG Cellular Networks
+    journal: IEEE Communications Magazine
+    volume: 59
+    number: 10
+    pages: 21-27
+    month: October
+    year: 2021
+    pdflink: "https://ece.northeastern.edu/wineslab/papers/bonati2021intelligence.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021intelligence.txt"
+
+  - name: bonati2022openrangym
+    author: L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia
+    title: "OpenRAN Gym: An Open Toolbox for Data Collection and Experimentation with AI in O-RAN"
+    booktitle: Proceedings of IEEE WCNC Workshop on Open RAN Architecture for 5G Evolution and 6G
+    address: Austin, TX, USA
+    month: April
+    year: 2022
+    pdflink: "https://arxiv.org/pdf/2202.10318"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym.txt"
+
+  - name: polese2023understanding
+    author: M. Polese, L. Bonati, S. D'Oro, S. Basagni, and T. Melodia
+    title: "Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges"
+    journal: "IEEE Communications Surveys & Tutorials"
+    pages: 1-23
+    month: January
+    year: 2023
+    pdflink: "https://arxiv.org/pdf/2202.01032"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2022understanding.txt"
+
+  - name: doro2022orchestran
+    author: S. D'Oro, L. Bonati, M. Polese, and T. Melodia
+    title: "OrchestRAN: Network Automation through Orchestrated Intelligence in the Open RAN"
+    booktitle: Proceedings of IEEE INFOCOM
+    address: Virtual Conference
+    month:  May
+    year: 2022
+    pdflink: "https://arxiv.org/pdf/2201.05632"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022infocom.txt"
+    note: AR 19.9%
+
+  - name: polese2022coloran
+    author: M. Polese, L. Bonati, S. D'Oro, S. Basagni, and T. Melodia
+    title: "ColO-RAN: Developing Machine Learning-based xApps for Open RAN Closed-loop Control on Programmable Experimental Platforms"
+    journal: "IEEE Transactions on Mobile Computing"
+    pages: 1-14
+    month: July
+    year: 2022
+    pdflink: "https://arxiv.org/pdf/2112.09559"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2021coloran.txt"
+
+  - name: doro2022dapps
+    author: S. D'Oro, M. Polese, L. Bonati, H. Cheng, and T. Melodia
+    title: "dApps: Distributed Applications for Real-time Inference and Control in O-RAN"
+    journal: "IEEE Communications Magazine"
+    volume: 60
+    number: 11
+    pages: 52-58
+    month: November
+    year: 2022
+    pdflink: "https://arxiv.org/pdf/2203.02370"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022dapps.txt"
+
+  - name: bonati2022intelligent
+    author: L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia
+    title: "Intelligent Closed-loop RAN Control with xApps in OpenRAN Gym"
+    booktitle: "Proceedings of IEEE European Wireless"
+    address: Dresden, Germany
+    month: September
+    year: 2022
+    pdflink: "https://arxiv.org/pdf/2208.14877.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022intelligent.txt"
+
+  - name: lacava2022programmable
+    author: A. Lacava, M. Polese, R. Sivaraj, R. Soundrarajan, B.S. Bhati, T. Singh, T. Zugno, F. Cuomo, and T. Melodia
+    title: "Programmable and Customized Intelligence for Traffic Steering in 5G Networks Using Open RAN Architectures"
+    journal: "arXiv:2209.14171 [cs.NI]"
+    pages: 1-15
+    month: October
+    year: 2022
+    pdflink: "https://arxiv.org/pdf/2209.14171v3.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/andrea/LacavaAMC22.txt"
+
+  - name: bonati2023openrangympawr
+    author: L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia
+    title: "OpenRAN Gym: AI/ML Development, Data Collection, and Testing for O-RAN on PAWR Platforms"
+    journal: "Computer Networks"
+    volume: 220
+    pages: 1-11
+    month: January
+    year: 2023
+    pdflink: "https://arxiv.org/pdf/2207.12362.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym-pawr.txt"
+
+  - name: bonati2023neutran
+    author: L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia
+    title: "NeutRAN: An Open RAN Neutral Host Architecture for Zero-Touch RAN and Spectrum Sharing"
+    journal: "IEEE Transactions on Mobile Computing"
+    pages: 1-13
+    month: August
+    year: 2023
+    pdflink: "https://arxiv.org/pdf/2301.07653.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2023neutran.txt"
+  
+  - name: bonati20235gct
+    author: L. Bonati, M. Polese, S. D'Oro, P. Brach del Prever, and T. Melodia
+    title: "5G-CT: Automated Deployment and Over-the-Air Testing of End-to-End Open Radio Access Networks"
+    journal: "arXiv:2311.03206 [cs.NI]"
+    pages: 1-7
+    month: November
+    year: 2023
+    pdflink: "https://arxiv.org/pdf/2311.03206.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati20235gct.txt"
+
+  - name: fiandrino2023explora
+    author: C. Fiandrino, L. Bonati, S. D'Oro, M. Polese, T. Melodia, and J. Widmer
+    title: "EXPLORA: AI/ML EXPLainability for the Open RAN"
+    booktitle: Proceedings of ACM CoNEXT
+    address: Paris, France
+    month: December
+    year: 2023
+    pdflink: "https://arxiv.org/pdf/2310.13667.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/fiandrino2023explora.txt"
+    note: AR 18.8%
+
+  - name: tsampazi2023comparative
+    author: M. Tsampazi, S. D'Oro, M. Polese, L. Bonati, G. Poitau, M. Healy, and T. Melodia
+    title: "A Comparative Analysis of Deep Reinforcement Learning-based xApps in O-RAN"
+    booktitle: Proceedings of IEEE GLOBECOM
+    address: Kuala Lumpur, Malaysia
+    month: December
+    year: 2023
+    pdflink: "https://arxiv.org/pdf/2309.05621.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2023globecom.txt"
+
+
+# these publications are NOT automatically printed in the publications page
+other:
+  - name: bertizzolo2020arena
+    author: L. Bertizzolo, L. Bonati, E. Demirors, A. Al-shawabka, S. D'Oro, F. Restuccia, and T. Melodia, Tommaso
+    title: "Arena: A 64-antenna SDR-based Ceiling Grid Testing Platform for Sub-6 GHz 5G-and-Beyond Radio Spectrum Research"
+    journal: Computer Networks
+    volume: 181
+    pages: 1-17
+    month: November
+    year: 2020
+    pdflink: "https://ece.northeastern.edu/wineslab/papers/BertizzoloComnet20.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/BertizzoloComnet20.txt"
+
+  - name: bonati2021colosseum
+    author: L. Bonati, P. Johari, M. Polese, S. D'Oro, S. Mohanti, M. Tehrani-Moayyed, D. Villa, S. Shrivastava, C. Tassie, K. Yoder, A. Bagga, P. Patel, V. Petkov, M. Seltser, F. Restuccia, A. Gosain, K.R. Chowdhury, S. Basagni, and T. Melodia
+    title: "Colosseum: Large-Scale Wireless Experimentation Through Hardware-in-the-Loop Network Emulation"
+    booktitle: Proceedings of IEEE DySPAN
+    address: Virtual Conference
+    month: December
+    year: 2021
+    pdflink: "https://ece.northeastern.edu/wineslab/papers/bonati2021colosseum.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021colosseum.txt"   

@@ -9,6 +9,18 @@ short-description:
 
 {% assign publications = site.data.publications %}
 
+{% assign el = publications.publications | where: "name", "bonati2023openrangympawr" %}
+{% assign element = el[0] %}
+{% capture pub_bonati2023openrangympawr %}
+{% include pub-template.html %}
+{% endcapture %}
+
+{% assign el = publications.publications | where: "name", "lacava2022programmable" %}
+{% assign element = el[0] %}
+{% capture pub_lacava2022programmable %}
+{% include pub-template.html %}
+{% endcapture %}
+
 OpenRAN Gym is an open-source project fostering collaborative, AI-driven and experimental research in the Open RAN ecosystem.
 The goal of OpenRAN Gym is to bring together researchers from academia and industry to create a vibrant, dynamic, evolving and cooperative ecosystem advancing research and development of cutting-edge and groundbreaking solutions for the Open RAN.
 We welcome contributions from the community, please follow this link to [contribute](/other/contribute) to OpenRAN Gym.
@@ -17,12 +29,12 @@ We welcome contributions from the community, please follow this link to [contrib
 If you use the components part of OpenRAN Gym, please reference the following paper and the paper relative to the specific component that you are using.
 {: .text-justify}
 
-> {{ publications.bonati2023openrangympawr }}
+> {{ pub_bonati2023openrangympawr | strip_newlines }}
 > {: .text-justify}
 
 If you use [ns-O-RAN](/ran-frameworks/ns-o-ran), please reference the following paper:
 
-> {{ publications.lacava2022programmable }}
+> {{ pub_lacava2022programmable | strip_newlines }}
 > {: .text-justify}
 
 &nbsp;
@@ -32,50 +44,17 @@ If you use [ns-O-RAN](/ran-frameworks/ns-o-ran), please reference the following 
 OpenRAN Gym features the following publications:
 {: .text-justify}
 
-> {{ publications.tsampazi2023comparative }}
-> {: .text-justify}
+{% for element in publications.publications reversed %}
 
-> {{ publications.fiandrino2023explora }}
-> {: .text-justify}
+{% capture pub_item %}
+{% include pub-template.html %}
+{% endcapture %}
 
-> {{ publications.bonati20235gct }}
+> {{ pub_item | strip_newlines }}
 > {: .text-justify}
+{% if forloop.last %}{: reversed="reversed"}{% endif %}
 
-> {{ publications.bonati2023neutran }}
-> {: .text-justify}
-
-> {{ publications.bonati2023openrangympawr }}
-> {: .text-justify}
-
-> {{ publications.lacava2022programmable }}
-> {: .text-justify}
-
-> {{ publications.bonati2022intelligent }}
-> {: .text-justify}
-
-> {{ publications.doro2022dapps }}
-> {: .text-justify}
-
-> {{ publications.polese2022coloran }}
-> {: .text-justify}
-
-> {{ publications.doro2022orchestran }}
-> {: .text-justify}
-
-> {{ publications.polese2022understanding }}
-> {: .text-justify}
-
-> {{ publications.bonati2022openrangym }}
-> {: .text-justify}
-
-> {{ publications.bonati2021intelligence }}
-> {: .text-justify}
-
-> {{ publications.polese2021deepbeam }}
-> {: .text-justify}
-
-> {{ publications.bonati2021scope }}
-> {: .text-justify}
+{% endfor %}
 
 &nbsp;
 

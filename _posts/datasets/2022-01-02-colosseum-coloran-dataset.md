@@ -9,6 +9,12 @@ short-description:
 
 {% assign publications = site.data.publications %}
 
+{% assign el = publications.publications | where: "name", "polese2022coloran" %}
+{% assign element = el[0] %}
+{% capture pub_polese2022coloran %}
+{% include pub-template.html %}
+{% endcapture %}
+
 This is the dataset for the paper M. Polese, L. Bonati, S. D'Oro, S. Basagni, T. Melodia, <i>"ColoRAN: Design and Testing of Open RAN Intelligence on Large-scale Experimental Platforms,"</i> IEEE Transactions on Mobile Computing, pp. 1–14, July 2022.
 The dataset can be found <a href="https://github.com/wineslab/colosseum-oran-coloran-dataset" target="_blank">at this link</a>.
 {: .text-justify}
@@ -26,5 +32,5 @@ The dataset can be found <a href="https://github.com/wineslab/colosseum-oran-col
 
 If you use this dataset, please reference the following paper:
 
-> {{ publications.polese2022coloran }}
+> {{ pub_polese2022coloran | strip_newlines }}
 > {: .text-justify}
