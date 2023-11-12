@@ -32,10 +32,13 @@ If you use [ns-O-RAN](/ran-frameworks/ns-o-ran), please reference the following 
 OpenRAN Gym features the following publications:
 {: .text-justify}
 
-> {{ publications.bonati20235gct }}
+> {{ publications.tsampazi2023comparative }}
 > {: .text-justify}
 
 > {{ publications.fiandrino2023explora }}
+> {: .text-justify}
+
+> {{ publications.bonati20235gct }}
 > {: .text-justify}
 
 > {{ publications.bonati2023neutran }}
