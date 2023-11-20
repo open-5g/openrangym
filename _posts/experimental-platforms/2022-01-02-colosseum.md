@@ -29,7 +29,7 @@ Colosseum is the world’s largest wireless network emulator designed to support
 
 &nbsp;
 
-It combines 128 Standard Radio Nodes (SRNs), each equipped with NI USRP X310 Software-defined Radios (SDRs), with a Massive digital Channel Emulator (MCHEM) backed by an extensive FPGA routing fabric. MCHEM emulates in FPGA real-world wireless RF channel between the SRNs and it is able to capture effects such as fading, multipath, etc., for up to 256x256 independently customizable channels. Accessible as a cloud-based platform, Colosseum also provides unique experimentation and data-collection capabilities.
+It combines 128 Standard Radio Nodes (SRNs), each equipped with NI USRP X310 Software-defined Radios (SDRs), with a Massive digital Channel Emulator (MCHEM) backed by an extensive FPGA routing fabric. MCHEM emulates in FPGA real-world wireless RF channels between the SRNs and it is able to capture effects such as fading, multipath, etc., for up to 256x256 independently customizable channels. Accessible as a cloud-based platform, Colosseum also provides unique experimentation and data-collection capabilities.
 {: .text-justify}
 
 <img src="/assets/post-assets/colosseum-architecture.png" class="post-image" alt="Colosseum Architecture" width="90%">
