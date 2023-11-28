@@ -28,7 +28,7 @@ The basic repository for this [project can be found here](https://github.com/win
 ### Prerequisites
 Please make a [Colosseum](/experimental-platforms/colosseum) reservation with the following images (credentials are `root`/`pass` for all):
 - `oai-core` for the core network
-- `oai-gbr-ran` for both the gNB and the UEs (at least 3 UEs are suggested)
+- `oai-ran-gbr` for both the gNB and the UEs (at least 3 UEs are suggested)
 - `nrt-ric-gbr` for the nRT-RIC and the xApp
 
 ### Deployment and testing
