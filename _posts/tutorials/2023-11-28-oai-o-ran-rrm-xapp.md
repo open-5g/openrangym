@@ -1,0 +1,234 @@
+---
+layout: post
+title: "Managing GBR SLA with an O-RAN xApp and OAI"
+date: 2022-11-02
+category: tutorials
+author:
+short-description: How to setup an OAI-based O-RAN deployment and manage GBR SLA with an xApp
+---
+
+{% assign publications = site.data.publications %}
+
+{% assign el = publications.publications | where: "name", "moro2023open" %}
+{% assign element = el[0] %}
+{% capture pub_moro2023open %}
+{% include pub-template.html %}
+{% endcapture %}
+
+OpenAirInterface (OAI) is a 3GPP-compliant software implementation of the full 5G NR stack. In this tutorial, we show how OpenRAN Gym users can get started with deploying an OAI 5G NR SA network composed of a gNB and a few UEs on Colosseum. Additionally, this tutorial shows how to deploy a nRT-RIC and an xApp developed to manage GBR SLAs of the RAN UEs. 
+{: .text-justify}
+More details in this paper:
+> {{ pub_lacava2022programmable | strip_newlines }}
+> {: .text-justify}
+Please consider citing the paper above if you use the O-RAN-compliant OAI gNB, the xApp SDK and the custom E2SM definitions in your research. 
+
+The basic repository for this [project can be found here](https://github.com/wineslab/OAI-colosseum-ric-integration). It contains submodules that point to the different projects that are relevant to this tutorial. 
+{: .text-justify}
+
+### xApp Components
+#### Base xApp
+This is a [basic xapp](https://github.com/wineslab/xapp-oai/tree/afed1099cf19d4c84c32b3808e80010fbdc1b229) (`base-xapp` in `xapp-oai` submodule) that subscribes to selected RAN parameters, receives periodic indications messages and sends control requests to update these parameters. The base xApp can communicate with the gNB by means of a RIC, or via direct socket communication.
+{: .text-justify}
+
+#### xApp SM Connector
+This [component](https://github.com/wineslab/xapp-oai/tree/afed1099cf19d4c84c32b3808e80010fbdc1b229) (`xapp-sm-connector` in `xapp-oai` submodule) connects the xApp with the RIC. In downstream (from the xApp to the gNB), the connector receives our custom sm buffers to be encapsulated in E2AP messages and sent to the RIC. In upstream (from the gNB to the xApp), the connector retrieves custom Service Model (SM) buffers from E2AP to be sent to the xApp.
+{: .text-justify}
+
+#### RIC Components 
+See [ColO-RAN](/o-ran-frameworks/coloran) for a detailed description of the RIC components.
+
+
+### Base Station Components
+#### E2SIM
+Similar to what the xApp SM Connector does, [the E2SIM component](https://github.com/wineslab/oai-o-ran-e2-sim) (`e2sim` submodule) encapsulates/decapsulates custom SM buffers that are to be sent or that are received from the gNB. It communicates with the gNB via UDP sockets.
+{: .text-justify}
+
+#### gNB Emulator
+[This component](https://github.com/wineslab/e2protobuf/tree/45e61bda64ec1f0efdc2077320134be758834766) (in the `e2protobuf` submodule) is a simple gNB emulator to test custom SMs without running a real gNB. 
+
+#### Protobuf Definitions
+[This repository](https://github.com/wineslab/oai-oran-protolib/tree/ee64155e9f0489eba7c36b956c4954e9b0c90a88) contains our custom protobuf definitions (in the `oai-oran-protolib` submodule).
+
+#### OpenAirInterface with xApp Agent
+[This component](https://github.com/EugenioMoro/openairinterface5g/tree/ccde5ea8b198a49aa1bd1c2b3fd98a3c2f418ca4) (`openairinterface5g` submodule) is a fork of OpenAirInterface with the addition of a custom xApp agent.
+
+### Running the Base xApp with OAI gNB 
+This tutorial showcases an end-to-end 5G SA deployment with a near-RT RIC and an xApp reading L2 info from the gNB. 
+
+This requires a [Colosseum](/experimental-platforms/colosseum) reservation with the following SRNs (credentials are `root`/`pass` for all):
+- `oai-core` for the core network functions
+- `oai-gnb-e2agent` for the E2-compliant gNB
+- 1 or more `oai-gnb-e2agent` acting as UEs
+- `oai-ric` for the near-RT RIC and the sample xApp
+
+Once the reservation is ready, start the core network in the `oai-core` SRN:
+
+{% highlight bash %}
+cd oai-cn5g-fed/docker-compose
+./core-network.sh start nrf spgwu
+{% endhighlight %}
+
+Then start the near-RT RIC in the `oai-ric` SRN:
+
+{% highlight bash %}
+start_ric.sh
+{% endhighlight %}
+
+and take note of the IP address of the SRN:
+
+{% highlight bash %}
+ifconfig col0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'
+{% endhighlight %}
+
+You can check if all the ric components are running by using the command `docker ps`, whose result should be this:
+
+{% highlight bash %}
+e2term:ricindi
+e2mgr:latest
+e2rtmansim:latest
+dbaas:latest
+{% endhighlight %}
+
+Start the gNB in the `oai-gnb-e2agent` SRN:
+
+{% highlight bash %}
+./run_gnb.sh -t donor
+{% endhighlight %}
+
+In the same SRN, start the `e2term`:
+
+{% highlight bash %}
+cd ocp-e2sim
+./run_e2sim.sh RIC_IP
+{% endhighlight %}
+
+where `RIC_IP` is the `col0` IP address you have previously found. The E2 Agent of the gNB is successfully connected with the RIC if the following line is shown:
+
+{% highlight bash %}
+[E2AP] Received SETUP-RESPONSE-SUCCESS
+{% endhighlight %}
+
+Now start the xApp container in the `oai-ric` SRN:
+
+{% highlight bash %}
+./start_xapp_container.sh
+{% endhighlight %}
+
+The xApp is separated into two components: an `xapp-connector` which establishes a connection with the RIC, and a `base-xapp` which implements the xApp logic. 
+
+Start the `xapp-connector` in a dedicated terminal:
+
+{% highlight bash %}
+docker exec -it base-xapp-24 bash
+cd ../xapp-oai/xapp-sm-connector/
+./run_xapp.sh
+{% endhighlight %}
+
+Wait for the following lines to appear:
+
+{% highlight bash %}
+about to call xapp startup
+Still waiting for indreq buf...
+Opened control socket server on port 7000
+{% endhighlight %}
+
+The `xapp-connector` is now ready to communicate with the base xApp, which should be started in a separate terminal: 
+
+{% highlight bash %}
+docker exec -it base-xapp-24 bash
+cd ../xapp-oai/base-xapp/
+python3 run_xapp.py
+{% endhighlight %}
+
+The base xApp will now receive periodic update messages from the gNB:
+{: .text-justify}
+
+{% highlight bash %}
+Recevied RIC indication response:
+param_map {
+  key: GNB_ID
+  string_value: "0"
+}
+param_map {
+  key: UE_LIST
+  ue_list {
+    connected_ues: 0
+  }
+}
+{% endhighlight %}
+
+Since no UEs are connected, the collection of UE L2 statistics is empty. 
+Run the following command in a `oai-gnb-e2agent` SRN different from the one where the gNB is running to activate an UE:
+
+{% highlight bash %}
+colosseumcli rf start -c 10011
+{% endhighlight %}
+
+to activate a 0dB attenuation rf scenario, and:
+
+{% highlight bash %}
+./run_ue.sh
+{% endhighlight %}
+
+to finally start the UE. The xApp is now reporting the statistics:
+
+{% highlight bash %}
+param_map {
+  key: GNB_ID
+  string_value: "0"
+}
+param_map {
+  key: UE_LIST
+  ue_list {
+    connected_ues: 1
+    ue_info {
+      rnti: 21000
+      dlsch_errors: 0
+      dlsch_total_bytes: 24477
+      dlsch_current_bytes: 0
+      ulsch_errors: 0
+      ulsch_total_bytes_rx: 21344
+      num_rsrp_meas: 0
+      sched_ul_bytes: 0
+      estimated_ul_buffer: 0
+      num_total_bytes: 0
+      raw_rssi: 1022
+      pusch_snrx10: 240
+      pucch_snrx10: 350
+      ul_rssi: 0
+    }
+  }
+}
+{% endhighlight %}
+
+You can add more UEs. To test the end-to-end connection add the route to the UE subnet in the core network SRN:
+
+{% highlight bash %}
+ip route add 12.1.1.0/24 via 192.168.70.134
+{% endhighlight %}
+
+In the UE SRN, add the route to the core network host:
+
+{% highlight bash %}
+ip route add 192.168.70.128/26 via 12.1.1.1
+{% endhighlight %} 
+
+and take note of the UE GTP endpoint IP:
+
+{% highlight bash %}
+ifconfig oaitun_ue1 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'
+{% endhighlight %}
+
+Run an `iperf3` server in the UE SRN:
+
+{% highlight bash %}
+iperf3 -s
+{% endhighlight %}
+
+and test the connection in downlink by running this in the `oai-core` SRN:
+
+{% highlight bash %}
+iperf3 -c UE_IP -u -b 1M 
+{% endhighlight %}
+
+where UE_IP is the UE GTP endpoint IP. Add `-R` to the previous command to the the uplink connection. 
