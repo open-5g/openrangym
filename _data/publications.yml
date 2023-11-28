@@ -160,6 +160,15 @@ publications:
     pdflink: "https://arxiv.org/pdf/2309.05621.pdf"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2023globecom.txt"
 
+  - name: moro2023open
+    author: E. Moro, M. Polese, A. Capone, T. Melodia
+    title: "An Open RAN Framework for the Dynamic Control of 5G Service Level Agreements"
+    booktitle: Proceedings of IEEE NFV-SDN
+    address: Dresden, Germany
+    month: November
+    year: 2023
+    pdflink: "https://arxiv.org/pdf/2309.07508.pdf"
+    bibtexlink: "https://scholar.googleusercontent.com/scholar.bib?q=info:mLiNmrrMUN8J:scholar.google.com/&output=citation&scisdr=ClGyTutsEKi15M7ENgs:AFWwaeYAAAAAZWXCLgvZiaNQZCfEMz0gC92Exq0&scisig=AFWwaeYAAAAAZWXCLjK7VaUZ56EZYzF2TTQnqmY&scisf=4&ct=citation&cd=-1&hl=en"
 
 # these publications are NOT automatically printed in the publications page
 other:
