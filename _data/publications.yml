@@ -160,8 +160,17 @@ publications:
     pdflink: "https://arxiv.org/pdf/2309.05621.pdf"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2023globecom.txt"
 
+  - name: maxenti2024scaloran
+    author: S. Maxenti, S. D'Oro, L. Bonati, M. Polese, A. Capone, and T. Melodia
+    title: "ScalO-RAN: Energy-aware Network Intelligence Scaling in Open RAN"
+    booktitle: Proceedings of IEEE INFOCOM
+    address: Vancouver, BC, Canada
+    month: May
+    year: 2024
+    note: AR 19.6%
 
-# these publications are NOT automatically printed in the publications page
+
+# these publications are NOT automatically printed in the publications page but we reference them in some of the pages
 other:
   - name: bertizzolo2020arena
     author: L. Bertizzolo, L. Bonati, E. Demirors, A. Al-shawabka, S. D'Oro, F. Restuccia, and T. Melodia, Tommaso
