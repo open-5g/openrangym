@@ -169,6 +169,14 @@ publications:
     year: 2024
     note: AR 19.6%
 
+  - name: doro2024orchestran
+    author: S. D'Oro, L. Bonati, M. Polese, and T. Melodia
+    title: "OrchestRAN: Orchestrating Network Intelligence in the Open RAN"
+    journal: "IEEE Transactions on Mobile Computing"
+    pages: 1-16
+    month:  in press
+    year: 2024
+
 
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
 other:
