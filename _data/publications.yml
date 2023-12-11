@@ -167,6 +167,8 @@ publications:
     address: Vancouver, BC, Canada
     month: May
     year: 2024
+    pdflink: https://arxiv.org/pdf/2312.05096.pdf
+    bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/maxenti2024scaloran.txt
     note: AR 19.6%
 
   - name: doro2024orchestran
