@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Managing GBR SLA with an O-RAN xApp and OAI"
+title: "O-RAN xApps with an E2E 5G deployment: base example and GBR SLA"
 date: 2022-11-02
 category: tutorials
 author:
-short-description: How to setup an OAI-based O-RAN deployment and manage GBR SLA with an xApp
+short-description: How to setup an OAI-based O-RAN deployment with a basic monitoring xApp and an advanced xApp that manages GBR SLA
 ---
 
 {% assign publications = site.data.publications %}
@@ -28,7 +28,7 @@ The basic repository for this [project can be found here](https://github.com/win
 ### Prerequisites
 Please make a [Colosseum](/experimental-platforms/colosseum) reservation with the following images (credentials are `root`/`pass` for all):
 - `oai-core` for the core network
-- `oai-ran-gbr` for both the gNB and the UEs (at least 3 UEs are suggested)
+- `oai-gbr-ran` for both the gNB and the UEs (at least 3 UEs are suggested)
 - `nrt-ric-gbr` for the nRT-RIC and the xApp
 
 ### Deployment and testing
@@ -97,12 +97,17 @@ We now start the xApp. Back to the RIC container, attach a terminal to the `xApp
 docker exec -it xapp bash
 {% endhighlight %}
 
-Different SLA management xApp are available, please refer to the paper above for all the details. We start now the xApp implementing an elastic SLA policy: 
+A basic xApp and different SLA management xApp are available, please refer to the paper above for all the details. 
+
+The basic monitoring xApp can be started as follows:
+{% highlight bash %}
+python3 base_xapp.py
+{% endhighlight %}
+
+After stopping the basic xApp, we start the advanced xApp implementing an elastic SLA policy: 
 {% highlight bash %}
 python3 elastic_sla.py
 {% endhighlight %}
-
-The xApp is now running. 
 
 Finally, we can generate downlink UE traffic as follows. In every UE container, add the route to the core network host:
 
