@@ -32,6 +32,13 @@ In this tutorial, we show how to use the [SCOPE](/ran-frameworks/scope) and [Col
 #### Prerequisites
 In the remaining of this tutorial, we assume users started an interactive reservation on Colosseum with one ColO-RAN near-RT RIC node (`coloran-near-rt-ric` or `coloran-near-rt-ric-prebuilt` image, credentials are `root`/`ChangeMe` for both), at least one SCOPE base station (`scope-with-e2` image, credentials are `root`/`scope`), and at least one SCOPE UE (`scope` image, credentials are `root`/`scope`). The RIC should be allocated to the last SRN in the Colosseum reservation. Procedures on how to use the OpenRAN Gym images on different testbeds (e.g., the [Arena](/experimental-platforms/arena) testbed, or to the POWDER and COSMOS testbeds of the [PAWR program](/experimental-platforms/pawr-platforms)) can be found at the end of this tutorial.
 
+### Start Colosseum RF Scenario
+Start a Radio Frequency (RF) scenario on Colosseum, e.g., scenario `1009`.
+
+{% highlight bash %}
+colosseumcli rf start 1009 -c
+{% endhighlight %}
+
 
 ### Starting the SCOPE Base Station
 As a first step, we start the SCOPE base station (the base station application will only start if this is the first node in the reservation, otherwise a UE application will start) and pass the configuration of the base station through the `radio_interactive.conf` file. In the SCOPE node, type the following commands. These commands take care of starting the base station and core network applications. They can also be used on other nodes to start the UEs applications (see below).
