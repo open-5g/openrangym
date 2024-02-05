@@ -74,7 +74,7 @@ First, base Docker images, used to build the RIC images, are imported. Then, the
 - `e2rtmansim`, which leverages the RIC Message Router (RMR) protocol to route the E2 messages inside the RIC
 - `db`, which maintains a database of the RAN nodes connected to the RIC
 
-After the building process completes, the Docker images are initialized as containers on a Colosseum Standard Radio Node (SRN), and listen for incoming connections from RAN nodes implementing an E2 termination endpoint. The container logs can be read through the `docker logs` command, e.g., `docker logs e2term -f` shows the logs of the E2 termination (`e2term`) container.
+After the building process completes, the Docker images are initialized as containers on a Colosseum Standard Radio Node (SRN), and listen for incoming connections from RAN nodes implementing an E2 termination endpoint. The container logs can be read through the `docker logs` command, e.g., `docker logs e2term -f | grep gnb` shows the logs of the E2 termination (`e2term`) container.
 
 
 ### Connecting the SCOPE Base Station to ColO-RAN Near-RT RIC
