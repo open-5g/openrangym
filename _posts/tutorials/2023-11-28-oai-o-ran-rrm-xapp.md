@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "O-RAN xApps with an E2E 5G deployment: base example and GBR SLA"
-date: 2022-11-02
+date: 2023-11-28
 category: tutorials
 author:
 short-description: How to setup an OAI-based O-RAN deployment with a basic monitoring xApp and an advanced xApp that manages GBR SLA
