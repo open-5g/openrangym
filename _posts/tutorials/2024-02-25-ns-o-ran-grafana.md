@@ -7,7 +7,7 @@ author:
 short-description: How to setup Grafana and visualize plots from ns-3 simulation data
 ---
 
-This tutorial demonstrates the process of visualizing ns-3 simulation data through Grafana. The following example involve extracting data from an ns-3 simulation and transmitting it to an InfluxDB server using Telegraf, in order for Grafana to collect and present the data on a dashboard, facilitating convenient analysis and interpretation. Four distinct dashboards have been designed to showcase the data derived from "cu-up," "cu-cp," and "du" files within the simulation container. The fourth dashboard specifically plots aggregated data points of interest. All the code is available in [this repository](https://github.com/wineslab/ns-o-ran-grafana).
+"This tutorial illustrates how to visualize ns-O-RAN simulation data using Grafana. The presented example extracts information from an ns-3 simulation, sending it to InfluxDB through Telegraf. This process enables Grafana to pull and display the data on a dashboard, streamlining analysis and interpretation. Four dashboards were created, with three specifically designed to visualize data extracted from the simulation's "cu-up," "cu-cp," and "du" files. The fourth dashboard is dedicated to plotting aggregated points of interest. All the code is available in [this repository](https://github.com/wineslab/ns-o-ran-grafana)."
 
 
 #### Prerequisites
