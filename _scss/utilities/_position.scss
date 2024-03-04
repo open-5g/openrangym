@@ -62,6 +62,12 @@
   margin-top: -225px;
 }
 
+@media screen and (max-width: 768px) {
+  .negative-m-xl {
+    margin-top: -285px;
+  }
+}
+
 .negative-m-lg {
   margin-top: -150px;
 }
