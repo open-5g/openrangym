@@ -25,7 +25,7 @@ Please consider citing the paper above if you use the O-RAN-compliant OAI gNB, t
 The basic repository for this [project can be found here](https://github.com/wineslab/OAI-colosseum-ric-integration). It contains submodules that point to the different projects that are relevant to this tutorial. 
 {: .text-justify}
 
-### Prerequisites
+### Prerequisites
 Please make a [Colosseum](/experimental-platforms/colosseum) reservation with the following images (credentials are `root`/`pass` for all):
 - `oai-core` for the core network
 - `oai-gbr-ran` for both the gNB and the UEs (at least 3 UEs are suggested)
