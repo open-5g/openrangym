@@ -15,7 +15,7 @@ short-description: How to setup an OAI-based O-RAN deployment with a basic monit
 {% include pub-template.html %}
 {% endcapture %}
 
-OpenAirInterface (OAI) is a 3GPP-compliant software implementation of the full 5G NR stack. In this tutorial, we show how OpenRAN Gym users can get started with deploying an OAI 5G NR SA network composed of a gNB and a few UEs on Colosseum. Additionally, this tutorial shows how to deploy a nRT-RIC and an xApp developed to manage GBR SLAs of the RAN UEs. 
+OpenAirInterface (OAI) is a 3GPP-compliant software implementation of the full 5G NR stack. In this tutorial, we show how OpenRAN Gym users can get started with deploying an OAI 5G NR SA network composed of a gNB and a few UEs on Colosseum. Additionally, this tutorial shows how to deploy a nRT-RIC and an xApp developed to manage Guaranteed Bit Rate (GBR) Service Level Agreements (SLAs) of the RAN UEs. 
 {: .text-justify}
 More details in this paper:
 > {{ pub_moro2023open | strip_newlines }}
@@ -115,7 +115,7 @@ Finally, we can generate downlink UE traffic as follows. In every UE container, 
 ip route add 192.168.70.128/26 via 12.1.1.1
 {% endhighlight %} 
 
-and take note of the UE GTP endpoint IP:
+and take note of the UE GPRS Tunneling Protocol (GTP) endpoint IP:
 
 {% highlight bash %}
 ifconfig oaitun_ue1 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'
