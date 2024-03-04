@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Graphical Visualization of simulated ns-3 data with Grafana"
+title: "Graphical Visualization of ns-O-RAN data with Grafana"
 date: 2024-02-25
 category: tutorials
 author:
