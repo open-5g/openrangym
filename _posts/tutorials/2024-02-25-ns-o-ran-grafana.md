@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Graphical Visualization of simulated ns-3 data with Grafana"
-date: 2022-02-25
+date: 2024-02-25
 category: tutorials
 author:
 short-description: How to setup Grafana and visualize plots from ns-3 simulation data
