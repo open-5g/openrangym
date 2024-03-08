@@ -7,9 +7,9 @@ author:
 short-description: How to setup Grafana and visualize plots from ns-3 simulation data
 ---
 
-"This tutorial illustrates how to visualize ns-O-RAN simulation data using Grafana. The presented example extracts information from an ns-3 simulation, sending it to InfluxDB through Telegraf. This process enables Grafana to pull and display the data on a dashboard, streamlining analysis and interpretation. Four dashboards were created, with three specifically designed to visualize the Key Performance Measurements (KPMs) extracted from the simulation, namely Central Unit (CU) -User Plane (UP), CU - Control Plane (CP), and Distributed Unit (DU). The fourth dashboard shows aggregated data extracted from KPMs. 
+This tutorial illustrates how to visualize ns-O-RAN simulation data using Grafana. The presented example extracts information from an ns-3 simulation, sending it to InfluxDB through Telegraf. This process enables Grafana to pull and display the data on a dashboard, streamlining analysis and interpretation. Four dashboards were created, with three specifically designed to visualize the Key Performance Measurements (KPMs) extracted from the simulation, namely Central Unit (CU) -User Plane (UP), CU - Control Plane (CP), and Distributed Unit (DU). The fourth dashboard shows aggregated data extracted from KPMs. 
 
-The code of this tutorial is available in [this repository](https://github.com/wineslab/ns-o-ran-grafana)."
+The code of this tutorial is available in [this repository](https://github.com/wineslab/ns-o-ran-grafana).
 
 
 #### Prerequisites
