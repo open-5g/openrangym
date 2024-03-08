@@ -160,6 +160,16 @@ publications:
     pdflink: "https://arxiv.org/pdf/2309.05621.pdf"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2023globecom.txt"
 
+  - name: moro2023open
+    author: E. Moro, M. Polese, A. Capone, T. Melodia
+    title: "An Open RAN Framework for the Dynamic Control of 5G Service Level Agreements"
+    booktitle: Proceedings of IEEE NFV-SDN
+    address: Dresden, Germany
+    month: November
+    year: 2023
+    pdflink: "https://arxiv.org/pdf/2309.07508.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/moro2023nfv.txt"
+
   - name: maxenti2024scaloran
     author: S. Maxenti, S. D'Oro, L. Bonati, M. Polese, A. Capone, and T. Melodia
     title: "ScalO-RAN: Energy-aware Network Intelligence Scaling in Open RAN"
