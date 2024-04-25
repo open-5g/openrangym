@@ -160,6 +160,24 @@ publications:
     pdflink: "https://arxiv.org/pdf/2309.07508.pdf"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/moro2023nfv.txt"
 
+  - name: doro2023orchestran
+    author: S. D'Oro, L. Bonati, M. Polese, and T. Melodia
+    title: "OrchestRAN: Orchestrating Network Intelligence in the Open RAN"
+    journal: "IEEE Transactions on Mobile Computing"
+    pages: 1-16
+    month:  December
+    year: 2023
+
+  - name: villa2024colosseum
+    author: D. Villa, M. Tehrani-Moayyed, C.P. Robinson, L. Bonati, P. Johari, M. Polese, and T. Melodia
+    title: "Colosseum as a Digital Twin: Bridging Real-World Experimentation and Wireless Network Emulation"
+    journal: "IEEE Transactions on Mobile Computing"
+    pages: 1-17
+    month: January
+    year: 2024
+    pdflink: "https://arxiv.org/pdf/2303.17063.pdf"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2023dt.txt"
+
   - name: bonati20235gct
     author: L. Bonati, M. Polese, S. D'Oro, P. Brach del Prever, and T. Melodia
     title: "5G-CT: Automated Deployment and Over-the-Air Testing of End-to-End Open Radio Access Networks"
@@ -169,6 +187,16 @@ publications:
     year: 2024
     pdflink: "https://arxiv.org/pdf/2311.03206.pdf"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati20235gct.txt"
+
+  - name: groen2024securing
+    author: J. Groen, S. D'Oro, U. Demir, L. Bonati, D. Villa, M. Polese, T. Melodia, K. Chowdhury
+    title: "Securing O-RAN Open Interfaces"
+    journal: "IEEE Transactions on Mobile Computing"
+    pages: 1-13
+    month: April
+    year: 2024
+    pdflink: "https://arxiv.org/pdf/2404.15076.pdf"
+    bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/groen2024securing.txt
 
   - name: maxenti2024scaloran
     author: S. Maxenti, S. D'Oro, L. Bonati, M. Polese, A. Capone, and T. Melodia
@@ -180,14 +208,6 @@ publications:
     pdflink: https://arxiv.org/pdf/2312.05096.pdf
     bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/maxenti2024scaloran.txt
     note: AR 19.6%
-
-  - name: doro2024orchestran
-    author: S. D'Oro, L. Bonati, M. Polese, and T. Melodia
-    title: "OrchestRAN: Orchestrating Network Intelligence in the Open RAN"
-    journal: "IEEE Transactions on Mobile Computing"
-    pages: 1-16
-    month:  in press
-    year: 2024
 
 
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
