@@ -227,6 +227,7 @@ publications:
     month: May
     year: 2024
     pdflink: "https://arxiv.org/pdf/2405.04395"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/brachdelprever2024pacifista.txt"
 
 
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
