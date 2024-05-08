@@ -219,6 +219,15 @@ publications:
     bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/maxenti2024scaloran.txt
     note: AR 19.6%
 
+  - name: brachdelprever2024pacifista
+    author: P. Brach del Prever, S. D’Oro, L. Bonati, M. Polese, M. Tsampazi, H. Lehmann, and T. Melodia
+    title: "PACIFISTA: Conflict Evaluation and Management in Open RAN"
+    journal: "arXiv:2405.04395 [cs.NI]"
+    pages: 1-12
+    month: May
+    year: 2024
+    pdflink: "https://arxiv.org/pdf/2405.04395"
+
 
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
 other:
