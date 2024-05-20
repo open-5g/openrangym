@@ -10,6 +10,6 @@
 {% if bibdata.month %}{{ bibdata.month }} {% else %}<!-- -->{% endif %}
 {% if bibdata.year %}{{ bibdata.year }}{% else %}<!-- -->{% endif %}.
 <!-- {% if bibdata.note %}<font style="color:#b71c1c;"> {{ bibdata.note }}.</font>{% else %}{% endif %} -->
-{% if bibdata.pdflink %}<a href="{{ bibdata.pdflink }}"> [pdf]</a>{% else %}<!-- -->{% endif %}
-{% if bibdata.bibtexlink %}<a href="{{ bibdata.bibtexlink }}"> [bibtex]</a>{% else %}<!-- -->{% endif %}
+{% if bibdata.pdflink %}<a href="{{ bibdata.pdflink }}" target="_blank"> [pdf]</a>{% else %}<!-- -->{% endif %}
+{% if bibdata.bibtexlink %}<a href="{{ bibdata.bibtexlink }}" target="_blank"> [bibtex]</a>{% else %}<!-- -->{% endif %}
 {: .text-justify}
