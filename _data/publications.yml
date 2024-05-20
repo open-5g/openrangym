@@ -251,4 +251,14 @@ other:
     month: December
     year: 2021
     pdflink: "https://ece.northeastern.edu/wineslab/papers/bonati2021colosseum.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021colosseum.txt"   
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021colosseum.txt"
+
+  - name: villa2024x5g
+    author: D. Villa, I. Khan, F. Kaltenberger, N. Hedberg, R. Soares da Silva, A. Kelkar, C. Dick, S. Basagni, J. M. Jornet, T. Melodia, M. Polese, and D. Koutsonikolas
+    title: "An Open, Programmable, Multi-vendor 5G O-RAN Testbed with NVIDIA ARC and OpenAirInterface"
+    booktitle: Proceedings of the 2nd IEEE Workshop on Next-generation Open and Programmable Radio Access Networks (NG-OPERA)
+    address: Vancouver, BC, Canada
+    month: May
+    year: 2024
+    pdflink: "https://arxiv.org/pdf/2310.17062"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2024x5g.txt"   
