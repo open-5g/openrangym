@@ -111,6 +111,8 @@ blockquote {
   border-left: $border-width-lg solid $border-color;
   margin-left: 0;
   padding: $unit-2 $unit-4;
+  background-color: $border-color;
+  border-radius: 10px;
 
   p:last-child {
     margin-bottom: 0;
