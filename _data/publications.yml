@@ -229,6 +229,15 @@ publications:
     pdflink: "https://arxiv.org/pdf/2405.04395"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/brachdelprever2024pacifista.txt"
 
+  - name: tsampazi2024pandora
+    author: M. Tsampazi, S. D’Oro, M. Polese, L. Bonati, G. Poitau, M. Healy, M. Alavirad, and T. Melodia
+    title: "PandORA: Automated Design and Comprehensive Evaluation of Deep Reinforcement Learning Agents for Open RAN"
+    journal: ResearchGate Preprint
+    pages: 1-18
+    month: May
+    year: 2024
+    pdflink: "https://www.researchgate.net/profile/Maria_Tsampazi/publication/380971138_PandORA_Automated_Design_and_Comprehensive_Evaluation_of_Deep_Reinforcement_Learning_Agents_for_Open_RAN/links/66577409479366623a209b1b/PandORA-Automated-Design-and-Comprehensive-Evaluation-of-Deep-Reinforcement-Learning-Agents-for-Open-RAN.pdf"
+
 
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
 other:
