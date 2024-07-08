@@ -238,6 +238,15 @@ publications:
     year: 2024
     pdflink: "https://www.researchgate.net/profile/Maria_Tsampazi/publication/380971138_PandORA_Automated_Design_and_Comprehensive_Evaluation_of_Deep_Reinforcement_Learning_Agents_for_Open_RAN/links/66577409479366623a209b1b/PandORA-Automated-Design-and-Comprehensive-Evaluation-of-Deep-Reinforcement-Learning-Agents-for-Open-RAN.pdf"
 
+  - name: villa2024x5gtmc
+    author: D. Villa, I. Khan, F. Kaltenberger, N. Hedberg, R. Soares da Silva, S. Maxenti, L. Bonati, A. Kelkar, C. Dick, E. Baena, J. M. Jornet, T. Melodia, M. Polese, and D. Koutsonikolas
+    title: "X5G: An Open, Programmable, Multi-vendor, End-to-end, Private 5G O-RAN Testbed with NVIDIA ARC and OpenAirInterface"
+    journal: "arXiv:2406.15935 [cs.NI]"
+    pages: 1-15
+    month: June
+    year: 2024
+    pdflink: "https://arxiv.org/pdf/2406.15935"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2024x5gtmc.txt"
 
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
 other:
