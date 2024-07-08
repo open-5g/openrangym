@@ -61,7 +61,7 @@ dbaas:latest
 xapp:latest
 {% endhighlight %}
 
-Start the gNB in the `oai-gbr-ran` SRN:
+Start the gNB in the `oai-ran-gbr` SRN:
 
 {% highlight bash %}
 ./run_gnb.sh -t donor
@@ -70,10 +70,10 @@ Start the gNB in the `oai-gbr-ran` SRN:
 In the same SRN, start the `e2term`:
 
 {% highlight bash %}
-./run_e2sim.sh RIC_IP
+./run_e2sim.sh RIC_IP RIC_PORT
 {% endhighlight %}
 
-where `RIC_IP` is the `col0` IP address you have previously found. The E2 Agent of the gNB is successfully connected with the RIC if the following line is shown:
+where `RIC_IP` is the `col0` IP address you have previously found, and `RIC_PORT` is the default `36422`. The E2 Agent of the gNB is successfully connected with the RIC if the following line is shown:
 
 {% highlight bash %}
 [E2AP] Received SETUP-RESPONSE-SUCCESS
@@ -97,14 +97,16 @@ We now start the xApp. Back to the RIC container, attach a terminal to the `xApp
 docker exec -it xapp bash
 {% endhighlight %}
 
-A basic xApp and different SLA management xApp are available, please refer to the paper above for all the details. 
+# A basic xApp and different SLA management xApp are available, please refer to the paper above for all the details. 
 
-The basic monitoring xApp can be started as follows:
-{% highlight bash %}
-python3 base_xapp.py
-{% endhighlight %}
+# The basic monitoring xApp can be started as follows:
+# {% highlight bash %}
+# python3 base_xapp.py
+# {% endhighlight %}
 
-After stopping the basic xApp, we start the advanced xApp implementing an elastic SLA policy: 
+# After stopping the basic xApp, we start the advanced xApp implementing an elastic SLA policy:
+
+Different SLA management xApps are available, please refer to the paper above for all the details. We start the advanced xApp implementing an elastic SLA policy:
 {% highlight bash %}
 python3 elastic_sla.py
 {% endhighlight %}
