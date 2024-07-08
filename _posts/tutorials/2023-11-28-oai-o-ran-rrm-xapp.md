@@ -27,7 +27,7 @@ The basic repository for this [project can be found here](https://github.com/win
 
 ### Prerequisites
 Please make a [Colosseum](/experimental-platforms/colosseum) reservation with the following images (credentials are `root`/`pass` for all):
-- `oai-core` for the core network
+- `oai-core-gbr` for the core network
 - `oai-gbr-ran` for both the gNB and the UEs (at least 3 UEs are suggested)
 - `nrt-ric-gbr` for the nRT-RIC and the xApp
 
@@ -35,8 +35,7 @@ Please make a [Colosseum](/experimental-platforms/colosseum) reservation with th
 Once the reservation is ready, start the core network in the `oai-core` SRN:
 
 {% highlight bash %}
-cd oai-cn5g-fed/docker-compose
-./core-network.sh start nrf spgwu
+./start_core.sh
 {% endhighlight %}
 
 Then start the near-RT RIC in the `oai-ric` SRN:
