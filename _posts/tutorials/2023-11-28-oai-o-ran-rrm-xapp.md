@@ -96,15 +96,6 @@ We now start the xApp. Back to the RIC container, attach a terminal to the `xApp
 docker exec -it xapp bash
 {% endhighlight %}
 
-# A basic xApp and different SLA management xApp are available, please refer to the paper above for all the details. 
-
-# The basic monitoring xApp can be started as follows:
-# {% highlight bash %}
-# python3 base_xapp.py
-# {% endhighlight %}
-
-# After stopping the basic xApp, we start the advanced xApp implementing an elastic SLA policy:
-
 Different SLA management xApps are available, please refer to the paper above for all the details. We start the advanced xApp implementing an elastic SLA policy:
 {% highlight bash %}
 python3 elastic_sla.py
