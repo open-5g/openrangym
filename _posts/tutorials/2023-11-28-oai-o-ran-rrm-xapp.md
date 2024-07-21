@@ -28,7 +28,7 @@ The basic repository for this [project can be found here](https://github.com/win
 ### Prerequisites
 Please make a [Colosseum](/experimental-platforms/colosseum) reservation with the following images (credentials are `root`/`pass` for all):
 - `oai-core-gbr` for the core network
-- `oai-gbr-ran` for both the gNB and the UEs (at least 3 UEs are suggested)
+- `oai-ran-gbr` for both the gNB and the UEs (at least 3 UEs are suggested)
 - `nrt-ric-gbr` for the nRT-RIC and the xApp
 
 ### Deployment and testing
@@ -122,7 +122,7 @@ iperf3 -s
 and test the connection in downlink by running this in the `oai-core` SRN:
 
 {% highlight bash %}
-iperf3 -c UE_IP 
+docker exec -it oai-spgwu iperf3 -c UE_IP 
 {% endhighlight %}
 
 where UE_IP is the UE GTP endpoint IP.
