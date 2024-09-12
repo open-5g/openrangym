@@ -242,7 +242,8 @@ publications:
     author: M. Polese, L. Bonati, S. D’Oro, P. Johari, D. Villa, S. Velumani, R. Gangula, M. Tsampazi, C. P. Robinson, G. Gemmi, A. Lacava, S. Maxenti, H. Cheng, T. Melodia
     title: "Colosseum: The Open RAN Digital Twin"
     journal: "IEEE Open Journal of the Communications Society"
-    pages: 1-16
+    volume: 5
+    pages: 5452-5466
     month: August
     year: 2024
     pdflink: "https://arxiv.org/pdf/2404.17317"
