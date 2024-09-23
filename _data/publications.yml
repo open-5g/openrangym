@@ -257,6 +257,16 @@ publications:
     month: November
     year: 2024
     bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2024twinning.txt
+  
+  - name: feraudo2024xDevSM
+    author: A. Feraudo, S. Maxenti, A. Lacava, P. Bellavista,  M. Polese, and T. Melodia
+    title: "xDevSM: Streamlining xApp Development With a Flexible Framework for O-RAN E2 Service Models"
+    booktitle: Proceedings of the 18th ACM Workshop on Wireless Network Testbeds, Experimental evaluation & Characterization (WiNTECH)
+    address: Washington, D.C., USA
+    month: November
+    year: 2024
+    pdflink: ""
+    bibtexlink: ""   
 
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
 other:
