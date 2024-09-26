@@ -256,6 +256,7 @@ publications:
     address: Washington, DC, USA
     month: November
     year: 2024
+    pdflink: https://arxiv.org/pdf/2409.16217
     bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2024twinning.txt
   
   - name: feraudo2024xDevSM
