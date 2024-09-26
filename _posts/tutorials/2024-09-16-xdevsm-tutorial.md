@@ -14,7 +14,7 @@ short-description: Guide for deploying an xApp with xDevSM and examples of the e
 {% include pub-template.html %}
 {% endcapture %}
 
-This guide provides an overview of deploying an xApp based on the xDevSM framework and offers examples of how to use it effectively. For detailed information about the framework's structure, refer to the [paper](#paper-reference).
+This guide provides an overview of deploying an xApp based on the xDevSM framework and offers examples of how to use it effectively. For detailed information about the framework's structure, refer to this [paper](#paper-reference).
 
 
 ## Prerequisites
@@ -294,10 +294,5 @@ sudo ./nr-softmodem -O <configuration_file> --rfsim --sa -E
 
 ## Paper Reference
 
-
-
 > {{ pub_feraudo2024xDevSM | strip_newlines }}
 > {: .text-justify}
-
-
-
