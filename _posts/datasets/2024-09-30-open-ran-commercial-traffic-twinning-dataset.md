@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Open-RAN Commercial Traffic Twinning Dataset"
+title: "Open RAN Commercial Traffic Twinning Dataset"
 date: 2024-09-30
 category: datasets
 author:
