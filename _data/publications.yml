@@ -269,6 +269,14 @@ publications:
     pdflink: https://arxiv.org/pdf/2409.16754
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/feraudo2024xDevSM.txt"
 
+  - name: cheng2024oranslice
+    author: H. Cheng, S. D'Oro, R. Gangula, S. Velumani, D. Villa, L. Bonati, M. Polese, T. Melodia, G. Arrobo, C. Maciocco
+    title: "ORANSlice: An Open Source 5G Network Slicing Platform for O-RAN"
+    booktitle: Proceedings of ACM Workshop on Open AI and Open RAN (Open AI RAN)
+    address: Washington, D.C., USA
+    month: November
+    year: 2024
+
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
 other:
   - name: bertizzolo2020arena
