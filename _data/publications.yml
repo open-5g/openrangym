@@ -276,6 +276,7 @@ publications:
     address: Washington, D.C., USA
     month: November
     year: 2024
+    pdflink: https://arxiv.org/pdf/2410.12978
 
 # these publications are NOT automatically printed in the publications page but we reference them in some of the pages
 other:
