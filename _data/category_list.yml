@@ -20,3 +20,7 @@ tutorials:
   name: Tutorials
   description:
   has-subcategories: false
+automated-testing:
+  name: Automated Testing
+  description:
+  has-subcategories: false
