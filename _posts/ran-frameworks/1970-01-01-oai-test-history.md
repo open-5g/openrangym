@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "OpenAirInterface Automated Testing History on Colosseum"
-date: 2024-10-24
-category: automated-testing
+date: 1970-01-01
+category: ran-frameworks
 author:
 short-description: Automated testing history of OAI on Colosseum
 ---
@@ -24,5 +24,5 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 | 2024-10-24 06:18:43 | TCP        | Transmit rate unlimited |                   1573.53 |             26.226  |                      2.90739 |                730.217 |        60.0003 | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) |
 
 
-Last updated: 2024-10-24 21:57:03 EDT
+Last updated: 2024-10-25 08:56:48 EDT
 {: .text-right}

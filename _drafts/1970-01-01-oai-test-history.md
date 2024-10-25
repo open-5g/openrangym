@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "OpenAirInterface Automated Testing History on Colosseum"
-date: 2024-10-24
-category: automated-testing
+date: 1970-01-01
+category: ran-frameworks
 author:
 short-description: Automated testing history of OAI on Colosseum
 ---
