@@ -16,7 +16,6 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 | 2024-10-24 07:52:43 | TCP        | Transmit rate unlimited |                   4012.38 |             66.8731 |        60.0001 | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) |
 | 2024-10-24 06:17:43 | TCP        | Transmit rate unlimited |                   4375.61 |             72.9263 |        60.0004 | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) |
 
-
 #### iPerf3  TCP Uplink
 
 | Date                | Protocol   | Transmit Rate           |   Data Transferred [Mbit] |   Throughput [Mbps] |   TCP Congestion Window [MB] |   Round-trip Time [ms] |   Duration [s] | gNB Commit                                                                     | UE Commit                                                                      |
@@ -25,3 +24,5 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 | 2024-10-24 06:18:43 | TCP        | Transmit rate unlimited |                   1573.53 |             26.226  |                      2.90739 |                730.217 |        60.0003 | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) |
 
 
+Last updated: 2024-10-24 21:57:03 EDT
+{: .text-right}
