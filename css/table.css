@@ -7,9 +7,16 @@ table {
 table {
   color: #333;
   background: white;
-  border: 1px solid grey;
+/*  border: 1px solid grey;*/
   font-size: 12pt;
   border-collapse: collapse;
+  /* Add horizontal scrollbar to table */
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 table thead th,
 table tfoot th {
