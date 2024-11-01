@@ -40,7 +40,14 @@ by offering an O-RAN-compliant near-real-time RIC and E2 termination."
 
 footer_images:
   - image: other/NU_IoT_NLuxPlus_WRWW.png
+    height: 54
     link: https://www.northeastern.edu/wiot/
+  - image: other/ai_edge_logo.png
+    height: 46
+    link: https://aiedge.osu.edu/
+  - image: other/open6g_logo.svg
+    height: 46
+    link: https://www.open6g.net
 
 home_image: /assets/post-assets/openrangym-architecture.png
 meta_image: /post-assets/openrangym-architecture.png
