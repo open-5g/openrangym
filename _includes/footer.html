@@ -4,13 +4,29 @@
   <div class="container grid-xl footer-contents mb-0">
     <div class="columns text-center">
       <div class="column col-12">
-        {% for element in site.footer_images %}
-        {% if element.link %}
-        <a href="{{ element.link }}" {{% if element.external %}}target="_blank"{{% endif %}}>
-          <img style="max-width: 25%; min-width: 150px; opacity: 0.7;" src="{{ site.baseurl }}/assets/{{ element.image }}"/>
-        </a>
-        {% endif %}
-        {% endfor %}
+        <div>
+          {% for element in site.footer_logo_main %}
+          {% if element.link %}
+          <div class="img-sp">
+            <a href="{{ element.link }}" {{% if element.external %}}target="_blank"{{% endif %}}>
+              <img style="max-width: 100%; opacity: 0.7;" src="{{ site.baseurl }}/assets/{{ element.image }}" height={{ element.height }} />
+            </a>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        &nbsp;
+        <div>
+          {% for element in site.footer_logo_others %}
+          {% if element.link %}
+          <div class="img-sp">
+            <a href="{{ element.link }}" {{% if element.external %}}target="_blank"{{% endif %}}>
+              <img style="max-width: 100%; opacity: 0.7;" src="{{ site.baseurl }}/assets/{{ element.image }}" height={{ element.height }} />
+            </a>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
         <div class="footer-social my-4">
           {% if site.email %}
           <a href="mailto:{{ site.email }}" target="_blank"><i class='uil uil-envelope'></i></a>
