@@ -38,15 +38,17 @@ data-driven O-RAN experimentation at scale. Building on frameworks for data coll
 and RAN control, OpenRAN Gym enables end-to-end design and testing of data-driven xApps
 by offering an O-RAN-compliant near-real-time RIC and E2 termination."
 
-footer_images:
+footer_logo_main:
   - image: other/NU_IoT_NLuxPlus_WRWW.png
-    height: 54
+    height: 78
     link: https://www.northeastern.edu/wiot/
+
+footer_logo_others:
   - image: other/ai_edge_logo.png
-    height: 46
+    height: 42
     link: https://aiedge.osu.edu/
   - image: other/open6g_logo.svg
-    height: 46
+    height: 42
     link: https://www.open6g.net
 
 home_image: /assets/post-assets/openrangym-architecture.png
@@ -63,11 +65,8 @@ instagram_username: #
 # Template options
 show_article_counter: false
 
-# Navivation
+# Navigation
 nav_items:
-  # - name: Open5G
-  #   link: https://open5g.info/
-  #   external: true
   - name: About
     link: /other/about
     external: false
@@ -94,8 +93,10 @@ footer_items:
     link: /other/about
   - name: WiNES Lab
     link: https://ece.northeastern.edu/wineslab/
-  - name: Open5G
-    link: https://open5g.info/
+  - name: Open6G
+    link: https://open6g.net/
+  - name: AI EDGE Institute
+    link: https://aiedge.osu.edu/
   - name: Northeastern Institute for the Wireless Internet of Things
     link: https://www.northeastern.edu/wiot/
 
