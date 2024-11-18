@@ -47,8 +47,9 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 | 2024-10-24 07:52:43 | TCP        | Transmit rate unlimited |                   4012.38 |             66.8731 |        60.0001 | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) |
 | 2024-10-24 06:17:43 | TCP        | Transmit rate unlimited |                   4375.61 |             72.9263 |        60.0004 | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) |
 
+[Download test history](../assets/test-history/test_mean_history_tcp_downlink.csv)
+{: .text-right}
 &nbsp;
-
 #### iPerf3  TCP Uplink
 
 | Date                | Protocol   | Transmit Rate           |   Data Transferred [Mbit] |   Throughput [Mbps] |   TCP Congestion Window [MB] |   Round-trip Time [ms] |   Duration [s] | gNB Commit                                                                     | UE Commit                                                                      |
@@ -87,7 +88,8 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 | 2024-10-24 07:53:43 | TCP        | Transmit rate unlimited |                   1481.2  |             24.6873 |                      2.91048 |                763.669 |        60.0004 | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) |
 | 2024-10-24 06:18:43 | TCP        | Transmit rate unlimited |                   1573.53 |             26.226  |                      2.90739 |                730.217 |        60.0003 | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) | [2c07f0081](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/2c07f0081) |
 
+[Download test history](../assets/test-history/test_mean_history_tcp_uplink.csv)
+{: .text-right}
 &nbsp;
-
-Last updated: 2024-11-09 02:32:23 EST
+Last updated: 2024-11-18 18:55:30 EST
 {: .text-right}
