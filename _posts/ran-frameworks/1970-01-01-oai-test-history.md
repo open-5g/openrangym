@@ -13,6 +13,7 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 
 | Date                | Protocol   | Transmit Rate           |   Data Transferred [Mbit] |   Throughput [Mbps] |   Duration [s] | gNB Commit                                                                     | UE Commit                                                                      |
 |---------------------|------------|-------------------------|---------------------------|---------------------|----------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| 2024-11-25 08:52:39 | TCP        | Transmit rate unlimited |                   3654.33 |             60.9054 |        60      | [68191088a](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/68191088a) | [68191088a](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/68191088a) |
 | 2024-11-24 08:52:42 | TCP        | Transmit rate unlimited |                   3669.56 |             61.1593 |        60      | [68191088a](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/68191088a) | [68191088a](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/68191088a) |
 | 2024-11-23 21:34:42 | TCP        | Transmit rate unlimited |                   3302.86 |             55.0477 |        60      | [68191088a](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/68191088a) | [68191088a](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/68191088a) |
 | 2024-11-23 07:16:42 | TCP        | Transmit rate unlimited |                   3576.06 |             59.6009 |        60      | [68191088a](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/68191088a) | [68191088a](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/68191088a) |
@@ -99,5 +100,5 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 [Download test history](../assets/test-history/test_mean_history_tcp_uplink.csv)
 {: .text-right}
 &nbsp;
-Last updated: 2024-11-24 04:06:42 EST
+Last updated: 2024-11-25 04:06:31 EST
 {: .text-right}
