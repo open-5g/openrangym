@@ -96,12 +96,14 @@ export INTERFACE_TO_RIC="col0"
 Initialize the E2 termination on the SCOPE base station by typing the following commands on the SCOPE node.
 
 {% highlight bash %}
+cd ~/radio_code/ # if needed
 cd colosseum-scope-e2/
 ./build_odu.sh clean
 ./run_odu.sh
 {% endhighlight %}
 
-The E2 termination is first built through the `build_odu.sh` script, which also sets the IP address and port of the near-RT RIC to connect to, as well as the network interface used for the connection to the RIC. Then, the E2 termination can be started through the `run_odu.sh` script, which initializes the E2 termination and connects it to the near-RT RIC. The successful connection of base station and near-RT RIC can be verified by reading the logs of the `e2term` container on the ColO-RAN node (e.g., through the command `docker logs e2term -f`). This log shows the association messages between the RIC and the base station, together with the ID of the connected base stations (e.g., `gnb:311-048-01000501`).
+The E2 termination is first built through the `build_odu.sh` script, which also sets the IP address and port of the near-RT RIC to connect to, as well as the network interface used for the connection to the RIC. Then, the E2 termination can be started through the `run_odu.sh` script, which initializes the E2 termination and connects it to the near-RT RIC. The successful connection of base station and near-RT RIC can be verified by reading the logs of the `e2term` container on the ColO-RAN node (e.g., through the command `docker logs e2term -f | grep gnb:`). This log shows the association messages between the RIC and the base station, together with the ID of the connected base stations (e.g., `gnb:311-048-01000501`).
+The logic to create the gNB ID is [here](https://github.com/wineslab/colosseum-scope-e2/blob/e97051d6879bd479ae8cf4e2ff095eea46a75855/src/du_app/du_e2ap_msg_hdl.c#L99-L138).
 
 
 ### Initializing a Sample xApp
