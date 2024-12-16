@@ -68,7 +68,7 @@ python3 scope_start.py --config-file radio_interactive.conf
 Now we start the ColO-RAN near-RT RIC. In the ColO-RAN node, type the following commands. These commands will build and start the Docker images of the ColO-RAN near-RT RIC, and specify the network interface used by the RIC to communicate with the RAN (e.g., the `col0` interface in Colosseum).
 
 {% highlight bash %}
-cd /radio_code/colosseum-near-rt-ric/ # if needed
+cd ~/radio_code/colosseum-near-rt-ric/ # if needed
 cd setup-scripts/
 ./setup-ric.sh col0
 {% endhighlight %}
@@ -96,7 +96,7 @@ Specifically, the E2 termination of the base station can:
 - receive RIC RAN Control (RC) messages from the xApps;
 - interface with the SCOPE Application Programming Interfaces (APIs) to modify the scheduling and slicing configurations of the base station based on the received xApp control.
 
-Edit the `build_odu.sh` script to include the IP address of the ColO-RAN node (e.g., the `col0` interface of the ColO-RAN node in Colosseum).
+Edit the `~/radio_code/colosseum-scope-e2/build_odu.sh` script to include the IP address of the ColO-RAN node (e.g., the `col0` interface of the ColO-RAN node in Colosseum).
 
 {% highlight bash %}
 export RIC_HOST="<insert-ric-ip-address-here>"
@@ -107,8 +107,7 @@ export INTERFACE_TO_RIC="col0"
 Initialize the E2 termination on the SCOPE base station by typing the following commands on the SCOPE node.
 
 {% highlight bash %}
-cd ~/radio_code/ # if needed
-cd colosseum-scope-e2/
+cd ~/radio_code/colosseum-scope-e2/  # if needed
 ./build_odu.sh clean
 ./run_odu.sh
 {% endhighlight %}
@@ -144,8 +143,7 @@ docker exec -it sample-xapp-24 /home/sample-xapp/run_xapp.sh
 {% endhighlight %}
 
 After performing these steps, the ColO-RAN sample xApp logs on file the KPMs received from the RAN node. 
-Users of OpenRAN Gym can add custom intelligence (e.g., through AI/ML agents) to the xApp by modifying the template scripts in the `setup/sample-xapp/` [directory](https://github.com/wineslab/colosseum-near-rt-ric/tree/main/setup/sample-xapp), and rebuilding the xApp Docker image through the steps described in this section.
-
+Users of OpenRAN Gym can add custom intelligence (e.g., through AI/ML agents) to the xApp by modifying the template scripts in the `~/radio_code/colosseum-near-rt-ric/setup/sample-xapp/` [directory](https://github.com/wineslab/colosseum-near-rt-ric/tree/main/setup/sample-xapp), and rebuilding the xApp Docker image through the steps described in this section.
 
 
 
