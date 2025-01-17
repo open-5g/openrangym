@@ -222,11 +222,12 @@ publications:
   - name: tsampazi2024pandora
     author: M. Tsampazi, S. D’Oro, M. Polese, L. Bonati, G. Poitau, M. Healy, M. Alavirad, and T. Melodia
     title: "PandORA: Automated Design and Comprehensive Evaluation of Deep Reinforcement Learning Agents for Open RAN"
-    journal: ResearchGate Preprint
+    journal: IEEE Transactions on Mobile Computing
     pages: 1-18
-    month: May
+    month: November
     year: 2024
-    pdflink: "https://www.researchgate.net/profile/Maria_Tsampazi/publication/380971138_PandORA_Automated_Design_and_Comprehensive_Evaluation_of_Deep_Reinforcement_Learning_Agents_for_Open_RAN/links/66577409479366623a209b1b/PandORA-Automated-Design-and-Comprehensive-Evaluation-of-Deep-Reinforcement-Learning-Agents-for-Open-RAN.pdf"
+    pdflink: "https://arxiv.org/pdf/2407.11747"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2024pandora.txt"
 
   - name: villa2024x5gtmc
     author: D. Villa, I. Khan, F. Kaltenberger, N. Hedberg, R. Soares da Silva, S. Maxenti, L. Bonati, A. Kelkar, C. Dick, E. Baena, J. M. Jornet, T. Melodia, M. Polese, and D. Koutsonikolas
