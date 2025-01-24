@@ -21,6 +21,12 @@ short-description:
 {% include pub-template.html %}
 {% endcapture %}
 
+{% assign el = publications.publications | where: "name", "lacava2025dapps" %}
+{% assign element = el[0] %}
+{% capture pub_lacava2025dapps %}
+{% include pub-template.html %}
+{% endcapture %}
+
 OpenRAN Gym is an open-source project fostering collaborative, AI-driven and experimental research in the Open RAN ecosystem.
 The goal of OpenRAN Gym is to bring together researchers from academia and industry to create a vibrant, dynamic, evolving and cooperative ecosystem advancing research and development of cutting-edge and groundbreaking solutions for the Open RAN.
 We welcome contributions from the community, please follow this link to [contribute](/other/contribute) to OpenRAN Gym.
@@ -35,6 +41,11 @@ If you use the components part of OpenRAN Gym, please reference the following pa
 If you use [ns-O-RAN](/ran-frameworks/ns-o-ran), please reference the following paper:
 
 > {{ pub_lacava2022programmable | strip_newlines }}
+> {: .text-justify}
+
+If you use [dApps](/ran-frameworks/dapps), please reference the following paper:
+
+> {{ pub_lacava2025dapps | strip_newlines }}
 > {: .text-justify}
 
 &nbsp;
