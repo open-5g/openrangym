@@ -119,6 +119,7 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 
 | Date                | Protocol   | Transmit Rate           |   Data Transferred [Mbit] |   Throughput [Mbps] |   TCP Congestion Window [MB] |   Round-trip Time [ms] |   Duration [s] | gNB Commit                                                                     | UE Commit                                                                      |
 |---------------------|------------|-------------------------|---------------------------|---------------------|------------------------------|------------------------|----------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| 2025-01-29 07:17:12 | TCP        | Transmit rate unlimited |                  1477.26  |             24.6209 |                      2.84998 |                703.099 |        60      | [64a472aef](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/64a472aef) | [64a472aef](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/64a472aef) |
 | 2025-01-28 09:05:11 | TCP        | Transmit rate unlimited |                  1478.32  |             24.6389 |                      2.92349 |                751.743 |        60      | [64a472aef](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/64a472aef) | [64a472aef](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/64a472aef) |
 | 2025-01-27 08:53:12 | TCP        | Transmit rate unlimited |                  1452.38  |             24.207  |                      2.89494 |                755.584 |        60      | [e0549de9e](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/e0549de9e) | [e0549de9e](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/e0549de9e) |
 | 2025-01-27 07:17:12 | TCP        | Transmit rate unlimited |                  1453.19  |             24.2202 |                      2.99454 |                776.954 |        60      | [e0549de9e](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/e0549de9e) | [e0549de9e](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/e0549de9e) |
@@ -238,5 +239,5 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 [Download test history](../assets/test-history/test_mean_history_tcp_uplink.csv)
 {: .text-right}
 &nbsp;
-Last updated: 2025-01-28 04:17:54 EST
+Last updated: 2025-01-29 02:29:45 EST
 {: .text-right}
