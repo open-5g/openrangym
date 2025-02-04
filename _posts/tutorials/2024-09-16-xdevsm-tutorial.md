@@ -96,7 +96,7 @@ pip install .
 
 ## xApp example using xDevSM
 
-> Note: You can use the pre-built image provided in [xApp examples repository](https://github.com/wineslab/xDevSM-xapps-examples) (`angeloferaudo/kpm-basic-xapp`). This means that, after cloning the repository, **you can skip this section and proceed directly with the [xApp deployment](#deploying-an-xapp-using-kpm-basic-example)**. However, if you plan to make changes in the source code, you will need to build the image yourself.
+> Note: You can use the [pre-built image](https://hub.docker.com/repository/docker/angeloferaudo/kpm-basic-xapp/general) provided in [xApp examples repository](https://github.com/wineslab/xDevSM-xapps-examples) (`angeloferaudo/kpm-basic-xapp`). This means that, after cloning the repository, **you can skip this section and proceed directly with the [xApp deployment](#deploying-an-xapp-using-kpm-basic-example)**. However, if you plan to make changes in the source code, you will need to build the image yourself.
 
 
 ### Create your own xApp (optional)
@@ -164,8 +164,8 @@ docker build --tag kpm-basic-xapp:0.1.0 --file docker/Dockerfile.kpm_basic_xapp 
 
 Push the Image to a Repository:
 ```bash
-docker tag kpm-basic-xapp:0.1.0 <your_username>/kpm-basic-xapp:0.1.0
-docker push <your_username>/kpm-basic-xapp:0.1.0
+docker tag kpm-basic-xapp:0.1.0 <your_username>/kpm-basic-xapp:0.1.0 # use the versioning you want
+docker push <your_username>/kpm-basic-xapp:0.1.0 # use the versioning you want
 ```
 
 Change the xApp config file (**xapps-repo → kpm_basic_xapp → config**):
@@ -177,12 +177,27 @@ Change the xApp config file (**xapps-repo → kpm_basic_xapp → config**):
             "name": "kpm-basic-xapp",
             "image": {
                 "registry": "docker.io",
-                "name": "<your_username>/kpm-basic-xapp", // use username
-                "tag": "0.1.0"
+                "name": "<your_username>/kpm-basic-xapp", // use your username e.g., aferaudo/kpm-basic-xapp                
+                "tag": "0.1.0" // use your defined tag, e.g., 1.0.0
             }
         }
     ],
 ```
+
+#### kpm-basic-xapp features
+The xapp provided within the framework allows you to record RAN metrics in an influxdb.
+
+To enable this feature, modify the docker file `xDevSM-xapps-examples/docker/Dockerfile.kpm_basic_xapp`.
+
+``` bash
+# replace this line
+CMD ["python", "kpm_xapp.py"]
+
+# with 
+CMD python3 kpm_xapp.py --influx_end_point http://<ip>:port -o <org> -t <token> -b <bucket> 
+```
+
+Then build the image as outlined [here](#build-the-xapp-kpm-basic-example).
 
 
 ## Deploying an xApp using KPM basic example
@@ -200,13 +215,13 @@ export CHART_REPO_URL=http://0.0.0.0:8090
 Once ChartMuseum is running, you can onboard the xApp:
 ```bash
 dms_cli onboard \
-  --config-file-path <kpm-basic-xapp-path>/config/config.json \
+  --config-file-path <kpm-basic-xapp-path>/config/config-file.json \
   --shcema_file_path <kpm-basic-xapp-path>/config/schema.json
 ```
 ### Downloading the Helm Chart Package
 To download the Helm chart for your xApp, use:
 ```bash
-dms_cli download_helm_chart kpm-basic-xapp 0.1.0
+dms_cli download_helm_chart kpm-basic-xapp 0.1.0 # change name and version accordingly
 ```
 
 > Note: You can also do this using `dms_cli install`. Please refer to [this tutorial](https://lf-o-ran-sc.atlassian.net/wiki/download/attachments/14123019/command_list.txt?version=1&modificationDate=1719164970168&cacheVersion=1&api=v2).
@@ -253,14 +268,15 @@ cd openairinterface5g
 git submodule init
 git submodule update
 ```
+> Note: to build the Service Models use `gcc-12`
 
 Build and install the Service Models:
 ```bash
 cd openair2/E2AP/flexric
 mkdir build
 cd build
-cmake ..
-make
+cmake .. -DKPM_VERSION=KPM_V3_00
+make -j ${nproc}
 sudo make install
 ```
 
