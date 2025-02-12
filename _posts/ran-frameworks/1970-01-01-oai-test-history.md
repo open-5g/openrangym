@@ -13,6 +13,7 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 
 | Date                | Protocol   | Transmit Rate           |   Data Transferred [Mbit] |   Throughput [Mbps] |   Duration [s] | gNB Commit                                                                     | UE Commit                                                                      |
 |---------------------|------------|-------------------------|---------------------------|---------------------|----------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| 2025-02-12 08:52:11 | TCP        | Transmit rate unlimited |                   2914.6  |             48.5767 |        60      | [ff58b5e16](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/ff58b5e16) | [ff58b5e16](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/ff58b5e16) |
 | 2025-02-11 07:16:11 | TCP        | Transmit rate unlimited |                   2992.02 |             49.8669 |        60      | [0053a3d0f](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/0053a3d0f) | [0053a3d0f](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/0053a3d0f) |
 | 2025-02-10 08:52:11 | TCP        | Transmit rate unlimited |                   3078.86 |             51.3143 |        60      | [0053a3d0f](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/0053a3d0f) | [0053a3d0f](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/0053a3d0f) |
 | 2025-02-09 08:52:11 | TCP        | Transmit rate unlimited |                   3019.12 |             50.3187 |        60      | [0053a3d0f](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/0053a3d0f) | [0053a3d0f](https://gitlab.eurecom.fr/oai/openairinterface5g/commit/0053a3d0f) |
@@ -261,5 +262,5 @@ This page shows results from OpenAirInterface (OAI) iPerf3 tests run via [Coloss
 [Download test history](../assets/test-history/test_mean_history_tcp_uplink.csv)
 {: .text-right}
 &nbsp;
-Last updated: 2025-02-11 04:06:14 EST
+Last updated: 2025-02-12 04:06:01 EST
 {: .text-right}
