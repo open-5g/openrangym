@@ -16,9 +16,9 @@ short-description: "How to deploy and run the ORANSlice framework for 5G network
 {% endcapture %}
 
 ORANSlice is an end-to-end open-source 5G network slicing framework for O-RAN. 
-It (i) extends the 5G protocol stacks of OAI to support RAN slicing; (ii) implements an E2SM-CCC-based SM and xApp for RAN slicing control; (iii) conducts extensive testing and validation on [Arena](https://openrangym.com/experimental-platforms/arena) and [X5G](https://x5g.org/) testbeds to ensure the robustness and effectiveness of the implementation.
+It (i) extends the 5G protocol stacks of OAI to support RAN slicing; (ii) implements an E2SM-CCC-based SM and xApp for RAN slicing control; (iii) conducts extensive testing and validation on <a href="https://openrangym.com/experimental-platforms/arena" target="_blank">Arena</a> and <a href="https://x5g.org/" target="_blank">X5G</a> testbeds to ensure the robustness and effectiveness of the implementation.
 
-More details can be found in the ORANSlice [GitHub page](https://github.com/wineslab/ORANSlice) and in the following paper:
+More details can be found in the ORANSlice <a href="https://github.com/wineslab/ORANSlice" target="_blank">GitHub page</a> and in the following paper:
 > {{ pub_cheng2024oranslice | strip_newlines }}
 > {: .text-justify}
 
@@ -41,7 +41,7 @@ We provide OAI and Open5GS core network slicing deployment in docker.
 Go to folder `oai_cn` and follow the readme to deploy OAI core legacy version (v1.5.1) or latest version (develop branch).
 
 ### Open5GS
-The code of depolying Open5GS core network in docker is given in [Github Repo](https://github.com/wineslab/docker_open5gs/tree/open5gs_slicing). 
+The code of depolying Open5GS core network in docker is given in <a href="https://github.com/wineslab/docker_open5gs/tree/open5gs_slicing" target="_blank">GitHub Repo</a>. 
 
 ## 5G RAN Slicing
 
@@ -69,15 +69,15 @@ The customized RAN slicing and E2 Agent code are integrated into OAI 2024.w28 re
 
 ### Disaggregated gNB from NVIDIA Aerial and OAI 
 
-Please refer to the tutorial in [ARC-OTA](https://docs.nvidia.com/aerial/aerial-ran-colab-ota/current/) and [Aerial CUDA-Accelerated RAN](https://docs.nvidia.com/aerial/cuda-accelerated-ran/index.html).
+Please refer to the tutorial in <a href="https://docs.nvidia.com/aerial/aerial-ran-colab-ota/current/" target="_blank">ARC-OTA</a>() and <a href="https://docs.nvidia.com/aerial/cuda-accelerated-ran/index.html" target="_blank">Aerial CUDA-Accelerated RAN</a>.
 
 ### OAI nrUE with multiple-PDU support
 Our customized OAI nrUE with multiple-PDU support is given in 
 > https://gitlab.eurecom.fr/oai/openairinterface5g/-/tree/NR_UE_multi_pdu
 
-Follow the [official guide](https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/NR_UE_multi_pdu/doc/NR_SA_Tutorial_OAI_nrUE.md) to build and run OAI nrUE.
+Follow the <a href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/NR_UE_multi_pdu/doc/NR_SA_Tutorial_OAI_nrUE.md" target="_blank">official guide</a> to build and run OAI nrUE.
 
-Follow the [guide](https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/NR_UE_multi_pdu/doc/RUNMODEM.md#at-command-interface-in-nr-ue) to configure multiple PDU session at nrUE.
+Follow the <a href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/NR_UE_multi_pdu/doc/RUNMODEM.md#at-command-interface-in-nr-ue" target="_blank">guide</a> to configure multiple PDU session at nrUE.
 
 **If you do not need multiple-pdu support at nrUE, you can build and run nrUE at `oai_ran`**
 
@@ -87,15 +87,15 @@ You can use COTS 5G UE modules from Sierra Wireless or Quectel to establish netw
 ## Near-Real-Time RIC
 
 ### OSC Near-RT RIC 
-The O-RAN Software Community (OSC) Near-RT RIC Release E can be installed following this [guide](https://docs.o-ran-sc.org/projects/o-ran-sc-ric-plt-ric-dep/en/latest/installation-guides.html). Note that for this tutorial, the OSC Near-RT RIC runs on an OpenShift cluster, whereas a plain Kubernetes deployment might require specific networking configurations.
+The O-RAN Software Community (OSC) Near-RT RIC Release E can be installed following this <a href="https://docs.o-ran-sc.org/projects/o-ran-sc-ric-plt-ric-dep/en/latest/installation-guides.html" target="_blank">guide</a>. Note that for this tutorial, the OSC Near-RT RIC runs on an OpenShift cluster, whereas a plain Kubernetes deployment might require specific networking configurations.
 
 ### E2Sim 
-The e2sim is a component that can run on the same server as the gNB and has the duty to encapsulate/decapsulate the custom Service Model (SM) buffers to be sent to or received from the gNB. It communicates with the gNB via UDP sockets. The e2sim codebase can be found at this GitHub [Repo](https://github.com/wineslab/o-ran-e2sim/tree/x5g-e2sim).
+The e2sim is a component that can run on the same server as the gNB and has the duty to encapsulate/decapsulate the custom Service Model (SM) buffers to be sent to or received from the gNB. It communicates with the gNB via UDP sockets. The e2sim codebase can be found at this <a href="https://github.com/wineslab/o-ran-e2sim/tree/x5g-e2sim" target="_blank">GitHub Repo</a>.
 
 ### xApp
 
 Our xAPP consists of two parts: a C/C++ based xAPP Base Station (BS) Connector and a python-based xAPP logic unit. The code can be found at the 
-[Github Repo](https://github.com/wineslab/xapp-oai/tree/oranslice).
+<a href="https://github.com/wineslab/xapp-oai/tree/oranslice" target="_blank">GitHub Repo</a>.
 
 #### xApp BS Connector
 The xApp BS connector component connects the pythonic xApp with the OSC Near-RT RIC. On one side, it receives the custom SM buffers to be encapsulated in E2AP (E2 Application Protocol) messages and sent to the RIC. On the other side, it retrieves the custom SM buffers from E2AP to be sent to the xApp.
