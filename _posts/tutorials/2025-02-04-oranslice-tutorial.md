@@ -18,7 +18,7 @@ short-description: "How to deploy and run the ORANSlice framework for 5G network
 ORANSlice is an end-to-end open-source 5G network slicing framework for O-RAN. 
 It (i) extends the 5G protocol stacks of OAI to support RAN slicing; (ii) implements an E2SM-CCC-based SM and xApp for RAN slicing control; (iii) conducts extensive testing and validation on [Arena](https://openrangym.com/experimental-platforms/arena) and [X5G](https://x5g.org/) testbeds to ensure the robustness and effectiveness of the implementation.
 
-More details can be found in the [ORANSlice GitHub page](https://github.com/wineslab/ORANSlice) and in the following paper:
+More details can be found in the ORANSlice [GitHub page](https://github.com/wineslab/ORANSlice) and in the following paper:
 > {{ pub_cheng2024oranslice | strip_newlines }}
 > {: .text-justify}
 
