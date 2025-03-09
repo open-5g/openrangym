@@ -38,7 +38,7 @@ git clone https://github.com/wineslab/ORANSlice.git
 We provide OAI and Open5GS core network slicing deployment in docker.
 
 ### OAI Core 
-Go to folder `oai_cn` and follow the readme to deploy OAI core legacy version (v1.5.1) or latest version (develop branch).
+Deploy OAI core legacy version (`v1.5.1`) or latest version (`develop` branch) from the `oai_cn` directory. A more indepth guide is present in the the `README.md`.
 
 ### Open5GS
 The code of depolying Open5GS core network in docker is given in <a href="https://github.com/wineslab/docker_open5gs/tree/open5gs_slicing" target="_blank">GitHub Repo</a>. 
