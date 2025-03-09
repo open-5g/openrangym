@@ -41,7 +41,7 @@ We provide OAI and Open5GS core network slicing deployment in docker.
 Deploy OAI core legacy version (`v1.5.1`) or latest version (`develop` branch) from the `oai_cn` directory. A more indepth guide is present in the the `README.md`.
 
 ### Open5GS
-The code of depolying Open5GS core network in docker is given in <a href="https://github.com/wineslab/docker_open5gs/tree/open5gs_slicing" target="_blank">GitHub Repo</a>. 
+The code for depolying the Open5GS core network in docker is available in the following <a href="https://github.com/wineslab/docker_open5gs/tree/open5gs_slicing" target="_blank">GitHub Repo</a>. 
 
 ## 5G RAN Slicing
 
@@ -77,7 +77,7 @@ Our customized OAI nrUE with multiple-PDU support is given in
 
 Follow the <a href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/NR_UE_multi_pdu/doc/NR_SA_Tutorial_OAI_nrUE.md" target="_blank">official guide</a> to build and run OAI nrUE.
 
-Follow the <a href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/NR_UE_multi_pdu/doc/RUNMODEM.md#at-command-interface-in-nr-ue" target="_blank">guide</a> to configure multiple PDU session at nrUE.
+Follow the <a href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/NR_UE_multi_pdu/doc/RUNMODEM.md#at-command-interface-in-nr-ue" target="_blank">guide</a> to configure multiple PDU sessions at the nrUE.
 
 **If you do not need multiple-pdu support at nrUE, you can build and run nrUE at `oai_ran`**
 
