@@ -41,7 +41,7 @@ We provide OAI and Open5GS core network slicing deployment in docker.
 Deploy OAI core legacy version (`v1.5.1`) or latest version (`develop` branch) from the `oai_cn` directory. A more indepth guide is present in the `README.md`.
 
 ### Open5GS
-The code for deploying the Open5GS CN in Docker is available in the following <a href="https://github.com/wineslab/docker_open5gs/tree/open5gs_slicing" target="_blank">GitHub Repo</a>. 
+The code for deploying the Open5GS CN in Docker is available in the following <a href="https://github.com/wineslab/docker_open5gs/tree/open5gs_slicing" target="_blank">GitHub repository</a>. 
 
 ## 5G RAN Slicing
 
@@ -91,12 +91,12 @@ You can use COTS 5G UE modules from Sierra Wireless or Quectel to establish a ne
 The O-RAN Software Community (OSC) Near-RT RIC Release E can be installed following this <a href="https://docs.o-ran-sc.org/projects/o-ran-sc-ric-plt-ric-dep/en/latest/installation-guides.html" target="_blank">guide</a>. Note that, for this tutorial, the OSC Near-RT RIC runs on an OpenShift cluster, whereas a plain Kubernetes deployment might require specific networking configurations.
 
 ### E2Sim 
-The e2sim is a component that can run on the same server as the gNB and has the duty to encapsulate/decapsulate the custom Service Model (SM) buffers to be sent to or received from the gNB. It communicates with the gNB via UDP sockets. The e2sim codebase is available in this <a href="https://github.com/wineslab/o-ran-e2sim/tree/x5g-e2sim" target="_blank">GitHub Repo</a>.
+The e2sim is a component that can run on the same server as the gNB and has the duty to encapsulate/decapsulate the custom Service Model (SM) buffers to be sent to or received from the gNB. It communicates with the gNB via UDP sockets. The e2sim codebase is available in this <a href="https://github.com/wineslab/o-ran-e2sim/tree/x5g-e2sim" target="_blank">GitHub repository</a>.
 
 ### xApp
 
 Our xApp consists of two components: a C/C++ based xApp Base Station (BS) Connector and a python-based xApp logic unit. The code is available in the following 
-<a href="https://github.com/wineslab/xapp-oai/tree/oranslice" target="_blank">GitHub Repo</a>.
+<a href="https://github.com/wineslab/xapp-oai/tree/oranslice" target="_blank">GitHub repository</a>.
 
 #### xApp BS Connector
 The xApp BS Connector component links the Pythonic xApp with the OSC Near-RT RIC. On one end, it receives custom SM buffers, encapsulates them in E2AP (E2 Application Protocol) messages, and sends them to the RIC. On the other end, it extracts custom SM buffers from E2AP and forwards them to the xApp.
