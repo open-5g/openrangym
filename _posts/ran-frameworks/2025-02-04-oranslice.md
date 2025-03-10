@@ -22,7 +22,7 @@ The ORANSlice framework is shown in the diagram below.
 
 <img src="/assets/post-assets/oranslice_framework.png" class="post-image" alt="ORANSlice Framework" width="75%">
 
-For more details about this framework, visit the ORANSlice <a href="https://github.com/wineslab/ORANSlice" target="_blank">GitHub page</a>.
+For more details about this framework, visit the ORANSlice <a href="https://github.com/wineslab/ORANSlice" target="_blank">GitHub repository</a>.
 
 A tutorial on how to use ORANSlice is available [here](/tutorials/oranslice-tutorial).
 
