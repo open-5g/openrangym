@@ -46,22 +46,26 @@ colosseumcli rf start 1009 -c
 
 
 ### Starting the SCOPE Base Station
-As a first step, we start the SCOPE base station (the base station application will only start if this is the first node in the reservation, otherwise a UE application will start) and pass the configuration of the base station through the `radio_interactive.conf` file. In the SCOPE node, type the following commands. These commands take care of starting the base station and core network applications. They can also be used on other nodes to start the UEs applications (see below).
+As a first step, we start the SCOPE base station (the base station application will only start if this is the first node in the reservation, otherwise a UE application will start) and pass the configuration of the base station through the `radio_interactive.conf` file. In the SCOPE node, type the following commands. These commands take care of starting the base station and core network applications in a new `tmux` session. They can also be used on other nodes to start the UEs applications (see below).
 
 {% highlight bash %}
 cd radio_api/
 python3 scope_start.py --config-file radio_interactive.conf
 {% endhighlight %}
+
+After the command above completes, you can attach to the created `tmux` session by typing `tmux a` to visualize the base station and core network logs.
 
 
 ### Starting the SCOPE UEs
 
-You can use the same steps as before to start the SCOPE UEs. Run the following commands on all the terminals of the SRNs that you want to use as UEs.
+You can use the same steps as before to start the SCOPE UEs in a new `tmux` session. Run the following commands on all the terminals of the SRNs that you want to use as UEs.
 
 {% highlight bash %}
 cd radio_api/
 python3 scope_start.py --config-file radio_interactive.conf
 {% endhighlight %}
+
+After the command above completes, you can attach to the created `tmux` session by typing `tmux a` to visualize the UE logs.
 
 
 ### Starting the ColO-RAN Near-RT RIC
