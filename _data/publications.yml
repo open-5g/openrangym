@@ -290,6 +290,16 @@ publications:
     pdflink: "https://arxiv.org/pdf/2501.16502.pdf"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/andrea/LacavadApps2025.txt"
 
+  - name: maxenti2025autoran
+    author: S. Maxenti, R. Shirkhani, M. Elkael, L. Bonati, S. D'Oro, T. Melodia, and M. Polese
+    title: "AutoRAN: Automated and Zero-Touch Open RAN Systems"
+    journal: "arXiv:2504.11233 [cs.NI]"
+    pages: 1--17
+    month: April
+    year: 2025
+    pdflink: "https://arxiv.org/pdf/2504.11233"
+    # bibtexlink: 
+
 # these publications are NOT automatically printed in the publications page, but we reference them in some of the pages
 other:
   - name: bertizzolo2020arena
