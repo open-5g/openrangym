@@ -29,7 +29,12 @@ The image contains a python script to start the gNB and UE.
 cd OAI-Colosseum
 python3 ran.py -t donor -m sa
 ```
-This will start the gNB process. If you get an error related to FPGA compatibility number mismatch, run the above command with `-f` option. This will flash the FPGA of the USRP with the version that matches your version of the UHD driver. This option is only needed once. The subsequent runs can be started without `-f`.
+This will start the gNB process. If you get an FPGA compatibility number mismatch error, flash the USRP FPGA with the bitstream that matches your UHD driver version (compatibility 39.0 in this example).
+```
+colosseumcli usrp flash -f usrp_x310_fpga_HG_c39.bit
+```
+You only need to flash the FPGA once. For details on the flash option, see <a href="https://colosseumwireless.readthedocs.io/en/latest/radio_api_traffic/colosseum_cli.html" target="_blank">the colosseumcli guide</a>. After the flash completes, you should be able to run the gNB without errors.
+
 ## Start RF Scenario
 Now we need to tell the MCHEM (Massive CHannel EMulator) to set up a channel between all the nodes in the current reservation. This can be done from any of the SRNs in the reservation. The following command starts an RF scenario with 0 dB path loss. (Please note that losses due to hardware impairments are still present.)
 
@@ -41,7 +46,7 @@ Run the following commands.
 cd OAI-Colosseum
 python3 ran.py -t ue -m sa
 ```
-If all goes well, the UE should connect to the gNB and the core network should have assigned an IP address to the UE. This can be verified by running `ifconfig` on the UE side and checking if the network interface named `oaitun_ue` has an IP assigned.
+If you get an FPGA compatibility number mismatch error, follow the same `colosseumcli usrp flash` command used for the gNB. If all goes well, the UE should connect to the gNB and the core network should have assigned an IP address to the UE. This can be verified by running `ifconfig` on the UE side and checking if the network interface named `oaitun_ue` has an IP assigned.
 
 Sometimes the UE may continuously fail the Random Access (RA) procedure and not proceed beyond that point. If this happens, try changing the `timing_advance` value in the `106` PRB section of the `conf.json` file (increase or decrease in steps of 5).
 ## IP Traffic
