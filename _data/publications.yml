@@ -300,6 +300,16 @@ publications:
     pdflink: "https://arxiv.org/pdf/2504.11233"
     # bibtexlink: 
 
+  - name: olimpieri2025libiqrealtimespectrumclassification
+    author: Filippo Olimpieri and Noemi Giustini and Andrea Lacava and Salvatore D'Oro and Tommaso Melodia and Francesca Cuomo
+    title: "LibIQ: Toward Real-Time Spectrum Classification in O-RAN dApps"
+    booktitle: Proceedings of IEEE Mediterranean Communication and Computer Networking Conference (MedComNet)
+    address: Cagliari, Italy
+    month: June
+    year: 2025
+    pdflink: "https://www.arxiv.org/pdf/2505.10537"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/LibiqMedComNet2025.txt"
+
 # these publications are NOT automatically printed in the publications page, but we reference them in some of the pages
 other:
   - name: bertizzolo2020arena
@@ -332,12 +342,3 @@ other:
     year: 2024
     pdflink: "https://arxiv.org/pdf/2310.17062"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2024x5g.txt"
-
-  - name: olimpieri2025libiqrealtimespectrumclassification
-    author: Filippo Olimpieri and Noemi Giustini and Andrea Lacava and Salvatore D'Oro and Tommaso Melodia and Francesca Cuomo
-    title: "LibIQ: Toward Real-Time Spectrum Classification in O-RAN dApps"
-    booktitle: Proceedings of IEEE Mediterranean Communication and Computer Networking Conference (MedComNet)
-    address: Cagliari, Italy
-    month: June
-    year: 2025
-    pdflink: "https://www.arxiv.org/abs/2505.10537"
