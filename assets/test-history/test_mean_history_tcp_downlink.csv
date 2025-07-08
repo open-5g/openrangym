@@ -1,4 +1,5 @@
 Date,Protocol,Transmit Rate,Data Transferred [Mbit],Throughput [Mbps],Duration [s],gNB Commit,UE Commit
+2025-07-08 13:57:26,TCP,Transmit rate unlimited,3858.9122560000005,64.31537101417666,60.0,8bf6d5d7d,8bf6d5d7d
 2025-07-02 06:04:25,TCP,Transmit rate unlimited,4134.701312,68.91160529662757,60.0,a3b9db202,a3b9db202
 2025-07-01 19:00:26,TCP,Transmit rate unlimited,4024.2733439999993,67.0711734307795,60.0,a3b9db202,a3b9db202
 2025-07-01 07:53:26,TCP,Transmit rate unlimited,4233.583807999999,70.55998402677984,60.0,a3b9db202,a3b9db202
