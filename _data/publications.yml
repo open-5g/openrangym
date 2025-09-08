@@ -229,7 +229,7 @@ publications:
     pdflink: "https://arxiv.org/pdf/2407.11747"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2024pandora.txt"
 
-  - name: villa2024x5gtmc
+  - name: villa2025x5gtmc
     author: D. Villa, I. Khan, F. Kaltenberger, N. Hedberg, R. Soares da Silva, S. Maxenti, L. Bonati, A. Kelkar, C. Dick, E. Baena, J. M. Jornet, T. Melodia, M. Polese, and D. Koutsonikolas
     title: "X5G: An Open, Programmable, Multi-vendor, End-to-end, Private 5G O-RAN Testbed with NVIDIA ARC and OpenAirInterface"
     journal: "arXiv:2406.15935 [cs.NI]"
@@ -237,7 +237,7 @@ publications:
     month: June
     year: 2024
     pdflink: "https://arxiv.org/pdf/2406.15935"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2024x5gtmc.txt"
+    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2025x5gtmc.txt"
 
   - name: polese2024colosseum
     author: M. Polese, L. Bonati, S. D’Oro, P. Johari, D. Villa, S. Velumani, R. Gangula, M. Tsampazi, C. P. Robinson, G. Gemmi, A. Lacava, S. Maxenti, H. Cheng, T. Melodia
