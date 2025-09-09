@@ -233,9 +233,9 @@ publications:
     author: D. Villa, I. Khan, F. Kaltenberger, N. Hedberg, R. Soares da Silva, S. Maxenti, L. Bonati, A. Kelkar, C. Dick, E. Baena, J. M. Jornet, T. Melodia, M. Polese, and D. Koutsonikolas
     title: "X5G: An Open, Programmable, Multi-vendor, End-to-end, Private 5G O-RAN Testbed with NVIDIA ARC and OpenAirInterface"
     journal: "arXiv:2406.15935 [cs.NI]"
-    pages: 1-15
-    month: June
-    year: 2024
+    pages: 1-18
+    month: In press
+    year: 2025
     pdflink: "https://arxiv.org/pdf/2406.15935"
     bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2025x5gtmc.txt"
 
