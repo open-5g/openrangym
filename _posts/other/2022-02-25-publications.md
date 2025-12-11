@@ -43,7 +43,7 @@ If you use [ns-O-RAN](/ran-frameworks/ns-o-ran), please reference the following 
 > {{ pub_lacava2022programmable | strip_newlines }}
 > {: .text-justify}
 
-If you use [dApps](/ran-frameworks/dapps), please reference the following paper:
+If you use [dApps](/o-ran-frameworks/dapps), please reference the following paper:
 
 > {{ pub_lacava2025dapps | strip_newlines }}
 > {: .text-justify}
