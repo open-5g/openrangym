@@ -9,8 +9,8 @@ publications:
     address: Virtual Conference
     month: June
     year: 2021
-    pdflink: "https://ece.northeastern.edu/wineslab/papers/bonati2021scope.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021scope.txt"
+    pdflink: "https://dl.acm.org/doi/pdf/10.1145/3458864.3466863"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021scope.txt"
     note: AR 21.7%
 
   - name: polese2021deepbeam
@@ -20,8 +20,8 @@ publications:
     address: Virtual Conference
     month: July
     year: 2021
-    pdflink: "https://arxiv.org/pdf/2012.14350.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2021mobihoc.txt"
+    pdflink: "https://dl.acm.org/doi/pdf/10.1145/3466772.3467035"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2021mobihoc.txt"
 
   - name: bonati2021intelligence
     author: L. Bonati, S. D'Oro, M. Polese, S. Basagni, and T. Melodia
@@ -32,8 +32,8 @@ publications:
     pages: 21-27
     month: October
     year: 2021
-    pdflink: "https://ece.northeastern.edu/wineslab/papers/bonati2021intelligence.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021intelligence.txt"
+    pdflink: "https://arxiv.org/pdf/2012.01263"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021intelligence.txt"
 
   - name: bonati2022openrangym
     author: L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia
@@ -43,7 +43,7 @@ publications:
     month: April
     year: 2022
     pdflink: "https://arxiv.org/pdf/2202.10318"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym.txt"
 
   - name: polese2023understanding
     author: M. Polese, L. Bonati, S. D'Oro, S. Basagni, and T. Melodia
@@ -53,7 +53,7 @@ publications:
     month: January
     year: 2023
     pdflink: "https://arxiv.org/pdf/2202.01032"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2022understanding.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2022understanding.txt"
 
   - name: doro2022orchestran
     author: S. D'Oro, L. Bonati, M. Polese, and T. Melodia
@@ -63,7 +63,7 @@ publications:
     month:  May
     year: 2022
     pdflink: "https://arxiv.org/pdf/2201.05632"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022infocom.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022infocom.txt"
     note: AR 19.9%
 
   - name: polese2022coloran
@@ -74,7 +74,7 @@ publications:
     month: July
     year: 2022
     pdflink: "https://arxiv.org/pdf/2112.09559"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2021coloran.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2021coloran.txt"
 
   - name: doro2022dapps
     author: S. D'Oro, M. Polese, L. Bonati, H. Cheng, and T. Melodia
@@ -86,7 +86,7 @@ publications:
     month: November
     year: 2022
     pdflink: "https://arxiv.org/pdf/2203.02370"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022dapps.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/doro2022dapps.txt"
 
   - name: bonati2022intelligent
     author: L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia
@@ -96,7 +96,7 @@ publications:
     month: September
     year: 2022
     pdflink: "https://arxiv.org/pdf/2208.14877.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022intelligent.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022intelligent.txt"
 
   - name: lacava2022programmable
     author: A. Lacava, M. Polese, R. Sivaraj, R. Soundrarajan, B.S. Bhati, T. Singh, T. Zugno, F. Cuomo, and T. Melodia
@@ -106,7 +106,7 @@ publications:
     month: October
     year: 2022
     pdflink: "https://arxiv.org/pdf/2209.14171v3.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/andrea/LacavaAMC22.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/andrea/LacavaAMC22.txt"
 
   - name: bonati2023openrangympawr
     author: L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia
@@ -117,7 +117,7 @@ publications:
     month: January
     year: 2023
     pdflink: "https://arxiv.org/pdf/2207.12362.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym-pawr.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2022openrangym-pawr.txt"
 
   - name: bonati2023neutran
     author: L. Bonati, M. Polese, S. D'Oro, S. Basagni, and T. Melodia
@@ -127,7 +127,7 @@ publications:
     month: August
     year: 2023
     pdflink: "https://arxiv.org/pdf/2301.07653.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2023neutran.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2023neutran.txt"
 
   - name: fiandrino2023explora
     author: C. Fiandrino, L. Bonati, S. D'Oro, M. Polese, T. Melodia, and J. Widmer
@@ -136,8 +136,8 @@ publications:
     address: Paris, France
     month: December
     year: 2023
-    pdflink: "https://arxiv.org/pdf/2310.13667.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/fiandrino2023explora.txt"
+    pdflink: "https://dl.acm.org/doi/pdf/10.1145/3629141"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/fiandrino2023explora.txt"
     note: AR 18.8%
 
   - name: tsampazi2023comparative
@@ -148,7 +148,7 @@ publications:
     month: December
     year: 2023
     pdflink: "https://arxiv.org/pdf/2309.05621.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2023globecom.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2023globecom.txt"
 
   - name: moro2023open
     author: E. Moro, M. Polese, A. Capone, T. Melodia
@@ -158,7 +158,7 @@ publications:
     month: November
     year: 2023
     pdflink: "https://arxiv.org/pdf/2309.07508.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/moro2023nfv.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/moro2023nfv.txt"
 
   - name: doro2023orchestran
     author: S. D'Oro, L. Bonati, M. Polese, and T. Melodia
@@ -167,6 +167,7 @@ publications:
     pages: 1-16
     month:  December
     year: 2023
+    pdflink: "https://ieeexplore.ieee.org/document/10356734"
 
   - name: villa2024colosseum
     author: D. Villa, M. Tehrani-Moayyed, C.P. Robinson, L. Bonati, P. Johari, M. Polese, and T. Melodia
@@ -176,7 +177,7 @@ publications:
     month: January
     year: 2024
     pdflink: "https://arxiv.org/pdf/2303.17063.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2023dt.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2023dt.txt"
 
   - name: bonati20235gct
     author: L. Bonati, M. Polese, S. D'Oro, P. Brach del Prever, and T. Melodia
@@ -186,7 +187,7 @@ publications:
     month: April
     year: 2024
     pdflink: "https://arxiv.org/pdf/2311.03206.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati20235gct.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati20235gct.txt"
 
   - name: groen2024securing
     author: J. Groen, S. D'Oro, U. Demir, L. Bonati, D. Villa, M. Polese, T. Melodia, K. Chowdhury
@@ -196,7 +197,7 @@ publications:
     month: April
     year: 2024
     pdflink: "https://arxiv.org/pdf/2404.15076.pdf"
-    bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/groen2024securing.txt
+    # bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/groen2024securing.txt
 
   - name: maxenti2024scaloran
     author: S. Maxenti, S. D'Oro, L. Bonati, M. Polese, A. Capone, and T. Melodia
@@ -206,18 +207,8 @@ publications:
     month: May
     year: 2024
     pdflink: https://arxiv.org/pdf/2312.05096.pdf
-    bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/maxenti2024scaloran.txt
+    # bibtexlink: https://ece.northeastern.edu/wineslab/wines_bibtex/maxenti2024scaloran.txt
     note: AR 19.6%
-
-  - name: brachdelprever2024pacifista
-    author: P. Brach del Prever, S. D’Oro, L. Bonati, M. Polese, M. Tsampazi, H. Lehmann, and T. Melodia
-    title: "PACIFISTA: Conflict Evaluation and Management in Open RAN"
-    journal: "arXiv:2405.04395 [cs.NI]"
-    pages: 1-12
-    month: May
-    year: 2024
-    pdflink: "https://arxiv.org/pdf/2405.04395"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/brachdelprever2024pacifista.txt"
 
   - name: tsampazi2024pandora
     author: M. Tsampazi, S. D’Oro, M. Polese, L. Bonati, G. Poitau, M. Healy, M. Alavirad, and T. Melodia
@@ -227,17 +218,7 @@ publications:
     month: November
     year: 2024
     pdflink: "https://arxiv.org/pdf/2407.11747"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2024pandora.txt"
-
-  - name: villa2025x5gtmc
-    author: D. Villa, I. Khan, F. Kaltenberger, N. Hedberg, R. Soares da Silva, S. Maxenti, L. Bonati, A. Kelkar, C. Dick, E. Baena, J. M. Jornet, T. Melodia, M. Polese, and D. Koutsonikolas
-    title: "X5G: An Open, Programmable, Multi-vendor, End-to-end, Private 5G O-RAN Testbed with NVIDIA ARC and OpenAirInterface"
-    journal: "arXiv:2406.15935 [cs.NI]"
-    pages: 1-18
-    month: In press
-    year: 2025
-    pdflink: "https://arxiv.org/pdf/2406.15935"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2025x5gtmc.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/tsampazi2024pandora.txt"
 
   - name: polese2024colosseum
     author: M. Polese, L. Bonati, S. D’Oro, P. Johari, D. Villa, S. Velumani, R. Gangula, M. Tsampazi, C. P. Robinson, G. Gemmi, A. Lacava, S. Maxenti, H. Cheng, T. Melodia
@@ -248,7 +229,7 @@ publications:
     month: August
     year: 2024
     pdflink: "https://arxiv.org/pdf/2404.17317"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2024colosseum.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/polese2024colosseum.txt"
 
   - name: bonati2024twinning
     author: L. Bonati, R. Shirkhani, C. Fiandrino, S. Maxenti, S. D'Oro, M. Polese, T. Melodia
@@ -257,18 +238,18 @@ publications:
     address: Washington, DC, USA
     month: November
     year: 2024
-    pdflink: "https://arxiv.org/pdf/2409.16217"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2024twinning.txt"
+    pdflink: "https://dl.acm.org/doi/pdf/10.1145/3636534.3697320"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2024twinning.txt"
   
   - name: feraudo2024xDevSM
     author: A. Feraudo, S. Maxenti, A. Lacava, P. Bellavista,  M. Polese, and T. Melodia
     title: "xDevSM: Streamlining xApp Development With a Flexible Framework for O-RAN E2 Service Models"
-    booktitle: Proceedings of the 18th ACM Workshop on Wireless Network Testbeds, Experimental evaluation & Characterization (WiNTECH)
+    booktitle: Proceedings of ACM WiNTECH
     address: Washington, D.C., USA
     month: November
     year: 2024
-    pdflink: "https://arxiv.org/pdf/2409.16754"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/feraudo2024xDevSM.txt"
+    pdflink: "https://dl.acm.org/doi/pdf/10.1145/3636534.3697325"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/feraudo2024xDevSM.txt"
 
   - name: cheng2024oranslice
     author: H. Cheng, S. D'Oro, R. Gangula, S. Velumani, D. Villa, L. Bonati, M. Polese, T. Melodia, G. Arrobo, C. Maciocco
@@ -277,8 +258,8 @@ publications:
     address: Washington, D.C., USA
     month: November
     year: 2024
-    pdflink: "https://arxiv.org/pdf/2410.12978"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/Cheng2024oranslice.txt"
+    pdflink: "https://dl.acm.org/doi/pdf/10.1145/3636534.3701544"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/Cheng2024oranslice.txt"
 
   - name: lacava2025dapps
     author: A. Lacava, L. Bonati, N. Mohamadi, R. Gangula, F. Kaltenberger, P. Johari, S. D'Oro, F. Cuomo, M. Polese, and T. Melodia
@@ -288,7 +269,7 @@ publications:
     month: February
     year: 2025
     pdflink: "https://arxiv.org/pdf/2501.16502.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/andrea/LacavadApps2025.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/andrea/LacavadApps2025.txt"
 
   - name: maxenti2025autoran
     author: S. Maxenti, R. Shirkhani, M. Elkael, L. Bonati, S. D'Oro, T. Melodia, and M. Polese
@@ -298,7 +279,17 @@ publications:
     month: April
     year: 2025
     pdflink: "https://arxiv.org/pdf/2504.11233"
-    # bibtexlink: 
+    # # bibtexlink: 
+
+  - name: brachdelprever2024pacifista
+    author: P. Brach del Prever, S. D’Oro, L. Bonati, M. Polese, M. Tsampazi, H. Lehmann, and T. Melodia
+    title: "PACIFISTA: Conflict Evaluation and Management in Open RAN"
+    journal: "IEEE Transactions on Mobile Computing"
+    pages: 1-12
+    month: May
+    year: 2025
+    pdflink: "https://arxiv.org/pdf/2405.04395"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/brachdelprever2024pacifista.txt"
 
   - name: olimpieri2025libiqrealtimespectrumclassification
     author: Filippo Olimpieri and Noemi Giustini and Andrea Lacava and Salvatore D'Oro and Tommaso Melodia and Francesca Cuomo
@@ -308,7 +299,17 @@ publications:
     month: June
     year: 2025
     pdflink: "https://www.arxiv.org/pdf/2505.10537"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/LibiqMedComNet2025.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/LibiqMedComNet2025.txt"
+
+  - name: villa2025x5gtmc
+    author: D. Villa, I. Khan, F. Kaltenberger, N. Hedberg, R. Soares da Silva, S. Maxenti, L. Bonati, A. Kelkar, C. Dick, E. Baena, J. M. Jornet, T. Melodia, M. Polese, and D. Koutsonikolas
+    title: "X5G: An Open, Programmable, Multi-vendor, End-to-end, Private 5G O-RAN Testbed with NVIDIA ARC and OpenAirInterface"
+    journal: "IEEE Transactions on Mobile Computing"
+    pages: 1-18
+    month: June
+    year: 2025
+    pdflink: "https://arxiv.org/pdf/2406.15935"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2025x5gtmc.txt"
 
 # these publications are NOT automatically printed in the publications page, but we reference them in some of the pages
 other:
@@ -320,8 +321,8 @@ other:
     pages: 1-17
     month: November
     year: 2020
-    pdflink: "https://ece.northeastern.edu/wineslab/papers/BertizzoloComnet20.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/BertizzoloComnet20.txt"
+    pdflink: "https://www.sciencedirect.com/science/article/abs/pii/S1389128620311257"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/BertizzoloComnet20.txt"
 
   - name: bonati2021colosseum
     author: L. Bonati, P. Johari, M. Polese, S. D'Oro, S. Mohanti, M. Tehrani-Moayyed, D. Villa, S. Shrivastava, C. Tassie, K. Yoder, A. Bagga, P. Patel, V. Petkov, M. Seltser, F. Restuccia, A. Gosain, K.R. Chowdhury, S. Basagni, and T. Melodia
@@ -330,8 +331,8 @@ other:
     address: Virtual Conference
     month: December
     year: 2021
-    pdflink: "https://ece.northeastern.edu/wineslab/papers/bonati2021colosseum.pdf"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021colosseum.txt"
+    pdflink: "https://arxiv.org/pdf/2110.10617"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/bonati2021colosseum.txt"
 
   - name: villa2024x5g
     author: D. Villa, I. Khan, F. Kaltenberger, N. Hedberg, R. Soares da Silva, A. Kelkar, C. Dick, S. Basagni, J. M. Jornet, T. Melodia, M. Polese, and D. Koutsonikolas
@@ -341,4 +342,4 @@ other:
     month: May
     year: 2024
     pdflink: "https://arxiv.org/pdf/2310.17062"
-    bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2024x5g.txt"
+    # bibtexlink: "https://ece.northeastern.edu/wineslab/wines_bibtex/villa2024x5g.txt"
