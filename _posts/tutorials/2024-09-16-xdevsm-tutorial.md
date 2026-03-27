@@ -14,6 +14,12 @@ short-description: Guide for deploying an xApp with xDevSM and examples of the e
 {% include pub-template.html %}
 {% endcapture %}
 
+{% assign el = publications.publications | where: "name", "feraudo2026xdevsm" %}
+{% assign element = el[0] %}
+{% capture pub_feraudo2026xdevsm %}
+{% include pub-template.html %}
+{% endcapture %}
+
 This guide provides an overview of deploying an xApp based on the xDevSM framework and offers examples of how to use it effectively. For detailed information about the framework's structure, refer to this [paper](#paper-reference).
 
 
@@ -27,6 +33,26 @@ Before you begin, ensure you have the following prerequisites installed and conf
 
 These tools are necessary for building and creating Helm charts for your xApp.
 
+A complete guide on how to set-up a single-node k8s cluster to host the Near-RT RIC can be found [here.](https://github.com/aferaudo/ORANInABox/wiki/Prerequisite-Setup)
+
+### Install Helm
+Download helm binary
+
+```bash
+# The version we download is the one indicated by ORAN SC in their RIC installation guides
+wget https://get.helm.sh/helm-v3.11.2-linux-amd64.tar.gz 
+tar xvzpf helm-v3.11.2-linux-amd64.tar.gz
+```
+
+Install helm
+```bash
+sudo cp linux-amd64/helm /usr/local/bin/
+```
+
+Try it
+```bash
+helm version
+```
 ### Deploying Near-RT RIC release J
 
 The official guide is available [here](https://lf-o-ran-sc.atlassian.net/wiki/spaces/RICP/pages/14123019/2024-06-23+Release+J?preview=/14123019/14124761/command_list.txt).
@@ -35,7 +61,7 @@ The official guide is available [here](https://lf-o-ran-sc.atlassian.net/wiki/sp
 
 Clone the repository:
 ```bash
-https://github.com/o-ran-sc/ric-plt-ric-dep.git
+git clone https://github.com/o-ran-sc/ric-plt-ric-dep.git
 cd ric-plt-ric-dep
 git checkout j-release
 ```
@@ -64,8 +90,8 @@ If you're running Kubernetes on bare metal or virtualized hardware (not using Mi
 kubectl -n ricplt expose deployment deployment-ricplt-e2term-alpha --protocol=SCTP --port=36422 --target-port=36422 --external-ip=<local-ip-nrric> --name=sctp-service
 ```
 
-### Installing dms_cli tool
-The ```dms_cli``` tool facilitates xApp onboarding. It uses the xApp descriptor and an additional schema file to generate xApp Helm charts.
+### Installing dms_cli tool for xApps onboarding and deployment
+The ```dms_cli``` tool facilitates xApp onboarding and deployment. It uses the xApp descriptor and an additional schema file to generate xApp Helm charts.
 
 ```bash
 git clone https://github.com/o-ran-sc/ric-plt-appmgr.git
@@ -93,111 +119,142 @@ python3.9 -m venv .venv
 pip install -r requirements.txt
 pip install .
 ```
+>⚠️ WARNING: if you get this error: bash error: invalid command 'bdist_wheel' just run pip install wheel
+
+> ⚠️ WARNING: if you get an error with fire package just run pip install --upgrade pip setuptools wheel importlib_metadata
+
+> ❗ Note: Be sure to use the virtual environment .venv just created (. .venv/bin/activate) to call the dms_cli command
+
+> ⚠️ WARNING: if you get this error ModuleNotFoundError: No module named 'pkg_resources' run pip install "setuptools<70"
 
 ## xApp example using xDevSM
+**By default xDevSM supports `KPM V3.00` and `RC V1.03`**
 
-> Note: You can use the [pre-built image](https://hub.docker.com/repository/docker/angeloferaudo/kpm-basic-xapp/general) provided in [xApp examples repository](https://github.com/wineslab/xDevSM-xapps-examples) (`angeloferaudo/kpm-basic-xapp`). This means that, after cloning the repository, **you can skip this section and proceed directly with the [xApp deployment](#deploying-an-xapp-using-kpm-basic-example)**. However, if you plan to make changes in the source code, you will need to build the image yourself.
+Clone the examples repository and initialize xDevSM as a submodule:
 
-
-### Create your own xApp (optional)
-
-You can create your own xApp using xDevSM by following one of these strategies:
-
-- Extending the ```XappKpmFrame```;
-- Encapsulate an object of type ```XappKpmFrame``` and access to the public methods.
-
-The [kpm example](https://github.com/wineslab/xDevSM-xapps-examples/tree/main/kpm_basic_xapp) uses the first strategy. In this case, you need to implement the ```logic()``` method where you can define your xApp's functionality.
-
-#### xDevSM: configuring the service model
-
-By default, xDevSM supports ```KPM V3.00```. However, it has also been tested with versions ```V2.01``` and ```V2.03```.
-
-You can find the shared library (```libkpm_sm.so```) related to the service model in the following directory:
-
-**xDevSM → sm_framework → lib**
-
-##### Change Service Model version (optional)
-
-If you wish to build a different version of the service model, clone the ```flexric``` repository:
-
-```bash
-git clone https://gitlab.eurecom.fr/mosaic5g/flexric.git
-git checkout dev
-```
-
-Build ```flexric``` with your desired version of the service model (e.g., ```V2.03```):
-```bash
-cmake .. -DKPM_VERSION=KPM_V2_03
-make
-```
-
-Locate the service model shared library and copy it into your xDevSM project:
-```bash
-find . -type f -name "*.so"
-cp ./src/sm/kpm_sm/kpm_sm_v02.03/libkpm_sm.so xDevSM/sm_framework/lib 
-```
-
-> Note: Details about why we are using ```flexric``` can be found in the [paper](#paper-reference).
-
-### Build the xApp: KPM-basic example
-
-***By default xDevSM supports ```KPM V3.00```***
-
-
-In [this repository](https://github.com/wineslab/xDevSM-xapps-examples),  you can find an example of a KPM xApp that prints data received by the gNB.
-
-Clone the repository and initialize the submodules:
 ```bash
 git clone https://github.com/wineslab/xDevSM-xapps-examples.git
-
-# clone xDevSM code
+cd xDevSM-xapps-examples
 git submodule init
 git submodule update
 ```
 
+xDevSM relies on the [decorator design pattern](https://refactoring.guru/design-patterns/decorator). So, we need to attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors. General object where we need to attach new behaviors in xDevSM is `xDevSMRMRXapp`.
+
+### Create your own xApp
+The directory structure for each xApp follows this convention:
+```
+<xapp_name>/
+│── <xapp_name>.py
+│── setup_imports.py
+│── requirements.txt
+├── config/
+│   ├── config-file.json
+│   └── schema.json
+docker/
+└── Dockerfile.<xapp_name>
+```
+
+#### KPM Example
+
+Creating a generic xDevSM RMR xApp:
+
+```python
+xapp_gen = xDevSMRMRXapp("0.0.0.0", route_file=args.route_file)
+
+
+# Adding kpm APIs to the xapp
+kpm_xapp = XappKpmFrame(xapp_gen, 
+                        xapp_gen.logger, 
+                        xapp_gen.server, 
+                        xapp_gen.get_xapp_name(), 
+                        xapp_gen.rmr_port, 
+                        xapp_gen.http_port,xapp_gen.get_pltnamespace(), 
+                        xapp_gen.get_app_namespace())
+
+# Registering the outermost rmr handler
+xapp_gen.register_handler(kpm_xapp.handle)
+
+# Getting RAN Functions decoded
+ran_function_description = kpm_xapp.get_ran_function_description(json_ran_info=gnb_info)
+
+# Subscribe to an E2 Node
+kpm_xapp.subscribe(gnb=gnb, ev_trigger=ev_trigger_tuple, func_def=func_def_dict, ran_period_ms=1000, sst=args.sst, sd=args.sd)
+```
+
+Take a look at [this xApp](https://github.com/wineslab/xDevSM-xapps-examples/tree/main/kpm_prb_xapp) to see how you can use multiple service models functionalities.
+
+Once created you need to build and deploy your xApp.
+
+#### kpm-basic-xapp dockerfile
+Docker file: `xDevSM-xapps-examples/docker/Dockerfile.kpm_basic_xapp.dev`.
+
+For automatic running:
+``` bash
+#  No parameters used
+CMD ["python", "kpm_xapp.py"]
+
+# Influx 
+CMD python3 kpm_xapp.py --influx_end_point http://<ip>:port -o <org> -t <token> -b <bucket> 
+
+# You may use other parameters like gnb_target, ssd, and sd
+```
+> **Important note**: `ENV PLT_NAMESPACE="ricplt-j"` change this in the dockerfile based on your deployment
+
+For manual running:
+```bash
+ENTRYPOINT ["sleep", "infinity"]
+```
+
+Then build the image as outlined [here](#build-the-xapp-kpm-basic-example).
+
+### Build the xApp: KPM-basic example
+
+> Note: A full table of the supported service model can be found [here](https://github.com/wineslab/xDevSM?tab=readme-ov-file#supported-service-model-actions)
+
+
+In [this repository](https://github.com/wineslab/xDevSM-xapps-examples),  you can find an example of a complete KPM xApp.
+This xApp can store KPM data in CSV files, InfluxDB and Redis. It subscribes to a single E2 node, which can be specified as an input parameter or defaults to the first available node to reply.
+
+Clone the repository as previously mentioned.
+
 > Note: The following steps are general, so you can also apply them to build the image of your custom xApp.
 
 Build the Image of the xApp:
+> Note: names and tag should match with those specified in the [config files](https://github.com/wineslab/xDevSM-xapps-examples/blob/main/kpm_basic_xapp/config/config-file.json)
+
 ```bash
-docker build --tag kpm-basic-xapp:0.1.0 --file docker/Dockerfile.kpm_basic_xapp .
+docker build --tag kpm-basic-xapp:0.3.0-dev --file docker/Dockerfile.kpm_basic_xapp.dev .
 ```
 
-Push the Image to a Repository:
+> **Important Note:** Make sure the image name and tag match those specified in `config/config-file.json`. Also update the `APP_NAMESPACE` field in the config file to match your deployment's namespace (e.g., `ricxapp-j`).
+
+Push the image to a registry (e.g., Docker Hub):
 ```bash
-docker tag kpm-basic-xapp:0.1.0 <your_username>/kpm-basic-xapp:0.1.0 # use the versioning you want
-docker push <your_username>/kpm-basic-xapp:0.1.0 # use the versioning you want
+docker tag kpm-basic-xapp:0.3.0-dev <your_username>/kpm-basic-xapp:0.3.0-dev # use the versioning you want
+docker push <your_username>/kpm-basic-xapp:0.3.0-dev # use the versioning you want
 ```
 
 Change the xApp config file (**xapps-repo → kpm_basic_xapp → config**):
 ```javascript
  // config-file.json
  //...
+    "name": "kpm-basic-xapp",
+    "version": "0.3.0-dev",
+    "APP_NAMESPACE": "ricxapp-j", 
     "containers": [
         {
             "name": "kpm-basic-xapp",
             "image": {
                 "registry": "docker.io",
-                "name": "<your_username>/kpm-basic-xapp", // use your username e.g., aferaudo/kpm-basic-xapp                
-                "tag": "0.1.0" // use your defined tag, e.g., 1.0.0
+                "name": "angeloferaudo/kpm-basic-xapp",
+                "tag": "0.3.0-dev"
             }
         }
     ],
 ```
+> **Important Note:** change the `APP_NAMESPACE` with the one used in your deployment.
 
-#### kpm-basic-xapp features
-The xapp provided within the framework allows you to record RAN metrics in an influxdb.
-
-To enable this feature, modify the docker file `xDevSM-xapps-examples/docker/Dockerfile.kpm_basic_xapp`.
-
-``` bash
-# replace this line
-CMD ["python", "kpm_xapp.py"]
-
-# with 
-CMD python3 kpm_xapp.py --influx_end_point http://<ip>:port -o <org> -t <token> -b <bucket> 
-```
-
-Then build the image as outlined [here](#build-the-xapp-kpm-basic-example).
 
 
 ## Deploying an xApp using KPM basic example
@@ -210,7 +267,7 @@ docker run --rm -u 0 -it -d -p 8090:8080 \
 
 export CHART_REPO_URL=http://0.0.0.0:8090
 ```
-### Oboarding the xApp
+### Onboarding the xApp
 
 Once ChartMuseum is running, you can onboard the xApp:
 ```bash
@@ -221,14 +278,16 @@ dms_cli onboard \
 ### Downloading the Helm Chart Package
 To download the Helm chart for your xApp, use:
 ```bash
-dms_cli download_helm_chart kpm-basic-xapp 0.1.0 # change name and version accordingly
+dms_cli download_helm_chart kpm-basic-xapp 0.3.0.dev # change name and version accordingly
 ```
 
 > Note: You can also do this using `dms_cli install`. Please refer to [this tutorial](https://lf-o-ran-sc.atlassian.net/wiki/download/attachments/14123019/command_list.txt?version=1&modificationDate=1719164970168&cacheVersion=1&api=v2).
 
+### Installing the xApp
 
+Once the Helm chart is downloaded, install it into the xApp namespace:
 ```bash
-helm install kpm-basic-xapp kpm-basic-xapp-0.1.0.tgz -n ricxapp
+helm install kpm-basic-xapp kpm-basic-xapp-0.3.0.dev.tgz -n ricxapp-j
 ```
 
 
@@ -263,7 +322,7 @@ After cloning the [repository](https://gitlab.eurecom.fr/oai/openairinterface5g)
 ```bash
 git clone https://gitlab.eurecom.fr/oai/openairinterface5g.git
 cd openairinterface5g
-# this downlods the flexric repository within the openairinterface5g project
+# this downloads the flexric repository within the openairinterface5g project
 # directory openair2/E2AP/flexric
 git submodule init
 git submodule update
@@ -285,30 +344,29 @@ Take note of the directory where the service models are installed.
 Build gnb with the `build-e2` option enabled:
 ```bash
 # THIS IS JUST AN EXAMPLE, USE THE OPTION YOU NEED ONLY + --build-e2
- ./build_oai -c --ninja \
-      --eNB --gNB --RU --UE --nrUE \
-      --build-lib "telnetsrv enbscope uescope nrscope" \
-      -w USRP -t Ethernet \
-      --build-e2 --cmake-opt -DXAPP_MULTILANGUAGE=OFF \
-      --noavx512 \
-      --cmake-opt -DCMAKE_C_FLAGS="-Werror" --cmake-opt -DCMAKE_CXX_FLAGS="-Werror" $BUILD_OPTION
+ ./build_oai --build-e2 --ninja --gNB --nrUE --ninja --cmake-opt -DKPM_VERSION=KPM_V3_00
 ```
 
 Enable the E2 connection by updating the gNB configuration file:
 ```javascript
 e2_agent = {
-  near_ric_ip_addr = "127.0.0.1";
+  near_ric_ip_addr = "127.0.0.1"; // near-RT RIC address
   sm_dir = "/usr/local/lib/flexric/" // service model directory --> CHANGE THIS ACCORDINGLY 
 }
 ```
+> Note: by default the OAI E2 Agent uses a different port to connect to the near-RT RIC. This is hard-coded. You may have two solutions: 1. expose the e2term service on a different port (on the RIC); 2. change the [e2 agent code](https://gitlab.eurecom.fr/mosaic5g/flexric/-/blob/dev/src/agent/e2_agent_api.c?ref_type=heads#L94) and rebuild.
+
 
 Run the gNB:
 ```bash
 # Adjust options for your deployment (real/simulated)
-sudo ./nr-softmodem -O <configuration_file> --rfsim --sa -E
+sudo ./nr-softmodem -O <configuration_file> --gNBs.[0].min_rxtxtime 6 --rfsim --rfsimulator.serveraddr server
 ```
 
-## Paper Reference
+## Paper References
 
 > {{ pub_feraudo2024xDevSM | strip_newlines }}
+> {: .text-justify}
+
+> {{ pub_feraudo2026xdevsm | strip_newlines }}
 > {: .text-justify}
