@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "dApp Framework on Colosseum"
-date: 2025-01-25
+date: 2026-03-30
 category: tutorials
 author: Andrea Lacava
 short-description: How to deploy the dApp framework for spectrum sharing on the Colosseum wireless network emulator.
