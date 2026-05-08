@@ -39,9 +39,9 @@ and RAN control, OpenRAN Gym enables end-to-end design and testing of data-drive
 by offering an O-RAN-compliant near-real-time RIC and E2 termination."
 
 footer_logo_main:
-  - image: other/NU_IoT_NLuxPlus_WRWW.png
+  - image: other/INSI_RGB_Monogram_Red_W.png
     height: 78
-    link: https://www.northeastern.edu/wiot/
+    link: https://insi.northeastern.edu/
 
 footer_logo_others:
   - image: other/ai_edge_logo.png
@@ -97,8 +97,8 @@ footer_items:
     link: https://open6g.net/
   - name: AI EDGE Institute
     link: https://aiedge.osu.edu/
-  - name: Northeastern Institute for the Wireless Internet of Things
-    link: https://www.northeastern.edu/wiot/
+  - name: Northeastern Institute for Intelligent Networked Systems
+    link: https://insi.northeastern.edu/
 
 # Build settings
 theme: minima
