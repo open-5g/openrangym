@@ -318,7 +318,14 @@ publications:
     month: January
     year: 2026
     pdflink: "https://arxiv.org/pdf/2602.03821"
-      # # bibtexlink: 
+      # # bibtexlink:
+  - name: feraudo2026e3controller
+    author: A. Feraudo, R. Shirkhani, S. Maxenti, A. Lacava, M. Polese, and T. Melodia
+    title: "Bringing dApps to OCUDU: An E3 Controller for Real-Time Open RAN Intelligence"
+    booktitle: Proceedings of ACM WiNTECH
+    pages: 17-24
+    year: 2026
+    pdflink: "https://doi.org/10.1145/3831662.3844165"
 # these publications are NOT automatically printed in the publications page, but we reference them in some of the pages
 other:
   - name: bertizzolo2020arena
