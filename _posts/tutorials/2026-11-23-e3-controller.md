@@ -258,7 +258,78 @@ The controller does not touch the gNB's codelet loader until the first dApp subs
 
 ### Connect a dApp
 
-<!-- TODO: dApp instructions -->
+The E3 Controller serves the E3SM-L1-KPM and Spectrum service models over ASN.1 on ZMQ/TCP. Any dApp built on the
+[dApp library](https://github.com/wineslab/dApp-library) (`libe3py` 0.6.1) can attach to it. This section runs the
+library's spectrum dApp, which reads the uplink I/Q of each slot from `/dev/shm/e3_ran_buffers` and answers with a
+PRB blacklist.
+{: .text-justify}
+
+**Before you start**, the controller and the gNB from the previous sections are running, in that order, and the gNB
+log shows the cell. Check that the controller created the shared memory:
+{: .text-justify}
+
+```bash
+ls -l /dev/shm/e3_ran_buffers
+```
+
+The dApp must see the same `/dev/shm` as the gNB and the controller. In a container, mount it in all three.
+{: .text-justify}
+
+**Install the dApp library.** Use a release of the [dApp library](https://github.com/wineslab/dApp-library) (PyPI
+package `dapps`) 0.4.3 or later, the first release that reads the controller's L1-KPM indications. Python 3.12 or
+later is required.
+{: .text-justify}
+
+```bash
+python3.12 -m venv dapp-venv
+dapp-venv/bin/pip install "dapps>=0.4.3"       # brings libe3py 0.6.x
+git clone -b v0.4.3 https://github.com/wineslab/dApp-library.git   # for examples/spectrum_dapp.py
+```
+
+**Run it.** Replace `--num-prbs` and `--center-freq` with the values of your cell (273 PRBs, 3619.2 MHz here).
+{: .text-justify}
+
+```bash
+cd dApp-library
+PYTHONPATH=$PWD:$PWD/src dapp-venv/bin/python -m examples.spectrum_dapp \
+    --link zmq --transport tcp --encoding-method asn1 \
+    --control -ru rfsim --num-prbs 273 --center-freq 3619200000 --e --no-sensing-only
+```
+
+| Option | Why |
+|---|---|
+| `--encoding-method asn1` | the controller serves ASN.1; the dApp and the controller must agree |
+| `-ru rfsim` | the I/Q layout of the controller's region, not an NVIDIA or Benetel one |
+| `--no-sensing-only` | OCUDU does not write the `/e3_l2_sensing` ring that the default filter waits for |
+| `--control` | send PRB blacklists to the controller |
+
+**What you should see.** The dApp completes the E3 setup and subscribes. The controller offers RF=1 control 1 only,
+so the dApp logs two warnings that it disabled controls the controller does not offer and subscribed again without
+them; this is expected.
+{: .text-justify}
+
+```text
+INFO - E3 Setup Response outcome: True
+WARNING - RAN function 2 does not offer control(s) [1]: unknown control identifier 1; disabled, subscribing again without them
+INFO - Positive subscription response, registering indication callback.
+INFO - [SHM] /e3_ran_buffers opened (num_fh_rows=120, fp16_beta=0.000488281)
+INFO - [SHM] stats: handled=51022 read_drops=0 (0.00%) ...
+```
+
+The first slots after the start can be dropped as stale (`stale slot dropped`, five in our test run): the
+ring has already rotated past the row the dApp read. They stop by themselves.
+{: .text-justify}
+
+**Limits to know.**
+{: .text-justify}
+
+- The gNB side of the controller publishes only cells of **273 PRBs** with 2, 4 or 8 receive ports. A narrower cell
+  (we tried 106 PRBs) is accepted, but every slot is dropped and the dApp sees nothing.
+- With a dummy radio the grid is zero. The dApp reads and decodes every slot, but its sensing values mean nothing.
+  To see a PRB block applied without a signal, use a policy that always blocks (a four-line `Policy` subclass,
+  `--policy module:Class`); the gNB log then shows `PRB block id=... n=3 prbs={[20, 23)}` and `PRB block id=... cleared`
+  after the dApp stops.
+- JSON dApps (NVIDIA Aerial, ports 5555-5557) need a controller configured for JSON; our test run used ASN.1 only.
 
 ## What to expect
 
